@@ -537,5 +537,17 @@
 				<ed:Type oid="!ed/208b2/4FD4/4264/5e9d64be3e3b"/>
 			</pragmas>
 		</Type>
+		<Type name="E_AUTOHOLD_AKTIV">
+			<definition>
+				<NamedType>
+					<type>
+						<TypeRef name="bool"/>
+					</type>
+				</NamedType>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/129a8/30E3/2034/5e9df2b14efe"/>
+			</pragmas>
+		</Type>
 	</declarations>
 </File>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" name="AH_main_modi_automatik_autohold">
+	<declarations>
+		<Operator name="AutoHold_Funktion" href="Operator11.xscade"/>
+		<Operator name="AutoHold_Steuerung" href="Operator2.xscade"/>
+		<Operator name="HillHold_Funktion" href="Operator3.xscade"/>
+	</declarations>
+	<pragmas>
+		<ed:Package oid="!ed/12982/1AF9/28C0/5e9de46f7f88" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+			<diagrams>
+				<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/12983/1AF9/28C0/5e9de46f5545" blockKind="constants"/>
+				<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/12984/1AF9/28C0/5e9de46f54bc" blockKind="types"/>
+				<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/12985/1AF9/28C0/5e9de46f7a00" blockKind="sensors"/>
+			</diagrams>
+		</ed:Package>
+	</pragmas>
+</Package>
