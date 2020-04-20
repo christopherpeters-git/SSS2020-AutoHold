@@ -272,5 +272,270 @@
 				<ed:Type oid="!ed/29b3f/3F53/2FBC/5e9abcc543ab"/>
 			</pragmas>
 		</Type>
+		<Type name="Time">
+			<definition>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/1277b/29C7/4324/5e9d5444752c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+					<comment>Aktuelle Systemzeit: „t“: in s [float64]</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="E_LED_P">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="P_ein">
+							<pragmas>
+								<ed:Value oid="!ed/20760/29C7/4324/5e9d5a584a9"/>
+							</pragmas>
+						</Value>
+						<Value name="P_aus">
+							<pragmas>
+								<ed:Value oid="!ed/20767/29C7/4324/5e9d5a671c62"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/2075f/29C7/4324/5e9d5a432ef8"/>
+			</pragmas>
+		</Type>
+		<Type name="E_COCKPITANZEIGE_P">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="C_P_aus">
+							<pragmas>
+								<ed:Value oid="!ed/20769/29C7/4324/5e9d5a9d156b"/>
+							</pragmas>
+						</Value>
+						<Value name="C_P_ein">
+							<pragmas>
+								<ed:Value oid="!ed/2077e/29C7/4324/5e9d5b6a6b3f"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/20768/29C7/4324/5e9d5a772909"/>
+			</pragmas>
+		</Type>
+		<Type name="E_COCKPITANZEIGE_HOLD">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="HOLD_aus">
+							<pragmas>
+								<ed:Value oid="!ed/20771/29C7/4324/5e9d5a9e809"/>
+							</pragmas>
+						</Value>
+						<Value name="HOLD_ein">
+							<pragmas>
+								<ed:Value oid="!ed/2077d/29C7/4324/5e9d5b52752"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/20770/29C7/4324/5e9d5a9e1f51"/>
+			</pragmas>
+		</Type>
+		<Type name="E_COCKPITANZEIGE_HOLD_GREEN">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="hold_aus">
+							<pragmas>
+								<ed:Value oid="!ed/20779/29C7/4324/5e9d5a9f73a9"/>
+							</pragmas>
+						</Value>
+						<Value name="hold_ein">
+							<pragmas>
+								<ed:Value oid="!ed/2077c/29C7/4324/5e9d5b4a4a1f"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/20778/29C7/4324/5e9d5a9f71b4"/>
+			</pragmas>
+		</Type>
+		<Type name="E_FAHRER_VERHALTEN">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="Verhalten_Manuell">
+							<pragmas>
+								<ed:Value oid="!ed/29c54/29C7/4324/5e9d5c6d4a74"/>
+							</pragmas>
+						</Value>
+						<Value name="Verhalten_Automatik">
+							<pragmas>
+								<ed:Value oid="!ed/29c55/29C7/4324/5e9d5cd95ce1"/>
+							</pragmas>
+						</Value>
+						<Value name="Verhalten_Automatik_Autohold">
+							<pragmas>
+								<ed:Value oid="!ed/29c56/29C7/4324/5e9d5ce8506c"/>
+							</pragmas>
+						</Value>
+						<Value name="Verhalten_Automatik_Autohold_Notbremsung">
+							<pragmas>
+								<ed:Value oid="!ed/29c57/29C7/4324/5e9d5d166c7f"/>
+							</pragmas>
+						</Value>
+						<Value name="Verhalten_Automatik_Autohold_Berg">
+							<pragmas>
+								<ed:Value oid="!ed/29c58/29C7/4324/5e9d5d90e9b"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/29c53/29C7/4324/5e9d5c4c1507"/>
+			</pragmas>
+		</Type>
+		<Type name="E_EPB_MODUS_MANUELL">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="EPB_MANUELL_aus">
+							<pragmas>
+								<ed:Value oid="!ed/128b4/4FD4/4264/5e9d603b43b5"/>
+							</pragmas>
+						</Value>
+						<Value name="EPB_MANUELL_ein">
+							<pragmas>
+								<ed:Value oid="!ed/128bb/4FD4/4264/5e9d604a344"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/128b3/4FD4/4264/5e9d600535a5"/>
+			</pragmas>
+		</Type>
+		<Type name="E_EPB_MODUS_AUTOMATIK">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="EPB_AUTOMATIK_aus">
+							<pragmas>
+								<ed:Value oid="!ed/128c4/4FD4/4264/5e9d60542450"/>
+							</pragmas>
+						</Value>
+						<Value name="EPB_AUTOMATIK_ein">
+							<pragmas>
+								<ed:Value oid="!ed/128c5/4FD4/4264/5e9d60542bdf"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/128c3/4FD4/4264/5e9d605441c6"/>
+			</pragmas>
+		</Type>
+		<Type name="E_FAHRERTUERSCHALTER">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="Fahrertuer_offen">
+							<pragmas>
+								<ed:Value oid="!ed/208c7/4FD4/4264/5e9d658611ac"/>
+							</pragmas>
+						</Value>
+						<Value name="Fahrertuer_geschlossen">
+							<pragmas>
+								<ed:Value oid="!ed/208ce/4FD4/4264/5e9d659b253b"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/208af/4FD4/4264/5e9d644d1e5c"/>
+			</pragmas>
+		</Type>
+		<Type name="E_SICHERHEITSGRUTSCHALTER">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="nichtAngelegt">
+							<pragmas>
+								<ed:Value oid="!ed/208b5/4FD4/4264/5e9d64ee4e94"/>
+							</pragmas>
+						</Value>
+						<Value name="Angelegt">
+							<pragmas>
+								<ed:Value oid="!ed/208b6/4FD4/4264/5e9d650454c9"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/208b0/4FD4/4264/5e9d64613361"/>
+			</pragmas>
+		</Type>
+		<Type name="E_TASTERZUSTAND_P">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="T_P_aus">
+							<pragmas>
+								<ed:Value oid="!ed/208b7/4FD4/4264/5e9d65135768"/>
+							</pragmas>
+						</Value>
+						<Value name="T_P_gezogen">
+							<pragmas>
+								<ed:Value oid="!ed/208be/4FD4/4264/5e9d65396fb1"/>
+							</pragmas>
+						</Value>
+						<Value name="T_P_gedrueckt">
+							<pragmas>
+								<ed:Value oid="!ed/208c6/4FD4/4264/5e9d65555329"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/208b1/4FD4/4264/5e9d64ad5d76"/>
+			</pragmas>
+		</Type>
+		<Type name="E_TASTERZUSTAND_HOLD">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="HOLD_AUS">
+							<pragmas>
+								<ed:Value oid="!ed/208b3/4FD4/4264/5e9d64d36f8f"/>
+							</pragmas>
+						</Value>
+						<Value name="HOLD_EIN">
+							<pragmas>
+								<ed:Value oid="!ed/208b4/4FD4/4264/5e9d64df4e99"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/208b2/4FD4/4264/5e9d64be3e3b"/>
+			</pragmas>
+		</Type>
 	</declarations>
 </File>
