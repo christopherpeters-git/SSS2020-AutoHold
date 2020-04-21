@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" name="Basis">
 	<inputs>
-		<Variable name="Geschwindigkeit">
+		<Variable name="I_Geschwindigkeit">
 			<type>
 				<NamedType>
 					<type>
@@ -13,7 +13,7 @@
 				<ed:Variable oid="!ed/29b62/3F53/2FBC/5e9abecc3a60"/>
 			</pragmas>
 		</Variable>
-		<Variable name="Zuendung">
+		<Variable name="I_Zuendung">
 			<type>
 				<NamedType>
 					<type>
@@ -25,7 +25,7 @@
 				<ed:Variable oid="!ed/1271b/3F1B/E6C/5e9abfed1b0e"/>
 			</pragmas>
 		</Variable>
-		<Variable name="Bremspedalstellung">
+		<Variable name="I_Bremspedalstellung">
 			<type>
 				<NamedType>
 					<type>
@@ -37,7 +37,7 @@
 				<ed:Variable oid="!ed/1276c/7045/E6C/5e9ac1555a6d"/>
 			</pragmas>
 		</Variable>
-		<Variable name="Getriebeschalter">
+		<Variable name="I_Getriebeschalter">
 			<type>
 				<NamedType>
 					<type>
@@ -49,7 +49,7 @@
 				<ed:Variable oid="!ed/12776/7045/E6C/5e9ac1a254e6"/>
 			</pragmas>
 		</Variable>
-		<Variable name="InputFestellbremsposition">
+		<Variable name="I_InputFestellbremsposition">
 			<type>
 				<NamedType>
 					<type>
@@ -63,7 +63,7 @@
 		</Variable>
 	</inputs>
 	<outputs>
-		<Variable name="OutputFeststellbremsposition">
+		<Variable name="O_OutputFeststellbremsposition">
 			<type>
 				<NamedType>
 					<type>
@@ -139,7 +139,7 @@
 		</Variable>
 	</locals>
 	<data>
-		<!-- _L1 = Geschwindigkeit; -->
+		<!-- _L1 = I_Geschwindigkeit; -->
 		<Equation>
 			<lefts>
 				<VariableRef name="_L1"/>
@@ -147,7 +147,7 @@
 			<right>
 				<IdExpression>
 					<path>
-						<ConstVarRef name="Geschwindigkeit"/>
+						<ConstVarRef name="I_Geschwindigkeit"/>
 					</path>
 				</IdExpression>
 			</right>
@@ -155,7 +155,7 @@
 				<ed:Equation oid="!ed/1278a/7045/E6C/5e9ac3694a68"/>
 			</pragmas>
 		</Equation>
-		<!-- _L2 = Zuendung; -->
+		<!-- _L2 = I_Zuendung; -->
 		<Equation>
 			<lefts>
 				<VariableRef name="_L2"/>
@@ -163,7 +163,7 @@
 			<right>
 				<IdExpression>
 					<path>
-						<ConstVarRef name="Zuendung"/>
+						<ConstVarRef name="I_Zuendung"/>
 					</path>
 				</IdExpression>
 			</right>
@@ -171,7 +171,7 @@
 				<ed:Equation oid="!ed/12790/7045/E6C/5e9ac36a32ee"/>
 			</pragmas>
 		</Equation>
-		<!-- _L3 = Bremspedalstellung; -->
+		<!-- _L3 = I_Bremspedalstellung; -->
 		<Equation>
 			<lefts>
 				<VariableRef name="_L3"/>
@@ -179,7 +179,7 @@
 			<right>
 				<IdExpression>
 					<path>
-						<ConstVarRef name="Bremspedalstellung"/>
+						<ConstVarRef name="I_Bremspedalstellung"/>
 					</path>
 				</IdExpression>
 			</right>
@@ -187,7 +187,7 @@
 				<ed:Equation oid="!ed/12796/7045/E6C/5e9ac36c5a92"/>
 			</pragmas>
 		</Equation>
-		<!-- _L4 = Getriebeschalter; -->
+		<!-- _L4 = I_Getriebeschalter; -->
 		<Equation>
 			<lefts>
 				<VariableRef name="_L4"/>
@@ -195,7 +195,7 @@
 			<right>
 				<IdExpression>
 					<path>
-						<ConstVarRef name="Getriebeschalter"/>
+						<ConstVarRef name="I_Getriebeschalter"/>
 					</path>
 				</IdExpression>
 			</right>
@@ -203,10 +203,10 @@
 				<ed:Equation oid="!ed/1279c/7045/E6C/5e9ac36e44aa"/>
 			</pragmas>
 		</Equation>
-		<!-- OutputFeststellbremsposition = _L5; -->
+		<!-- O_OutputFeststellbremsposition = _L5; -->
 		<Equation>
 			<lefts>
-				<VariableRef name="OutputFeststellbremsposition"/>
+				<VariableRef name="O_OutputFeststellbremsposition"/>
 			</lefts>
 			<right>
 				<IdExpression>
@@ -283,7 +283,7 @@
 				<ed:Equation oid="!ed/127b7/7045/E6C/5e9ac3874540"/>
 			</pragmas>
 		</Equation>
-		<!-- _L5 = InputFestellbremsposition; -->
+		<!-- _L5 = I_InputFestellbremsposition; -->
 		<Equation>
 			<lefts>
 				<VariableRef name="_L5"/>
@@ -291,7 +291,7 @@
 			<right>
 				<IdExpression>
 					<path>
-						<ConstVarRef name="InputFestellbremsposition"/>
+						<ConstVarRef name="I_InputFestellbremsposition"/>
 					</path>
 				</IdExpression>
 			</right>

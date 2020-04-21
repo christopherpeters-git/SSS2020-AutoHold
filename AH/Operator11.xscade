@@ -221,6 +221,18 @@
 				<ed:Variable oid="!ed/20a06/30E3/2034/5e9df64852c7"/>
 			</pragmas>
 		</Variable>
+		<Variable name="_L9">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="E_GETRIEBESCHALTHEBELSTELLUNG"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/12a84/31DC/30D8/5e9eb6db6f77"/>
+			</pragmas>
+		</Variable>
 	</locals>
 	<data>
 		<!-- _L1 = I_AutoHold_Aktiv; -->
@@ -447,6 +459,38 @@
 				<ed:Equation oid="!ed/20a05/30E3/2034/5e9df64811e8"/>
 			</pragmas>
 		</Equation>
+		<!-- _L9 = I_Getriebeschalthebel; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L9"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="I_Getriebeschalthebel"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/12a83/31DC/30D8/5e9eb6db7961"/>
+			</pragmas>
+		</Equation>
+		<!-- _ = _L9; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L9"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/12a8e/31DC/30D8/5e9eb7444f4e"/>
+			</pragmas>
+		</Equation>
 	</data>
 	<pragmas>
 		<ed:Operator oid="!ed/12986/1AF9/28C0/5e9de8cf5db0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
@@ -619,6 +663,30 @@
 								<Point x="13018" y="6165"/>
 								<Point x="13018" y="5689"/>
 								<Point x="14817" y="5689"/>
+							</positions>
+						</Edge>
+						<EquationGE presentable="!ed/12a83/31DC/30D8/5e9eb6db7961">
+							<position>
+								<Point x="4524" y="7355"/>
+							</position>
+							<size>
+								<Size width="265" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_TERMINATOR" presentable="!ed/12a8e/31DC/30D8/5e9eb7444f4e">
+							<position>
+								<Point x="6218" y="8440"/>
+							</position>
+							<size>
+								<Size width="502" height="503"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/12a83/31DC/30D8/5e9eb6db7961" dstEquation="!ed/12a8e/31DC/30D8/5e9eb7444f4e">
+							<positions>
+								<Point x="4789" y="7620"/>
+								<Point x="5636" y="7620"/>
+								<Point x="5636" y="8705"/>
+								<Point x="6482" y="8705"/>
 							</positions>
 						</Edge>
 					</presentationElements>

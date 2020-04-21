@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="fahrzeug">
 			<inputs>
-				<Variable name="t">
+				<Variable name="I_t">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/1277a/29C7/4324/5e9d5414526"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Zuendung">
+				<Variable name="I_Zuendung">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/2061b/29C7/4324/5e9d551c11c5"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Getriebeschalter">
+				<Variable name="I_Getriebeschalter">
 					<type>
 						<NamedType>
 							<type>
@@ -39,7 +39,7 @@
 						<ed:Variable oid="!ed/20622/29C7/4324/5e9d551ca0e"/>
 					</pragmas>
 				</Variable>
-				<Variable name="F_Betriebsbremspedaldruck">
+				<Variable name="I_F_Betriebsbremspedaldruck">
 					<type>
 						<NamedType>
 							<type>
@@ -51,7 +51,7 @@
 						<ed:Variable oid="!ed/20629/29C7/4324/5e9d551d1404"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Autohold_Betriebsbremspedaldruck">
+				<Variable name="I_Autohold_Betriebsbremspedaldruck">
 					<type>
 						<NamedType>
 							<type>
@@ -63,7 +63,7 @@
 						<ed:Variable oid="!ed/2064b/29C7/4324/5e9d560b975"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Gaspedal">
+				<Variable name="I_Gaspedal">
 					<type>
 						<NamedType>
 							<type>
@@ -75,7 +75,7 @@
 						<ed:Variable oid="!ed/20655/29C7/4324/5e9d56449f6"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Steigung">
+				<Variable name="I_Steigung">
 					<type>
 						<NamedType>
 							<type>
@@ -87,7 +87,7 @@
 						<ed:Variable oid="!ed/2065f/29C7/4324/5e9d56a56478"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Festbremse_position">
+				<Variable name="I_Festbremse_position">
 					<type>
 						<NamedType>
 							<type>
@@ -99,7 +99,7 @@
 						<ed:Variable oid="!ed/20669/29C7/4324/5e9d56dd3de5"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Bremsdrucksperrventilstellung">
+				<Variable name="I_Bremsdrucksperrventilstellung">
 					<type>
 						<NamedType>
 							<type>
@@ -111,7 +111,7 @@
 						<ed:Variable oid="!ed/20673/29C7/4324/5e9d573321eb"/>
 					</pragmas>
 				</Variable>
-				<Variable name="dummy_input1">
+				<Variable name="I_DUMMY_input1">
 					<type>
 						<NamedType>
 							<type>
@@ -123,7 +123,7 @@
 						<ed:Variable oid="!ed/2070a/29C7/4324/5e9d588a5c7c"/>
 					</pragmas>
 				</Variable>
-				<Variable name="dummy_input2">
+				<Variable name="I_DUMMY_input2">
 					<type>
 						<NamedType>
 							<type>
@@ -137,7 +137,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Geschwindigkeit">
+				<Variable name="O_Geschwindigkeit">
 					<type>
 						<NamedType>
 							<type>
@@ -149,7 +149,7 @@
 						<ed:Variable oid="!ed/2067d/29C7/4324/5e9d575c722c"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Strecke">
+				<Variable name="O_Strecke">
 					<type>
 						<NamedType>
 							<type>
@@ -297,7 +297,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = t; -->
+				<!-- _L1 = I_t; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -305,7 +305,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="t"/>
+								<ConstVarRef name="I_t"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -313,7 +313,7 @@
 						<ed:Equation oid="!ed/20691/29C7/4324/5e9d57a63678"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = Zuendung; -->
+				<!-- _L2 = I_Zuendung; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -321,7 +321,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Zuendung"/>
+								<ConstVarRef name="I_Zuendung"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -329,7 +329,7 @@
 						<ed:Equation oid="!ed/20697/29C7/4324/5e9d57a76c62"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = Getriebeschalter; -->
+				<!-- _L3 = I_Getriebeschalter; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -337,7 +337,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Getriebeschalter"/>
+								<ConstVarRef name="I_Getriebeschalter"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -345,7 +345,7 @@
 						<ed:Equation oid="!ed/2069d/29C7/4324/5e9d57a87766"/>
 					</pragmas>
 				</Equation>
-				<!-- _L4 = F_Betriebsbremspedaldruck; -->
+				<!-- _L4 = I_F_Betriebsbremspedaldruck; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L4"/>
@@ -353,7 +353,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="F_Betriebsbremspedaldruck"/>
+								<ConstVarRef name="I_F_Betriebsbremspedaldruck"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -361,7 +361,7 @@
 						<ed:Equation oid="!ed/206a3/29C7/4324/5e9d57a94a8f"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = Autohold_Betriebsbremspedaldruck; -->
+				<!-- _L5 = I_Autohold_Betriebsbremspedaldruck; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -369,7 +369,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Autohold_Betriebsbremspedaldruck"/>
+								<ConstVarRef name="I_Autohold_Betriebsbremspedaldruck"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -377,7 +377,7 @@
 						<ed:Equation oid="!ed/206a9/29C7/4324/5e9d57bc7110"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = Gaspedal; -->
+				<!-- _L6 = I_Gaspedal; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
@@ -385,7 +385,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Gaspedal"/>
+								<ConstVarRef name="I_Gaspedal"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -393,7 +393,7 @@
 						<ed:Equation oid="!ed/206af/29C7/4324/5e9d57c05c19"/>
 					</pragmas>
 				</Equation>
-				<!-- _L7 = Steigung; -->
+				<!-- _L7 = I_Steigung; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L7"/>
@@ -401,7 +401,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Steigung"/>
+								<ConstVarRef name="I_Steigung"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -409,7 +409,7 @@
 						<ed:Equation oid="!ed/206b5/29C7/4324/5e9d57c213e7"/>
 					</pragmas>
 				</Equation>
-				<!-- _L8 = Festbremse_position; -->
+				<!-- _L8 = I_Festbremse_position; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L8"/>
@@ -417,7 +417,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Festbremse_position"/>
+								<ConstVarRef name="I_Festbremse_position"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -425,7 +425,7 @@
 						<ed:Equation oid="!ed/206bb/29C7/4324/5e9d57c3601a"/>
 					</pragmas>
 				</Equation>
-				<!-- _L9 = Bremsdrucksperrventilstellung; -->
+				<!-- _L9 = I_Bremsdrucksperrventilstellung; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L9"/>
@@ -433,7 +433,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Bremsdrucksperrventilstellung"/>
+								<ConstVarRef name="I_Bremsdrucksperrventilstellung"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -441,10 +441,10 @@
 						<ed:Equation oid="!ed/206c1/29C7/4324/5e9d57c73b4c"/>
 					</pragmas>
 				</Equation>
-				<!-- Geschwindigkeit = _L10; -->
+				<!-- O_Geschwindigkeit = _L10; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Geschwindigkeit"/>
+						<VariableRef name="O_Geschwindigkeit"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -457,10 +457,10 @@
 						<ed:Equation oid="!ed/206c7/29C7/4324/5e9d57cb25e0"/>
 					</pragmas>
 				</Equation>
-				<!-- Strecke = _L11; -->
+				<!-- O_Strecke = _L11; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Strecke"/>
+						<VariableRef name="O_Strecke"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -617,7 +617,7 @@
 						<ed:Equation oid="!ed/206fb/29C7/4324/5e9d5840137f"/>
 					</pragmas>
 				</Equation>
-				<!-- _L10 = dummy_input1; -->
+				<!-- _L10 = I_DUMMY_input1; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L10"/>
@@ -625,7 +625,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="dummy_input1"/>
+								<ConstVarRef name="I_DUMMY_input1"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -633,7 +633,7 @@
 						<ed:Equation oid="!ed/20711/29C7/4324/5e9d58934b3d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L11 = dummy_input2; -->
+				<!-- _L11 = I_DUMMY_input2; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L11"/>
@@ -641,7 +641,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="dummy_input2"/>
+								<ConstVarRef name="I_DUMMY_input2"/>
 							</path>
 						</IdExpression>
 					</right>

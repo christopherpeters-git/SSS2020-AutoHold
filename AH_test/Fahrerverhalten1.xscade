@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="Fahrerverhalten">
 			<inputs>
-				<Variable name="t">
+				<Variable name="I_t">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/128ac/4FD4/4264/5e9d5f5e640c"/>
 					</pragmas>
 				</Variable>
-				<Variable name="v">
+				<Variable name="I_v">
 					<type>
 						<NamedType>
 							<type>
@@ -27,7 +27,7 @@
 						<ed:Variable oid="!ed/128ad/4FD4/4264/5e9d5f677e4d"/>
 					</pragmas>
 				</Variable>
-				<Variable name="s">
+				<Variable name="I_s">
 					<type>
 						<NamedType>
 							<type>
@@ -39,7 +39,7 @@
 						<ed:Variable oid="!ed/128ae/4FD4/4264/5e9d5f6d796d"/>
 					</pragmas>
 				</Variable>
-				<Variable name="LED_P">
+				<Variable name="I_LED_P">
 					<type>
 						<NamedType>
 							<type>
@@ -51,7 +51,7 @@
 						<ed:Variable oid="!ed/128af/4FD4/4264/5e9d5f784217"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Cockpitanzeige_P">
+				<Variable name="I_Cockpitanzeige_P">
 					<type>
 						<NamedType>
 							<type>
@@ -63,7 +63,7 @@
 						<ed:Variable oid="!ed/128b0/4FD4/4264/5e9d5f8832eb"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Cockpitanzeige_H">
+				<Variable name="I_Cockpitanzeige_H">
 					<type>
 						<NamedType>
 							<type>
@@ -75,7 +75,7 @@
 						<ed:Variable oid="!ed/128b2/4FD4/4264/5e9d5fa950c6"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Cockpitanzeige_H_G">
+				<Variable name="I_Cockpitanzeige_H_G">
 					<type>
 						<NamedType>
 							<type>
@@ -87,7 +87,7 @@
 						<ed:Variable oid="!ed/128b1/4FD4/4264/5e9d5f9a5525"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Betriebsbremseausgabe">
+				<Variable name="I_Betriebsbremseausgabe">
 					<type>
 						<NamedType>
 							<type>
@@ -99,7 +99,7 @@
 						<ed:Variable oid="!ed/20777/4FD4/4264/5e9d612a79b5"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Feststellbremse">
+				<Variable name="I_Feststellbremse">
 					<type>
 						<NamedType>
 							<type>
@@ -111,7 +111,7 @@
 						<ed:Variable oid="!ed/20778/4FD4/4264/5e9d613a7e83"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Bremsducksperrventil">
+				<Variable name="I_Bremsducksperrventil">
 					<type>
 						<NamedType>
 							<type>
@@ -123,7 +123,7 @@
 						<ed:Variable oid="!ed/20779/4FD4/4264/5e9d61472987"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Fahrerverhalten">
+				<Variable name="I_Fahrerverhalten">
 					<type>
 						<NamedType>
 							<type>
@@ -135,7 +135,7 @@
 						<ed:Variable oid="!ed/207e6/4FD4/4264/5e9d62146b60"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Getriebeschalthebelstellung">
+				<Variable name="I_Getriebeschalthebelstellung">
 					<type>
 						<NamedType>
 							<type>
@@ -147,7 +147,7 @@
 						<ed:Variable oid="!ed/207f1/4FD4/4264/5e9d623b2ec1"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Z_DUMMYINPUT">
+				<Variable name="I_Z_DUMMYINPUT">
 					<type>
 						<NamedType>
 							<type>
@@ -159,7 +159,7 @@
 						<ed:Variable oid="!ed/3c75c/4FD4/4264/5e9d666b2853"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Z_DUMMYINPUT5">
+				<Variable name="I_Z_DUMMYINPUT5">
 					<type>
 						<NamedType>
 							<type>
@@ -171,7 +171,7 @@
 						<ed:Variable oid="!ed/3c77a/4FD4/4264/5e9d66874678"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Z_DUMMYINPUT6">
+				<Variable name="I_Z_DUMMYINPUT6">
 					<type>
 						<NamedType>
 							<type>
@@ -183,7 +183,7 @@
 						<ed:Variable oid="!ed/3c780/4FD4/4264/5e9d66887e2b"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Z_DUMMYINPUT1">
+				<Variable name="I_Z_DUMMYINPUT1">
 					<type>
 						<NamedType>
 							<type>
@@ -195,7 +195,7 @@
 						<ed:Variable oid="!ed/3c762/4FD4/4264/5e9d667dcc0"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Z_DUMMYINPUT2">
+				<Variable name="I_Z_DUMMYINPUT2">
 					<type>
 						<NamedType>
 							<type>
@@ -207,7 +207,7 @@
 						<ed:Variable oid="!ed/3c768/4FD4/4264/5e9d667e7eb2"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Z_DUMMYINPUT3">
+				<Variable name="I_Z_DUMMYINPUT3">
 					<type>
 						<NamedType>
 							<type>
@@ -219,7 +219,7 @@
 						<ed:Variable oid="!ed/3c76e/4FD4/4264/5e9d667e587e"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Z_DUMMYINPUT4">
+				<Variable name="I_Z_DUMMYINPUT4">
 					<type>
 						<NamedType>
 							<type>
@@ -231,7 +231,7 @@
 						<ed:Variable oid="!ed/3c774/4FD4/4264/5e9d667e5cd5"/>
 					</pragmas>
 				</Variable>
-				<Variable name="EPB_Modus">
+				<Variable name="I_EPB_Modus">
 					<type>
 						<NamedType>
 							<type>
@@ -245,7 +245,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Zuendung">
+				<Variable name="O_Zuendung">
 					<type>
 						<NamedType>
 							<type>
@@ -257,7 +257,7 @@
 						<ed:Variable oid="!ed/207f0/4FD4/4264/5e9d622c2331"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Betriebsbremspedaldruck">
+				<Variable name="O_Betriebsbremspedaldruck">
 					<type>
 						<NamedType>
 							<type>
@@ -269,7 +269,7 @@
 						<ed:Variable oid="!ed/207f2/4FD4/4264/5e9d625638ab"/>
 					</pragmas>
 				</Variable>
-				<Variable name="gaspedalStellung">
+				<Variable name="O_GaspedalStellung">
 					<type>
 						<NamedType>
 							<type>
@@ -281,7 +281,7 @@
 						<ed:Variable oid="!ed/207f3/4FD4/4264/5e9d628b43ca"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Fahrertuerschalter">
+				<Variable name="O_Fahrertuerschalter">
 					<type>
 						<NamedType>
 							<type>
@@ -293,7 +293,7 @@
 						<ed:Variable oid="!ed/207f4/4FD4/4264/5e9d629a5bc8"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Sicherheitsgurtschalter">
+				<Variable name="O_Sicherheitsgurtschalter">
 					<type>
 						<NamedType>
 							<type>
@@ -305,7 +305,7 @@
 						<ed:Variable oid="!ed/207f5/4FD4/4264/5e9d62a6bed"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Tasterzustand_P">
+				<Variable name="O_Tasterzustand_P">
 					<type>
 						<NamedType>
 							<type>
@@ -317,7 +317,7 @@
 						<ed:Variable oid="!ed/207f6/4FD4/4264/5e9d62c66694"/>
 					</pragmas>
 				</Variable>
-				<Variable name="Tasterzustand_Hold">
+				<Variable name="O_Tasterzustand_Hold">
 					<type>
 						<NamedType>
 							<type>
@@ -573,7 +573,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = t; -->
+				<!-- _L1 = I_t; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -581,7 +581,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="t"/>
+								<ConstVarRef name="I_t"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -589,7 +589,7 @@
 						<ed:Equation oid="!ed/207f8/4FD4/4264/5e9d63055ba4"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = v; -->
+				<!-- _L2 = I_v; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -597,7 +597,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="v"/>
+								<ConstVarRef name="I_v"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -605,7 +605,7 @@
 						<ed:Equation oid="!ed/207fe/4FD4/4264/5e9d6309f0"/>
 					</pragmas>
 				</Equation>
-				<!-- _L3 = s; -->
+				<!-- _L3 = I_s; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L3"/>
@@ -613,7 +613,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="s"/>
+								<ConstVarRef name="I_s"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -621,7 +621,7 @@
 						<ed:Equation oid="!ed/20804/4FD4/4264/5e9d630c174b"/>
 					</pragmas>
 				</Equation>
-				<!-- _L4 = LED_P; -->
+				<!-- _L4 = I_LED_P; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L4"/>
@@ -629,7 +629,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="LED_P"/>
+								<ConstVarRef name="I_LED_P"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -637,7 +637,7 @@
 						<ed:Equation oid="!ed/2080a/4FD4/4264/5e9d630d1738"/>
 					</pragmas>
 				</Equation>
-				<!-- _L5 = Cockpitanzeige_P; -->
+				<!-- _L5 = I_Cockpitanzeige_P; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L5"/>
@@ -645,7 +645,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Cockpitanzeige_P"/>
+								<ConstVarRef name="I_Cockpitanzeige_P"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -653,7 +653,7 @@
 						<ed:Equation oid="!ed/20810/4FD4/4264/5e9d630f60fb"/>
 					</pragmas>
 				</Equation>
-				<!-- _L6 = Cockpitanzeige_H; -->
+				<!-- _L6 = I_Cockpitanzeige_H; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L6"/>
@@ -661,7 +661,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Cockpitanzeige_H"/>
+								<ConstVarRef name="I_Cockpitanzeige_H"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -669,7 +669,7 @@
 						<ed:Equation oid="!ed/20816/4FD4/4264/5e9d63122f0c"/>
 					</pragmas>
 				</Equation>
-				<!-- _L7 = Cockpitanzeige_H_G; -->
+				<!-- _L7 = I_Cockpitanzeige_H_G; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L7"/>
@@ -677,7 +677,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Cockpitanzeige_H_G"/>
+								<ConstVarRef name="I_Cockpitanzeige_H_G"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -685,7 +685,7 @@
 						<ed:Equation oid="!ed/2081c/4FD4/4264/5e9d631465ce"/>
 					</pragmas>
 				</Equation>
-				<!-- _L10 = Betriebsbremseausgabe; -->
+				<!-- _L10 = I_Betriebsbremseausgabe; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L10"/>
@@ -693,7 +693,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Betriebsbremseausgabe"/>
+								<ConstVarRef name="I_Betriebsbremseausgabe"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -701,7 +701,7 @@
 						<ed:Equation oid="!ed/2082e/4FD4/4264/5e9d631d2b84"/>
 					</pragmas>
 				</Equation>
-				<!-- _L11 = Feststellbremse; -->
+				<!-- _L11 = I_Feststellbremse; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L11"/>
@@ -709,7 +709,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Feststellbremse"/>
+								<ConstVarRef name="I_Feststellbremse"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -717,7 +717,7 @@
 						<ed:Equation oid="!ed/20834/4FD4/4264/5e9d631f12b9"/>
 					</pragmas>
 				</Equation>
-				<!-- _L12 = Bremsducksperrventil; -->
+				<!-- _L12 = I_Bremsducksperrventil; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L12"/>
@@ -725,7 +725,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Bremsducksperrventil"/>
+								<ConstVarRef name="I_Bremsducksperrventil"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -733,7 +733,7 @@
 						<ed:Equation oid="!ed/2083a/4FD4/4264/5e9d63214a52"/>
 					</pragmas>
 				</Equation>
-				<!-- _L13 = Fahrerverhalten; -->
+				<!-- _L13 = I_Fahrerverhalten; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L13"/>
@@ -741,7 +741,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Fahrerverhalten"/>
+								<ConstVarRef name="I_Fahrerverhalten"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -749,7 +749,7 @@
 						<ed:Equation oid="!ed/20840/4FD4/4264/5e9d632439ed"/>
 					</pragmas>
 				</Equation>
-				<!-- _L14 = Getriebeschalthebelstellung; -->
+				<!-- _L14 = I_Getriebeschalthebelstellung; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L14"/>
@@ -757,7 +757,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Getriebeschalthebelstellung"/>
+								<ConstVarRef name="I_Getriebeschalthebelstellung"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -973,10 +973,10 @@
 						<ed:Equation oid="!ed/3c74b/4FD4/4264/5e9d662d745e"/>
 					</pragmas>
 				</Equation>
-				<!-- Zuendung = _L15; -->
+				<!-- O_Zuendung = _L15; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Zuendung"/>
+						<VariableRef name="O_Zuendung"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -989,10 +989,10 @@
 						<ed:Equation oid="!ed/3c751/4FD4/4264/5e9d66616d08"/>
 					</pragmas>
 				</Equation>
-				<!-- Betriebsbremspedaldruck = _L16; -->
+				<!-- O_Betriebsbremspedaldruck = _L16; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Betriebsbremspedaldruck"/>
+						<VariableRef name="O_Betriebsbremspedaldruck"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1005,10 +1005,10 @@
 						<ed:Equation oid="!ed/3c752/4FD4/4264/5e9d66611625"/>
 					</pragmas>
 				</Equation>
-				<!-- gaspedalStellung = _L17; -->
+				<!-- O_GaspedalStellung = _L17; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="gaspedalStellung"/>
+						<VariableRef name="O_GaspedalStellung"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1021,10 +1021,10 @@
 						<ed:Equation oid="!ed/3c753/4FD4/4264/5e9d6661182"/>
 					</pragmas>
 				</Equation>
-				<!-- Fahrertuerschalter = _L18; -->
+				<!-- O_Fahrertuerschalter = _L18; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Fahrertuerschalter"/>
+						<VariableRef name="O_Fahrertuerschalter"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1037,10 +1037,10 @@
 						<ed:Equation oid="!ed/3c754/4FD4/4264/5e9d6661648a"/>
 					</pragmas>
 				</Equation>
-				<!-- Sicherheitsgurtschalter = _L19; -->
+				<!-- O_Sicherheitsgurtschalter = _L19; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Sicherheitsgurtschalter"/>
+						<VariableRef name="O_Sicherheitsgurtschalter"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1053,10 +1053,10 @@
 						<ed:Equation oid="!ed/3c755/4FD4/4264/5e9d66616701"/>
 					</pragmas>
 				</Equation>
-				<!-- Tasterzustand_P = _L20; -->
+				<!-- O_Tasterzustand_P = _L20; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Tasterzustand_P"/>
+						<VariableRef name="O_Tasterzustand_P"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1069,10 +1069,10 @@
 						<ed:Equation oid="!ed/3c756/4FD4/4264/5e9d66611097"/>
 					</pragmas>
 				</Equation>
-				<!-- Tasterzustand_Hold = _L21; -->
+				<!-- O_Tasterzustand_Hold = _L21; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Tasterzustand_Hold"/>
+						<VariableRef name="O_Tasterzustand_Hold"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -1085,7 +1085,7 @@
 						<ed:Equation oid="!ed/3c757/4FD4/4264/5e9d6661fb6"/>
 					</pragmas>
 				</Equation>
-				<!-- _L15 = Z_DUMMYINPUT; -->
+				<!-- _L15 = I_Z_DUMMYINPUT; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L15"/>
@@ -1093,7 +1093,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Z_DUMMYINPUT"/>
+								<ConstVarRef name="I_Z_DUMMYINPUT"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1101,7 +1101,7 @@
 						<ed:Equation oid="!ed/3c787/4FD4/4264/5e9d66949e5"/>
 					</pragmas>
 				</Equation>
-				<!-- _L16 = Z_DUMMYINPUT5; -->
+				<!-- _L16 = I_Z_DUMMYINPUT5; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L16"/>
@@ -1109,7 +1109,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Z_DUMMYINPUT5"/>
+								<ConstVarRef name="I_Z_DUMMYINPUT5"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1117,7 +1117,7 @@
 						<ed:Equation oid="!ed/3c789/4FD4/4264/5e9d66942d7b"/>
 					</pragmas>
 				</Equation>
-				<!-- _L17 = Z_DUMMYINPUT6; -->
+				<!-- _L17 = I_Z_DUMMYINPUT6; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L17"/>
@@ -1125,7 +1125,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Z_DUMMYINPUT6"/>
+								<ConstVarRef name="I_Z_DUMMYINPUT6"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1133,7 +1133,7 @@
 						<ed:Equation oid="!ed/3c78b/4FD4/4264/5e9d66947ca7"/>
 					</pragmas>
 				</Equation>
-				<!-- _L18 = Z_DUMMYINPUT1; -->
+				<!-- _L18 = I_Z_DUMMYINPUT1; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L18"/>
@@ -1141,7 +1141,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Z_DUMMYINPUT1"/>
+								<ConstVarRef name="I_Z_DUMMYINPUT1"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1149,7 +1149,7 @@
 						<ed:Equation oid="!ed/3c78d/4FD4/4264/5e9d66947cfa"/>
 					</pragmas>
 				</Equation>
-				<!-- _L19 = Z_DUMMYINPUT2; -->
+				<!-- _L19 = I_Z_DUMMYINPUT2; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L19"/>
@@ -1157,7 +1157,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Z_DUMMYINPUT2"/>
+								<ConstVarRef name="I_Z_DUMMYINPUT2"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1165,7 +1165,7 @@
 						<ed:Equation oid="!ed/3c78f/4FD4/4264/5e9d66944992"/>
 					</pragmas>
 				</Equation>
-				<!-- _L20 = Z_DUMMYINPUT3; -->
+				<!-- _L20 = I_Z_DUMMYINPUT3; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L20"/>
@@ -1173,7 +1173,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Z_DUMMYINPUT3"/>
+								<ConstVarRef name="I_Z_DUMMYINPUT3"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1181,7 +1181,7 @@
 						<ed:Equation oid="!ed/3c791/4FD4/4264/5e9d669462ea"/>
 					</pragmas>
 				</Equation>
-				<!-- _L21 = Z_DUMMYINPUT4; -->
+				<!-- _L21 = I_Z_DUMMYINPUT4; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L21"/>
@@ -1189,7 +1189,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Z_DUMMYINPUT4"/>
+								<ConstVarRef name="I_Z_DUMMYINPUT4"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -1197,7 +1197,7 @@
 						<ed:Equation oid="!ed/3c793/4FD4/4264/5e9d669430f6"/>
 					</pragmas>
 				</Equation>
-				<!-- _L22 = EPB_Modus; -->
+				<!-- _L22 = I_EPB_Modus; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L22"/>
@@ -1205,7 +1205,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="EPB_Modus"/>
+								<ConstVarRef name="I_EPB_Modus"/>
 							</path>
 						</IdExpression>
 					</right>

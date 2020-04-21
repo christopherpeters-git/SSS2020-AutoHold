@@ -3,7 +3,7 @@
 	<declarations>
 		<Operator kind="function" name="fahrweg">
 			<inputs>
-				<Variable name="Strecke">
+				<Variable name="I_Strecke">
 					<type>
 						<NamedType>
 							<type>
@@ -15,7 +15,7 @@
 						<ed:Variable oid="!ed/20734/29C7/4324/5e9d58e03a6c"/>
 					</pragmas>
 				</Variable>
-				<Variable name="dummy_input">
+				<Variable name="I_dummy_input">
 					<type>
 						<NamedType>
 							<type>
@@ -29,7 +29,7 @@
 				</Variable>
 			</inputs>
 			<outputs>
-				<Variable name="Steigung">
+				<Variable name="O_Steigung">
 					<type>
 						<NamedType>
 							<type>
@@ -69,7 +69,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1 = Strecke; -->
+				<!-- _L1 = I_Strecke; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -77,7 +77,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="Strecke"/>
+								<ConstVarRef name="I_Strecke"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -101,10 +101,10 @@
 						<ed:Equation oid="!ed/20746/29C7/4324/5e9d594e3b7e"/>
 					</pragmas>
 				</Equation>
-				<!-- Steigung = _L2; -->
+				<!-- O_Steigung = _L2; -->
 				<Equation>
 					<lefts>
-						<VariableRef name="Steigung"/>
+						<VariableRef name="O_Steigung"/>
 					</lefts>
 					<right>
 						<IdExpression>
@@ -117,7 +117,7 @@
 						<ed:Equation oid="!ed/2074b/29C7/4324/5e9d59519c3"/>
 					</pragmas>
 				</Equation>
-				<!-- _L2 = dummy_input; -->
+				<!-- _L2 = I_dummy_input; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L2"/>
@@ -125,7 +125,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="dummy_input"/>
+								<ConstVarRef name="I_dummy_input"/>
 							</path>
 						</IdExpression>
 					</right>
