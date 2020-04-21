@@ -87,30 +87,6 @@
 						<ed:Variable oid="!ed/128b1/4FD4/4264/5e9d5f9a5525"/>
 					</pragmas>
 				</Variable>
-				<Variable name="EPB_Modus_Manuell">
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="E_EPB_MODUS_MANUELL"/>
-							</type>
-						</NamedType>
-					</type>
-					<pragmas>
-						<ed:Variable oid="!ed/20770/4FD4/4264/5e9d60fd6575"/>
-					</pragmas>
-				</Variable>
-				<Variable name="EPB_Modus_Automatik">
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="E_EPB_MODUS_AUTOMATIK"/>
-							</type>
-						</NamedType>
-					</type>
-					<pragmas>
-						<ed:Variable oid="!ed/20776/4FD4/4264/5e9d611846ab"/>
-					</pragmas>
-				</Variable>
 				<Variable name="Betriebsbremseausgabe">
 					<type>
 						<NamedType>
@@ -253,6 +229,18 @@
 					</type>
 					<pragmas>
 						<ed:Variable oid="!ed/3c774/4FD4/4264/5e9d667e5cd5"/>
+					</pragmas>
+				</Variable>
+				<Variable name="EPB_Modus">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="E_EPB_MODUS"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/20a28/18E6/5DBC/5e9ebd555d70"/>
 					</pragmas>
 				</Variable>
 			</inputs>
@@ -427,30 +415,6 @@
 						<ed:Variable oid="!ed/2081d/4FD4/4264/5e9d6314385"/>
 					</pragmas>
 				</Variable>
-				<Variable name="_L8">
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="E_EPB_MODUS_MANUELL"/>
-							</type>
-						</NamedType>
-					</type>
-					<pragmas>
-						<ed:Variable oid="!ed/20823/4FD4/4264/5e9d631670ae"/>
-					</pragmas>
-				</Variable>
-				<Variable name="_L9">
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="E_EPB_MODUS_AUTOMATIK"/>
-							</type>
-						</NamedType>
-					</type>
-					<pragmas>
-						<ed:Variable oid="!ed/20829/4FD4/4264/5e9d63174b96"/>
-					</pragmas>
-				</Variable>
 				<Variable name="_L10">
 					<type>
 						<NamedType>
@@ -595,6 +559,18 @@
 						<ed:Variable oid="!ed/3c794/4FD4/4264/5e9d66946dd1"/>
 					</pragmas>
 				</Variable>
+				<Variable name="_L22">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="E_EPB_MODUS"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/20a33/18E6/5DBC/5e9ebd7b5fc2"/>
+					</pragmas>
+				</Variable>
 			</locals>
 			<data>
 				<!-- _L1 = t; -->
@@ -707,38 +683,6 @@
 					</right>
 					<pragmas>
 						<ed:Equation oid="!ed/2081c/4FD4/4264/5e9d631465ce"/>
-					</pragmas>
-				</Equation>
-				<!-- _L8 = EPB_Modus_Manuell; -->
-				<Equation>
-					<lefts>
-						<VariableRef name="_L8"/>
-					</lefts>
-					<right>
-						<IdExpression>
-							<path>
-								<ConstVarRef name="EPB_Modus_Manuell"/>
-							</path>
-						</IdExpression>
-					</right>
-					<pragmas>
-						<ed:Equation oid="!ed/20822/4FD4/4264/5e9d63167482"/>
-					</pragmas>
-				</Equation>
-				<!-- _L9 = EPB_Modus_Automatik; -->
-				<Equation>
-					<lefts>
-						<VariableRef name="_L9"/>
-					</lefts>
-					<right>
-						<IdExpression>
-							<path>
-								<ConstVarRef name="EPB_Modus_Automatik"/>
-							</path>
-						</IdExpression>
-					</right>
-					<pragmas>
-						<ed:Equation oid="!ed/20828/4FD4/4264/5e9d63173b77"/>
 					</pragmas>
 				</Equation>
 				<!-- _L10 = Betriebsbremseausgabe; -->
@@ -901,7 +845,7 @@
 						<ed:Equation oid="!ed/20860/4FD4/4264/5e9d633b981"/>
 					</pragmas>
 				</Equation>
-				<!-- _ = _L8; -->
+				<!-- _ = _L22; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_"/>
@@ -909,28 +853,12 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="_L8"/>
+								<ConstVarRef name="_L22"/>
 							</path>
 						</IdExpression>
 					</right>
 					<pragmas>
 						<ed:Equation oid="!ed/20865/4FD4/4264/5e9d633d526d"/>
-					</pragmas>
-				</Equation>
-				<!-- _ = _L9; -->
-				<Equation>
-					<lefts>
-						<VariableRef name="_"/>
-					</lefts>
-					<right>
-						<IdExpression>
-							<path>
-								<ConstVarRef name="_L9"/>
-							</path>
-						</IdExpression>
-					</right>
-					<pragmas>
-						<ed:Equation oid="!ed/2086a/4FD4/4264/5e9d633f55ba"/>
 					</pragmas>
 				</Equation>
 				<!-- _ = _L10; -->
@@ -1269,6 +1197,22 @@
 						<ed:Equation oid="!ed/3c793/4FD4/4264/5e9d669430f6"/>
 					</pragmas>
 				</Equation>
+				<!-- _L22 = EPB_Modus; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L22"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="EPB_Modus"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/20a32/18E6/5DBC/5e9ebd7b194c"/>
+					</pragmas>
+				</Equation>
 			</data>
 			<pragmas>
 				<ed:Operator oid="!ed/128aa/4FD4/4264/5e9d5f4e3f95" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
@@ -1326,22 +1270,6 @@
 								<EquationGE presentable="!ed/2081c/4FD4/4264/5e9d631465ce">
 									<position>
 										<Point x="1984" y="13282"/>
-									</position>
-									<size>
-										<Size width="265" height="503"/>
-									</size>
-								</EquationGE>
-								<EquationGE presentable="!ed/20822/4FD4/4264/5e9d63167482">
-									<position>
-										<Point x="3149" y="14684"/>
-									</position>
-									<size>
-										<Size width="264" height="503"/>
-									</size>
-								</EquationGE>
-								<EquationGE presentable="!ed/20828/4FD4/4264/5e9d63173b77">
-									<position>
-										<Point x="3254" y="15875"/>
 									</position>
 									<size>
 										<Size width="265" height="503"/>
@@ -1430,14 +1358,6 @@
 								<EquationGE presentable="!ed/20865/4FD4/4264/5e9d633d526d">
 									<position>
 										<Point x="5027" y="14393"/>
-									</position>
-									<size>
-										<Size width="503" height="503"/>
-									</size>
-								</EquationGE>
-								<EquationGE presentable="!ed/2086a/4FD4/4264/5e9d633f55ba">
-									<position>
-										<Point x="5186" y="16007"/>
 									</position>
 									<size>
 										<Size width="503" height="503"/>
@@ -1553,21 +1473,6 @@
 										<Point x="3651" y="13547"/>
 										<Point x="3651" y="13494"/>
 										<Point x="5054" y="13494"/>
-									</positions>
-								</Edge>
-								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/20822/4FD4/4264/5e9d63167482" dstEquation="!ed/20865/4FD4/4264/5e9d633d526d">
-									<positions>
-										<Point x="3413" y="14949"/>
-										<Point x="3413" y="14658"/>
-										<Point x="5292" y="14658"/>
-									</positions>
-								</Edge>
-								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/20828/4FD4/4264/5e9d63173b77" dstEquation="!ed/2086a/4FD4/4264/5e9d633f55ba">
-									<positions>
-										<Point x="3519" y="16140"/>
-										<Point x="4471" y="16140"/>
-										<Point x="4471" y="16272"/>
-										<Point x="5450" y="16272"/>
 									</positions>
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2082e/4FD4/4264/5e9d631d2b84" dstEquation="!ed/2086f/4FD4/4264/5e9d63411881">
@@ -1776,6 +1681,22 @@
 										<Point x="19473" y="12859"/>
 										<Point x="19473" y="12859"/>
 										<Point x="20929" y="12859"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/20a32/18E6/5DBC/5e9ebd7b194c">
+									<position>
+										<Point x="1773" y="14790"/>
+									</position>
+									<size>
+										<Size width="264" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/20a32/18E6/5DBC/5e9ebd7b194c" dstEquation="!ed/20865/4FD4/4264/5e9d633d526d">
+									<positions>
+										<Point x="2037" y="15055"/>
+										<Point x="3651" y="15055"/>
+										<Point x="3651" y="14658"/>
+										<Point x="5292" y="14658"/>
 									</positions>
 								</Edge>
 							</presentationElements>

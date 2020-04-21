@@ -406,16 +406,16 @@
 				<ed:Type oid="!ed/29c53/29C7/4324/5e9d5c4c1507"/>
 			</pragmas>
 		</Type>
-		<Type name="E_EPB_MODUS_MANUELL">
+		<Type name="E_EPB_MODUS">
 			<definition>
 				<Enum>
 					<values>
-						<Value name="EPB_MANUELL_aus">
+						<Value name="EPB_Manuell">
 							<pragmas>
 								<ed:Value oid="!ed/128b4/4FD4/4264/5e9d603b43b5"/>
 							</pragmas>
 						</Value>
-						<Value name="EPB_MANUELL_ein">
+						<Value name="EPB_Automatik">
 							<pragmas>
 								<ed:Value oid="!ed/128bb/4FD4/4264/5e9d604a344"/>
 							</pragmas>
@@ -425,27 +425,6 @@
 			</definition>
 			<pragmas>
 				<ed:Type oid="!ed/128b3/4FD4/4264/5e9d600535a5"/>
-			</pragmas>
-		</Type>
-		<Type name="E_EPB_MODUS_AUTOMATIK">
-			<definition>
-				<Enum>
-					<values>
-						<Value name="EPB_AUTOMATIK_aus">
-							<pragmas>
-								<ed:Value oid="!ed/128c4/4FD4/4264/5e9d60542450"/>
-							</pragmas>
-						</Value>
-						<Value name="EPB_AUTOMATIK_ein">
-							<pragmas>
-								<ed:Value oid="!ed/128c5/4FD4/4264/5e9d60542bdf"/>
-							</pragmas>
-						</Value>
-					</values>
-				</Enum>
-			</definition>
-			<pragmas>
-				<ed:Type oid="!ed/128c3/4FD4/4264/5e9d605441c6"/>
 			</pragmas>
 		</Type>
 		<Type name="E_FAHRERTUERSCHALTER">
@@ -547,6 +526,27 @@
 			</definition>
 			<pragmas>
 				<ed:Type oid="!ed/129a8/30E3/2034/5e9df2b14efe"/>
+			</pragmas>
+		</Type>
+		<Type name="E_BREMSSYSTEM_STATUS">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="fehler">
+							<pragmas>
+								<ed:Value oid="!ed/20ae7/18E6/5DBC/5e9ec0481618"/>
+							</pragmas>
+						</Value>
+						<Value name="ok">
+							<pragmas>
+								<ed:Value oid="!ed/20ae8/18E6/5DBC/5e9ec05a2572"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/20ae6/18E6/5DBC/5e9ec01f7131"/>
 			</pragmas>
 		</Type>
 	</declarations>

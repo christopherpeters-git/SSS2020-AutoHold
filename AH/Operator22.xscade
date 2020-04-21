@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" name="GetriebeStellung">
+	<inputs>
+		<Variable name="I_Zuendung">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2eba3/18E6/5DBC/5e9ec3ee1000"/>
+			</pragmas>
+		</Variable>
+		<Variable name="I_Geschwindigkeit">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2eba4/18E6/5DBC/5e9ec3f73f9f"/>
+			</pragmas>
+		</Variable>
+		<Variable name="I_Bremspedalstellung">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2eba8/18E6/5DBC/5e9ec427308"/>
+			</pragmas>
+		</Variable>
+		<Variable name="I_Getriebeschalter">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2eba9/18E6/5DBC/5e9ec43871a"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="O_Getriebeschalter">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2ebaa/18E6/5DBC/5e9ec4544546"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2ebac/18E6/5DBC/5e9ec4987b41"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2ebb2/18E6/5DBC/5e9ec49960b1"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2ebb8/18E6/5DBC/5e9ec49b5950"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L4">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int8"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/2ebbe/18E6/5DBC/5e9ec49e6118"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- _L1 = I_Zuendung; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="I_Zuendung"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2ebab/18E6/5DBC/5e9ec4985e44"/>
+			</pragmas>
+		</Equation>
+		<!-- _L2 = I_Geschwindigkeit; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L2"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="I_Geschwindigkeit"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2ebb1/18E6/5DBC/5e9ec49953b"/>
+			</pragmas>
+		</Equation>
+		<!-- _L3 = I_Bremspedalstellung; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L3"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="I_Bremspedalstellung"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2ebb7/18E6/5DBC/5e9ec49b29b7"/>
+			</pragmas>
+		</Equation>
+		<!-- _L4 = I_Getriebeschalter; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L4"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="I_Getriebeschalter"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2ebbd/18E6/5DBC/5e9ec49e4f97"/>
+			</pragmas>
+		</Equation>
+		<!-- O_Getriebeschalter = _L4; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="O_Getriebeschalter"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L4"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2ebc3/18E6/5DBC/5e9ec4a1185e"/>
+			</pragmas>
+		</Equation>
+		<!-- _ = _L1; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L1"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2ebc9/18E6/5DBC/5e9ec4a474d1"/>
+			</pragmas>
+		</Equation>
+		<!-- _ = _L2; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L2"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2ebcf/18E6/5DBC/5e9ec4a85b0e"/>
+			</pragmas>
+		</Equation>
+		<!-- _ = _L3; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L3"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/2ebd5/18E6/5DBC/5e9ec4aa1596"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/2eba1/18E6/5DBC/5e9ec3a459b0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+			<diagrams>
+				<NetDiagram name="GetriebeStellung_1" landscape="true" format="A4 (210 297)" oid="!ed/2eba2/18E6/5DBC/5e9ec3a43301">
+					<presentationElements>
+						<EquationGE presentable="!ed/2ebab/18E6/5DBC/5e9ec4985e44">
+							<position>
+								<Point x="4154" y="3836"/>
+							</position>
+							<size>
+								<Size width="265" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/2ebb1/18E6/5DBC/5e9ec49953b">
+							<position>
+								<Point x="4233" y="5530"/>
+							</position>
+							<size>
+								<Size width="265" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/2ebb7/18E6/5DBC/5e9ec49b29b7">
+							<position>
+								<Point x="4286" y="7646"/>
+							</position>
+							<size>
+								<Size width="265" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/2ebbd/18E6/5DBC/5e9ec49e4f97">
+							<position>
+								<Point x="4286" y="9393"/>
+							</position>
+							<size>
+								<Size width="265" height="502"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/2ebc3/18E6/5DBC/5e9ec4a1185e">
+							<position>
+								<Point x="13494" y="9393"/>
+							</position>
+							<size>
+								<Size width="317" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/2ebc9/18E6/5DBC/5e9ec4a474d1">
+							<position>
+								<Point x="6959" y="3810"/>
+							</position>
+							<size>
+								<Size width="502" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/2ebcf/18E6/5DBC/5e9ec4a85b0e">
+							<position>
+								<Point x="6853" y="5530"/>
+							</position>
+							<size>
+								<Size width="502" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/2ebd5/18E6/5DBC/5e9ec4aa1596">
+							<position>
+								<Point x="6773" y="7620"/>
+							</position>
+							<size>
+								<Size width="503" height="503"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2ebab/18E6/5DBC/5e9ec4985e44" dstEquation="!ed/2ebc9/18E6/5DBC/5e9ec4a474d1">
+							<positions>
+								<Point x="4419" y="4101"/>
+								<Point x="5821" y="4101"/>
+								<Point x="5821" y="4101"/>
+								<Point x="7223" y="4101"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2ebb1/18E6/5DBC/5e9ec49953b" dstEquation="!ed/2ebcf/18E6/5DBC/5e9ec4a85b0e">
+							<positions>
+								<Point x="4498" y="5794"/>
+								<Point x="5794" y="5794"/>
+								<Point x="5794" y="5794"/>
+								<Point x="7117" y="5794"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2ebb7/18E6/5DBC/5e9ec49b29b7" dstEquation="!ed/2ebd5/18E6/5DBC/5e9ec4aa1596">
+							<positions>
+								<Point x="4551" y="7911"/>
+								<Point x="5794" y="7911"/>
+								<Point x="5794" y="7911"/>
+								<Point x="7038" y="7911"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2ebbd/18E6/5DBC/5e9ec49e4f97" dstEquation="!ed/2ebc3/18E6/5DBC/5e9ec4a1185e">
+							<positions>
+								<Point x="4551" y="9657"/>
+								<Point x="9049" y="9657"/>
+								<Point x="9049" y="9657"/>
+								<Point x="13547" y="9657"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>
