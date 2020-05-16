@@ -1,0 +1,3 @@
+-target_dir "S:/2020/AHold/AH_01/AH_testsuite/Simulation" -target C -name_length 200 -significance_length 31 -user_config "./user_macros.h" -probes -debug 
+-root AH_testSuite_Pkg::tests_Pkg::testAutoModus_autoHold
+"S:/2020/AHold/AH_01/AH_testsuite/Simulation/scade_model_without_unused.scade"

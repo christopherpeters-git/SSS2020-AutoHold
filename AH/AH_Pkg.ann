@@ -1,0 +1,86 @@
+Notes-Types { Esterel-Technologies }  DEFINITIONS ::=
+BEGIN
+    Graphical_not_inC ::= SEQUENCE OF { SEQUENCE {
+    annot_object OID,
+    name STRING,
+        note_graphical_information {
+            NT_INCRUSTABLE BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_PERMANENT BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_MODIFY BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_LOCATION STRING
+            {
+            	 NT_DEFAULT_VALUE "RELATIVE" },
+            NT_FONT INTEGER
+            {
+            	 NT_DEFAULT_VALUE 2 },
+            NT_POS_X REAL
+            {
+            	 NT_DEFAULT_VALUE -1 },
+            NT_POS_Y REAL
+            {
+            	 NT_DEFAULT_VALUE -1 }
+        },
+        information {
+            Text TEXT
+            {
+            	 NT_INCRUSTABLE T }
+    } } }
+
+    Graphical ::= SEQUENCE OF { SEQUENCE {
+    annot_object OID,
+    name STRING,
+        note_graphical_information {
+            NT_INCRUSTABLE BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_PERMANENT BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_MODIFY BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_LOCATION STRING
+            {
+            	 NT_DEFAULT_VALUE "RELATIVE" },
+            NT_FONT INTEGER
+            {
+            	 NT_DEFAULT_VALUE 2 },
+            NT_POS_X REAL
+            {
+            	 NT_DEFAULT_VALUE -1 },
+            NT_POS_Y REAL
+            {
+            	 NT_DEFAULT_VALUE -1 }
+        },
+        information {
+            Text TEXT
+            {
+            	 NT_INCRUSTABLE T },
+            to_c BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T ,
+            	 NT_PRINTABLE F ,
+            	 NT_LEFT_LABEL "Propagate to generated code" }
+    } } }
+
+END
+
+Notes-Values { Esterel-Technologies }  DEFINITIONS ::=
+BEGIN
+    Graphical_not_inC ::= {
+        {"!ed/aeb0a/40F9/574/5e8ecff350f3", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -281.259843 , -33.346457 , "Gaspedal wird ausreichend fuer 
+Anfahren am Berg betaetigt" }}
+    Graphical ::= {
+        {"!ed/6e7c4/6833/47FC/5e8dc87b1294", "Graphical_1",T , T , T , "RELATIVE" , 2 , -155.196854 , -55.196850 , "Nachleuchten der LED P 
+nach Ausschalten der 
+Zuendung" , T },
+        {"!ed/cdf4b/40F9/574/5e8ed5cdaf3", "Graphical_1",T , T , T , "RELATIVE" , 2 , -69.803150 , -37.519685 , "Max. 2 s nach Loslassen 
+des Bremspedals" , T }}
+END
+
