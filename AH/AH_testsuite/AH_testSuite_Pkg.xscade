@@ -22395,7 +22395,7 @@
 																		<Point x="4418" y="4340"/>
 																	</labelPos>
 																	<slashPos>
-																		<Point x="5477" y="4340"/>
+																		<Point x="5477" y="4339"/>
 																	</slashPos>
 																</TransitionGE>
 																<StateGE presentable="!ed/37bd9/BD2/77EC/5ea86d7f4a90">
@@ -22476,7 +22476,7 @@
 																		<Point x="3175" y="7700"/>
 																	</labelPos>
 																	<slashPos>
-																		<Point x="4260" y="7700"/>
+																		<Point x="4260" y="7699"/>
 																	</slashPos>
 																</TransitionGE>
 															</presentationElements>
@@ -22721,7 +22721,7 @@
 														<Point x="5292" y="1032"/>
 													</position>
 													<size>
-														<Size width="20055" height="68606"/>
+														<Size width="20055" height="71332"/>
 													</size>
 												</StateMachineGE>
 												<StateGE presentable="!ed/1524d/BD2/77EC/5ea829b6628a">
@@ -23308,7 +23308,7 @@
 														<Point x="7673" y="66093"/>
 													</labelPos>
 													<slashPos>
-														<Point x="9154" y="66093"/>
+														<Point x="9155" y="66093"/>
 													</slashPos>
 												</TransitionGE>
 											</presentationElements>
@@ -23317,6 +23317,7 @@
 								</ed:Operator>
 							</pragmas>
 						</Operator>
+						<Operator name="manModus_autoHold" href="Operator3.xscade"/>
 					</declarations>
 					<pragmas>
 						<ed:Package oid="!ed/1789a/5242/3780/5e81f0a112b0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
@@ -26738,6 +26739,7 @@
 								</ed:Operator>
 							</pragmas>
 						</Operator>
+						<Operator name="testManModus_autoHold" href="testAutoModus_autoHold1.xscade"/>
 					</declarations>
 					<pragmas>
 						<ed:Package oid="!ed/1789e/5242/3780/5e81f0b342d6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">

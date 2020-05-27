@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config S:/2020/AHold/AH_01/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-04-28T20:25:02
+** Command: kcg66.exe -config C:/Users/Christopher/Nextcloud/Ostfalia/4. Semester/SoftwareSichereSysteme/Scade_Loesung/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-27T11:32:07
 *************************************************************$ */
 #ifndef _aktiviereAutoHoldModus_AH_Pkg_subf_Pkg_H_
 #define _aktiviereAutoHoldModus_AH_Pkg_subf_Pkg_H_
@@ -72,6 +72,6 @@ extern void aktiviereAutoHoldModus_init_AH_Pkg_subf_Pkg(
 #endif /* _aktiviereAutoHoldModus_AH_Pkg_subf_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** aktiviereAutoHoldModus_AH_Pkg_subf_Pkg.h
-** Generation date: 2020-04-28T20:25:02
+** Generation date: 2020-05-27T11:32:07
 *************************************************************$ */
 

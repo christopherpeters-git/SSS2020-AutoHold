@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config S:/2020/AHold/AH_01/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-04-28T20:25:02
+** Command: kcg66.exe -config C:/Users/Christopher/Nextcloud/Ostfalia/4. Semester/SoftwareSichereSysteme/Scade_Loesung/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-27T11:32:07
 *************************************************************$ */
 #ifndef _KCG_TYPES_H_
 #define _KCG_TYPES_H_
@@ -281,101 +281,89 @@ typedef enum kcg_tag__2_SSM_ST_SM1 {
   SSM_st_AH_inaktiv_SM1,
   SSM_st_AH_aktiv_SM1
 } _2_SSM_ST_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold/SM1: */
+/* AH_testSuite_Pkg::divFahrer::manModus_autoHold/SM1: */
 typedef enum kcg_tag_SSM_TR_SM1 {
   _11_SSM_TR_no_trans_SM1,
   SSM_TR_Start_zuendungEinschalten_1_Start_SM1,
   SSM_TR_zuendungEinschalten_bremspedalDurchtreten_1_zuendungEinschalten_SM1,
-  SSM_TR_bremspedalDurchtreten_automastikModusEinstellen_1_bremspedalDurchtreten_SM1,
-  SSM_TR_automastikModusEinstellen_automatikModusEingestellt_1_automastikModusEinstellen_SM1,
-  SSM_TR_automatikModusEingestellt_cockpitanzeigeBleibtAus_1_automatikModusEingestellt_SM1,
+  SSM_TR_bremspedalDurchtreten_manuellModusEinstellen_1_bremspedalDurchtreten_SM1,
+  SSM_TR_manuellModusEinstellen_manuellModusEingestellt_1_manuellModusEinstellen_SM1,
+  SSM_TR_manuellModusEingestellt_cockpitanzeigeBleibtAus_1_manuellModusEingestellt_SM1,
   SSM_TR_cockpitanzeigeBleibtAus_betriebsbremseLoesen_1_cockpitanzeigeBleibtAus_SM1,
-  SSM_TR_betriebsbremseLoesen_EPB_angezogen_1_betriebsbremseLoesen_SM1,
-  SSM_TR_EPB_angezogen_anfahrenVorbereiten_1_EPB_angezogen_SM1,
-  SSM_TR_anfahrenVorbereiten_EPB_arretiert_1_anfahrenVorbereiten_SM1,
-  SSM_TR_EPB_arretiert_anfahren_1_EPB_arretiert_SM1,
+  SSM_TR_betriebsbremseLoesen_anfahrenVorbereiten_1_betriebsbremseLoesen_SM1,
+  SSM_TR_anfahrenVorbereiten_Taste_P_druecken_1_anfahrenVorbereiten_SM1,
   SSM_TR_anfahren_fahren_1_anfahren_SM1,
-  SSM_TR_fahren_anhalten_1_fahren_SM1,
-  SSM_TR_anhalten_fzg_Steht_1_anhalten_SM1,
+  SSM_TR_fahren_annaehern_an_Ampel_1_fahren_SM1,
+  SSM_TR_annaehern_an_Ampel_fzg_Steht_1_annaehern_an_Ampel_SM1,
   SSM_TR_fzg_Steht_erneutAnfahren_1_fzg_Steht_SM1,
-  SSM_TR_erneutAnfahren_autoHoldEinschalten_1_erneutAnfahren_SM1,
-  SSM_TR_autoHoldEinschalten_anhaltenMitAutoHold_1_autoHoldEinschalten_SM1,
-  SSM_TR_anhaltenMitAutoHold_haltImAutoHold_1_anhaltenMitAutoHold_SM1,
-  SSM_TR_haltImAutoHold_anfahrenAusAutoHold_1_haltImAutoHold_SM1,
-  SSM_TR_anfahrenAusAutoHold_anhaltenZumBeenden_1_anfahrenAusAutoHold_SM1,
-  SSM_TR_anhaltenZumBeenden_fzgSteht_1_anhaltenZumBeenden_SM1,
-  SSM_TR_fzgSteht_parken_1_fzgSteht_SM1
+  SSM_TR_erneutAnfahren_fahren1_1_erneutAnfahren_SM1,
+  SSM_TR_parken_fzgAbstellen_1_parken_SM1,
+  SSM_TR_Taste_P_druecken_EPB_geloest_1_Taste_P_druecken_SM1,
+  SSM_TR_EPB_geloest_anfahren_1_EPB_geloest_SM1,
+  SSM_TR_fzg_Steht1_parken_1_fzg_Steht1_SM1,
+  SSM_TR_fahren1_anhalten_1_fahren1_SM1,
+  SSM_TR_anhalten_fzg_Steht1_1_anhalten_SM1,
+  SSM_TR_fzgAbstellen_fzgAbgestellt_1_fzgAbstellen_SM1
 } SSM_TR_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold/SM1: */
+/* AH_testSuite_Pkg::divFahrer::manModus_autoHold/SM1: */
 typedef enum kcg_tag_SSM_ST_SM1 {
   SSM_st_Start_SM1,
   SSM_st_zuendungEinschalten_SM1,
   SSM_st_bremspedalDurchtreten_SM1,
-  SSM_st_automastikModusEinstellen_SM1,
-  SSM_st_automatikModusEingestellt_SM1,
+  SSM_st_manuellModusEinstellen_SM1,
+  SSM_st_manuellModusEingestellt_SM1,
   SSM_st_cockpitanzeigeBleibtAus_SM1,
   SSM_st_betriebsbremseLoesen_SM1,
-  SSM_st_EPB_angezogen_SM1,
   SSM_st_anfahrenVorbereiten_SM1,
-  SSM_st_EPB_arretiert_SM1,
   SSM_st_anfahren_SM1,
   SSM_st_fahren_SM1,
-  SSM_st_anhalten_SM1,
+  SSM_st_annaehern_an_Ampel_SM1,
   SSM_st_fzg_Steht_SM1,
   SSM_st_erneutAnfahren_SM1,
-  SSM_st_autoHoldEinschalten_SM1,
-  SSM_st_anhaltenMitAutoHold_SM1,
-  SSM_st_haltImAutoHold_SM1,
-  SSM_st_anfahrenAusAutoHold_SM1,
-  SSM_st_anhaltenZumBeenden_SM1,
-  SSM_st_fzgSteht_SM1,
-  SSM_st_parken_SM1
+  SSM_st_parken_SM1,
+  SSM_st_Taste_P_druecken_SM1,
+  SSM_st_EPB_geloest_SM1,
+  SSM_st_fzg_Steht1_SM1,
+  SSM_st_fahren1_SM1,
+  SSM_st_anhalten_SM1,
+  SSM_st_fzgAbstellen_SM1,
+  SSM_st_fzgAbgestellt_SM1
 } SSM_ST_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold/SM1:anfahren:SM2: */
+/* AH_testSuite_Pkg::divFahrer::manModus_autoHold/SM1:anfahren:SM2: */
 typedef enum kcg_tag_SSM_TR_SM2_anfahren_SM1 {
   SSM_TR_no_trans_SM2_anfahren_SM1,
   _13_SSM_TR_bremspedalTreten_getriebe_auf_D_1_bremspedalTreten_SM2_anfahren_SM1,
   _12_SSM_TR_getriebe_auf_D_gasGeben_1_getriebe_auf_D_SM2_anfahren_SM1
 } SSM_TR_SM2_anfahren_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold/SM1:anfahren:SM2: */
+/* AH_testSuite_Pkg::divFahrer::manModus_autoHold/SM1:anfahren:SM2: */
 typedef enum kcg_tag_SSM_ST_SM2_anfahren_SM1 {
   SSM_st_bremspedalTreten_SM2_anfahren_SM1,
   SSM_st_getriebe_auf_D_SM2_anfahren_SM1,
   SSM_st_gasGeben_SM2_anfahren_SM1
 } SSM_ST_SM2_anfahren_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold/SM1:erneutAnfahren:SM2: */
+/* AH_testSuite_Pkg::divFahrer::manModus_autoHold/SM1:erneutAnfahren:SM2: */
 typedef enum kcg_tag_SSM_TR_SM2_erneutAnfahren_SM1 {
   SSM_TR_no_trans_SM2_erneutAnfahren_SM1,
   SSM_TR_bremspedalTreten_getriebe_auf_D_1_bremspedalTreten_SM2_erneutAnfahren_SM1,
   SSM_TR_getriebe_auf_D_gasGeben_1_getriebe_auf_D_SM2_erneutAnfahren_SM1
 } SSM_TR_SM2_erneutAnfahren_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold/SM1:erneutAnfahren:SM2: */
+/* AH_testSuite_Pkg::divFahrer::manModus_autoHold/SM1:erneutAnfahren:SM2: */
 typedef enum kcg_tag_SSM_ST_SM2_erneutAnfahren_SM1 {
   SSM_st_bremspedalTreten_SM2_erneutAnfahren_SM1,
   SSM_st_getriebe_auf_D_SM2_erneutAnfahren_SM1,
   SSM_st_gasGeben_SM2_erneutAnfahren_SM1
 } SSM_ST_SM2_erneutAnfahren_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold/SM1:autoHoldEinschalten:SM4: */
-typedef enum kcg_tag_SSM_TR_SM4_autoHoldEinschalten_SM1 {
-  SSM_TR_no_trans_SM4_autoHoldEinschalten_SM1,
-  SSM_TR_HoldDruecken_HoldLoesen_1_HoldDruecken_SM4_autoHoldEinschalten_SM1
-} SSM_TR_SM4_autoHoldEinschalten_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold/SM1:autoHoldEinschalten:SM4: */
-typedef enum kcg_tag_SSM_ST_SM4_autoHoldEinschalten_SM1 {
-  SSM_st_HoldDruecken_SM4_autoHoldEinschalten_SM1,
-  SSM_st_HoldLoesen_SM4_autoHoldEinschalten_SM1
-} SSM_ST_SM4_autoHoldEinschalten_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold/SM1:parken:SM5: */
+/* AH_testSuite_Pkg::divFahrer::manModus_autoHold/SM1:parken:SM5: */
 typedef enum kcg_tag_SSM_TR_SM5_parken_SM1 {
   SSM_TR_no_trans_SM5_parken_SM1,
   SSM_TR_bremseDurchtreten_getriebeWahlhebelNach_P_1_bremseDurchtreten_SM5_parken_SM1,
-  SSM_TR_getriebeWahlhebelNach_P_EPB_angezogen_1_getriebeWahlhebelNach_P_SM5_parken_SM1
+  SSM_TR_getriebeWahlhebelNach_P_EPB_nicht_angezogen_1_getriebeWahlhebelNach_P_SM5_parken_SM1
 } SSM_TR_SM5_parken_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold/SM1:parken:SM5: */
+/* AH_testSuite_Pkg::divFahrer::manModus_autoHold/SM1:parken:SM5: */
 typedef enum kcg_tag_SSM_ST_SM5_parken_SM1 {
   SSM_st_bremseDurchtreten_SM5_parken_SM1,
   SSM_st_getriebeWahlhebelNach_P_SM5_parken_SM1,
-  SSM_st_EPB_angezogen_SM5_parken_SM1
+  SSM_st_EPB_nicht_angezogen_SM5_parken_SM1
 } SSM_ST_SM5_parken_SM1;
 /* AhTypes_Pkg::ah_Pkg::tasterHold_T/ */
 typedef on_off_element_T_AhTypes_Pkg_ah_Pkg tasterHold_T_AhTypes_Pkg_ah_Pkg;
@@ -413,6 +401,6 @@ typedef kcg_float64 t_in_s_T_AhTypes_Pkg_physical_Pkg;
 #endif /* _KCG_TYPES_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_types.h
-** Generation date: 2020-04-28T20:25:02
+** Generation date: 2020-05-27T11:32:07
 *************************************************************$ */
 

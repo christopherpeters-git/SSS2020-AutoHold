@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config S:/2020/AHold/AH_01/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-04-28T20:25:02
+** Command: kcg66.exe -config C:/Users/Christopher/Nextcloud/Ostfalia/4. Semester/SoftwareSichereSysteme/Scade_Loesung/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-27T11:32:07
 *************************************************************$ */
 #ifndef _KCG_IMPORTED_FUNCTIONS_H_
 #define _KCG_IMPORTED_FUNCTIONS_H_
@@ -20,6 +20,6 @@ extern kcg_float64 SqrtR64_mathext_mathextimpl(/* i/ */ kcg_float64 i);
 #endif /* _KCG_IMPORTED_FUNCTIONS_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_imported_functions.h
-** Generation date: 2020-04-28T20:25:02
+** Generation date: 2020-05-27T11:32:07
 *************************************************************$ */
 

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config S:/2020/AHold/AH_01/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-04-28T20:25:02
+** Command: kcg66.exe -config C:/Users/Christopher/Nextcloud/Ostfalia/4. Semester/SoftwareSichereSysteme/Scade_Loesung/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-27T11:32:07
 *************************************************************$ */
 #ifndef _KCG_CONSTS_H_
 #define _KCG_CONSTS_H_
@@ -19,6 +19,10 @@
 
 /* AhTypes_Pkg::ah_Pkg::cNotbremsDelay/ */
 #define cNotbremsDelay_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(2.0))
+
+/* AhTypes_Pkg::ah_Pkg::cMinGaspedalStellungFuerEpbLoesen/ */
+#define cMinGaspedalStellungFuerEpbLoesen_AhTypes_Pkg_ah_Pkg                  \
+  (kcg_lit_float64(0.1))
 
 /* AhTypes_Pkg::ah_Pkg::cMasGaspedalStellungFuerEpbLoesen/ */
 #define cMasGaspedalStellungFuerEpbLoesen_AhTypes_Pkg_ah_Pkg                  \
@@ -75,10 +79,6 @@
 /* AhTypes_Pkg::ah_Pkg::cBremspedalkraftDurchgetreten/ */
 #define cBremspedalkraftDurchgetreten_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(0.8))
 
-/* AhTypes_Pkg::ah_Pkg::cMinGaspedalStellungFuerEpbLoesen/ */
-#define cMinGaspedalStellungFuerEpbLoesen_AhTypes_Pkg_ah_Pkg                  \
-  (kcg_lit_float64(0.1))
-
 /* AhTypes_Pkg::ah_Pkg::cLangsamesGaspedalTreten/ */
 #define cLangsamesGaspedalTreten_AhTypes_Pkg_ah_Pkg                           \
   (kcg_lit_float64(0.001) / kcg_lit_float64(0.1))
@@ -95,6 +95,6 @@
 #endif /* _KCG_CONSTS_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_consts.h
-** Generation date: 2020-04-28T20:25:02
+** Generation date: 2020-05-27T11:32:07
 *************************************************************$ */
 
