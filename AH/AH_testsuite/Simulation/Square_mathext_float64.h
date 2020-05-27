@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/Christopher/Nextcloud/Ostfalia/4. Semester/SoftwareSichereSysteme/Scade_Loesung/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-05-27T11:32:07
+** Command: kcg66.exe -config C:/Users/ma2/Desktop/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-27T15:47:01
 *************************************************************$ */
 #ifndef _Square_mathext_float64_H_
 #define _Square_mathext_float64_H_
@@ -45,6 +45,6 @@ extern void Square_init_mathext_float64(outC_Square_mathext_float64 *outC);
 #endif /* _Square_mathext_float64_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Square_mathext_float64.h
-** Generation date: 2020-05-27T11:32:07
+** Generation date: 2020-05-27T15:47:01
 *************************************************************$ */
 

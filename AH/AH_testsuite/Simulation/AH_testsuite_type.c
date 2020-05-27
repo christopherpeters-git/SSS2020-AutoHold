@@ -5132,44 +5132,46 @@ static SimEnumValUtils SSM_ST_SM1_values[] = {
     { "zuendungEinschalten", SSM_st_zuendungEinschalten_SM1},
     { "bremspedalDurchtreten", SSM_st_bremspedalDurchtreten_SM1},
     { "bremspedalDurchtreten", SSM_st_bremspedalDurchtreten_SM1},
-    { "manuellModusEinstellen", SSM_st_manuellModusEinstellen_SM1},
-    { "manuellModusEinstellen", SSM_st_manuellModusEinstellen_SM1},
-    { "manuellModusEingestellt", SSM_st_manuellModusEingestellt_SM1},
-    { "manuellModusEingestellt", SSM_st_manuellModusEingestellt_SM1},
+    { "automastikModusEinstellen", SSM_st_automastikModusEinstellen_SM1},
+    { "automastikModusEinstellen", SSM_st_automastikModusEinstellen_SM1},
+    { "automatikModusEingestellt", SSM_st_automatikModusEingestellt_SM1},
+    { "automatikModusEingestellt", SSM_st_automatikModusEingestellt_SM1},
     { "cockpitanzeigeBleibtAus", SSM_st_cockpitanzeigeBleibtAus_SM1},
     { "cockpitanzeigeBleibtAus", SSM_st_cockpitanzeigeBleibtAus_SM1},
     { "betriebsbremseLoesen", SSM_st_betriebsbremseLoesen_SM1},
     { "betriebsbremseLoesen", SSM_st_betriebsbremseLoesen_SM1},
+    { "EPB_angezogen", SSM_st_EPB_angezogen_SM1},
+    { "EPB_angezogen", SSM_st_EPB_angezogen_SM1},
     { "anfahrenVorbereiten", SSM_st_anfahrenVorbereiten_SM1},
     { "anfahrenVorbereiten", SSM_st_anfahrenVorbereiten_SM1},
+    { "EPB_arretiert", SSM_st_EPB_arretiert_SM1},
+    { "EPB_arretiert", SSM_st_EPB_arretiert_SM1},
     { "anfahren", SSM_st_anfahren_SM1},
     { "anfahren", SSM_st_anfahren_SM1},
     { "fahren", SSM_st_fahren_SM1},
     { "fahren", SSM_st_fahren_SM1},
-    { "annaehern_an_Ampel", SSM_st_annaehern_an_Ampel_SM1},
-    { "annaehern_an_Ampel", SSM_st_annaehern_an_Ampel_SM1},
+    { "anhalten", SSM_st_anhalten_SM1},
+    { "anhalten", SSM_st_anhalten_SM1},
     { "fzg_Steht", SSM_st_fzg_Steht_SM1},
     { "fzg_Steht", SSM_st_fzg_Steht_SM1},
     { "erneutAnfahren", SSM_st_erneutAnfahren_SM1},
     { "erneutAnfahren", SSM_st_erneutAnfahren_SM1},
+    { "autoHoldEinschalten", SSM_st_autoHoldEinschalten_SM1},
+    { "autoHoldEinschalten", SSM_st_autoHoldEinschalten_SM1},
+    { "anhaltenMitAutoHold", SSM_st_anhaltenMitAutoHold_SM1},
+    { "anhaltenMitAutoHold", SSM_st_anhaltenMitAutoHold_SM1},
+    { "haltImAutoHold", SSM_st_haltImAutoHold_SM1},
+    { "haltImAutoHold", SSM_st_haltImAutoHold_SM1},
+    { "anfahrenAusAutoHold", SSM_st_anfahrenAusAutoHold_SM1},
+    { "anfahrenAusAutoHold", SSM_st_anfahrenAusAutoHold_SM1},
+    { "anhaltenZumBeenden", SSM_st_anhaltenZumBeenden_SM1},
+    { "anhaltenZumBeenden", SSM_st_anhaltenZumBeenden_SM1},
+    { "fzgSteht", SSM_st_fzgSteht_SM1},
+    { "fzgSteht", SSM_st_fzgSteht_SM1},
     { "parken", SSM_st_parken_SM1},
     { "parken", SSM_st_parken_SM1},
-    { "Taste_P_druecken", SSM_st_Taste_P_druecken_SM1},
-    { "Taste_P_druecken", SSM_st_Taste_P_druecken_SM1},
-    { "EPB_geloest", SSM_st_EPB_geloest_SM1},
-    { "EPB_geloest", SSM_st_EPB_geloest_SM1},
-    { "fzg_Steht1", SSM_st_fzg_Steht1_SM1},
-    { "fzg_Steht1", SSM_st_fzg_Steht1_SM1},
-    { "fahren1", SSM_st_fahren1_SM1},
-    { "fahren1", SSM_st_fahren1_SM1},
-    { "anhalten", SSM_st_anhalten_SM1},
-    { "anhalten", SSM_st_anhalten_SM1},
-    { "fzgAbstellen", SSM_st_fzgAbstellen_SM1},
-    { "fzgAbstellen", SSM_st_fzgAbstellen_SM1},
-    { "fzgAbgestellt", SSM_st_fzgAbgestellt_SM1},
-    { "fzgAbgestellt", SSM_st_fzgAbgestellt_SM1},
 };
-const int SSM_ST_SM1_nb_values = 42;
+const int SSM_ST_SM1_nb_values = 44;
 
 int SSM_ST_SM1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
@@ -5604,6 +5606,156 @@ SimTypeUtils _Type_SSM_ST_SM2_erneutAnfahren_SM1_Utils = {
 };
 
 /****************************************************************
+ ** SSM_ST_SM4_autoHoldEinschalten_SM1 
+ ****************************************************************/
+
+#ifdef __cplusplus
+  #ifdef pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable_defined
+    extern struct SimTypeVTable *pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable;
+  #else 
+    struct SimTypeVTable *pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable = NULL;
+  #endif
+#else
+  struct SimTypeVTable *pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable;
+#endif
+
+static SimEnumValUtils SSM_ST_SM4_autoHoldEinschalten_SM1_values[] = {
+    { "HoldDruecken", SSM_st_HoldDruecken_SM4_autoHoldEinschalten_SM1},
+    { "HoldDruecken", SSM_st_HoldDruecken_SM4_autoHoldEinschalten_SM1},
+    { "HoldLoesen", SSM_st_HoldLoesen_SM4_autoHoldEinschalten_SM1},
+    { "HoldLoesen", SSM_st_HoldLoesen_SM4_autoHoldEinschalten_SM1},
+};
+const int SSM_ST_SM4_autoHoldEinschalten_SM1_nb_values = 4;
+
+int SSM_ST_SM4_autoHoldEinschalten_SM1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+{
+    if (pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable != NULL
+        && pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable->m_pfnGetConvInfo(SptString, SptNone) == 1) {
+       return pfnStrAppend(*(char**)pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable->m_pfnToType(SptString, pValue), pStrObj);
+    }
+    return pConverter->m_pfnEnumToString(*(SSM_ST_SM4_autoHoldEinschalten_SM1*)pValue, SSM_ST_SM4_autoHoldEinschalten_SM1_values, SSM_ST_SM4_autoHoldEinschalten_SM1_nb_values, pfnStrAppend, pStrObj); 
+}
+
+int check_SSM_ST_SM4_autoHoldEinschalten_SM1_string(const char *str, char **endptr)
+{
+    static SSM_ST_SM4_autoHoldEinschalten_SM1 rTemp;
+    return string_to_SSM_ST_SM4_autoHoldEinschalten_SM1(str, (void*)&rTemp, endptr);
+}
+
+int string_to_SSM_ST_SM4_autoHoldEinschalten_SM1(const char *str, void *pValue, char **endptr)
+{
+    int nRet = 0;
+    skip_whitespace(str);
+    if (pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable != NULL) {
+        nRet = string_to_VTable(str, pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable, pValue, endptr);
+    }
+    if (nRet == 0) {
+        int nTemp = 0;
+        nRet = pConverter->m_pfnStringToEnum(str, &nTemp, SSM_ST_SM4_autoHoldEinschalten_SM1_values, SSM_ST_SM4_autoHoldEinschalten_SM1_nb_values, endptr);
+        if (pValue != NULL && nRet != 0)
+            *(SSM_ST_SM4_autoHoldEinschalten_SM1*)pValue = (SSM_ST_SM4_autoHoldEinschalten_SM1)nTemp;
+    }
+    return nRet;
+}
+
+int is_SSM_ST_SM4_autoHoldEinschalten_SM1_double_conversion_allowed()
+{
+    if (pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable != NULL) {
+        return is_VTable_double_conversion_allowed(pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable);
+    }
+    return 1;
+}
+
+int SSM_ST_SM4_autoHoldEinschalten_SM1_to_double(const void *pValue, double *nValue)
+{
+    if (pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable != NULL) {
+        return VTable_to_double(pValue, pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable, nValue);
+    }
+    *nValue = (double)*((SSM_ST_SM4_autoHoldEinschalten_SM1*)pValue);
+    return 1;
+}
+
+int is_SSM_ST_SM4_autoHoldEinschalten_SM1_long_conversion_allowed()
+{
+    if (pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable != NULL) {
+        return is_VTable_long_conversion_allowed(pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable);
+    }
+    return 1;
+}
+
+int SSM_ST_SM4_autoHoldEinschalten_SM1_to_long(const void *pValue, long *nValue)
+{
+    if (pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable != NULL) {
+        return VTable_to_long(pValue, pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable, nValue);
+    }
+    *nValue = (long)*((SSM_ST_SM4_autoHoldEinschalten_SM1*)pValue);
+    return 1;
+}
+
+void compare_SSM_ST_SM4_autoHoldEinschalten_SM1(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
+{
+    int unitResult = 0;
+    /* Customized comparison */
+    if (pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable != NULL
+        && pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable->m_version >= Scv612
+        && pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable->m_pfnCompare != NULL) {
+        if (pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable->m_version >= Scv65) {
+            /* R15 and higher: VTable Compare function shall UPDATE *pResult global flag (*pResult |= SIM_CMP_RES_LT/...): */
+            unitResult = pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable->m_pfnCompare(pResult, pValue1, pValue2);
+        } else {
+            /* Before R15: VTable Compare function shall SET *pResult global flag (*pResult = -1/1/0): */
+            pSimSSM_ST_SM4_autoHoldEinschalten_SM1VTable->m_pfnCompare(&unitResult, pValue1, pValue2);
+            updateCompareResult(unitResult, pResult);
+        }
+    } else {
+        /* Predefined comparison */
+        unitResult = predef_compare_enum(pResult, (int)(*(SSM_ST_SM4_autoHoldEinschalten_SM1*)pValue1), (int)(*(SSM_ST_SM4_autoHoldEinschalten_SM1*)pValue2));
+    }
+    UNUSED(pTol);
+    if (unitResult != 0 && pfnStrListAppend != NULL && pszPath != NULL && *pszPath != 0 && pListErrPaths != NULL)
+        pfnStrListAppend(pszPath, pListErrPaths);
+}
+
+int get_SSM_ST_SM4_autoHoldEinschalten_SM1_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+{
+    return pConverter->m_pfnGetEnumSignature(SSM_ST_SM4_autoHoldEinschalten_SM1_values, SSM_ST_SM4_autoHoldEinschalten_SM1_nb_values, pfnStrAppend, pStrObj);
+}
+
+int init_SSM_ST_SM4_autoHoldEinschalten_SM1(void *pValue)
+{
+    *(SSM_ST_SM4_autoHoldEinschalten_SM1*)pValue = SSM_st_HoldDruecken_SM4_autoHoldEinschalten_SM1;
+    return 1;
+}
+
+int release_SSM_ST_SM4_autoHoldEinschalten_SM1(void *pValue)
+{
+    UNUSED(pValue);
+    return 1;
+}
+
+int copy_SSM_ST_SM4_autoHoldEinschalten_SM1(void *pToValue, const void *pFromValue)
+{
+    *((SSM_ST_SM4_autoHoldEinschalten_SM1*)pToValue) = *((SSM_ST_SM4_autoHoldEinschalten_SM1*)pFromValue);
+    return 1;
+}
+
+SimTypeUtils _Type_SSM_ST_SM4_autoHoldEinschalten_SM1_Utils = {
+    SSM_ST_SM4_autoHoldEinschalten_SM1_to_string,
+    check_SSM_ST_SM4_autoHoldEinschalten_SM1_string,
+    string_to_SSM_ST_SM4_autoHoldEinschalten_SM1,
+    is_SSM_ST_SM4_autoHoldEinschalten_SM1_double_conversion_allowed,
+    SSM_ST_SM4_autoHoldEinschalten_SM1_to_double,
+    is_SSM_ST_SM4_autoHoldEinschalten_SM1_long_conversion_allowed,
+    SSM_ST_SM4_autoHoldEinschalten_SM1_to_long,
+    compare_SSM_ST_SM4_autoHoldEinschalten_SM1,
+    get_SSM_ST_SM4_autoHoldEinschalten_SM1_signature,
+    init_SSM_ST_SM4_autoHoldEinschalten_SM1,
+    release_SSM_ST_SM4_autoHoldEinschalten_SM1,
+    copy_SSM_ST_SM4_autoHoldEinschalten_SM1,
+    sizeof(SSM_ST_SM4_autoHoldEinschalten_SM1)
+};
+
+/****************************************************************
  ** SSM_ST_SM5_parken_SM1 
  ****************************************************************/
 
@@ -5622,8 +5774,8 @@ static SimEnumValUtils SSM_ST_SM5_parken_SM1_values[] = {
     { "bremseDurchtreten", SSM_st_bremseDurchtreten_SM5_parken_SM1},
     { "getriebeWahlhebelNach_P", SSM_st_getriebeWahlhebelNach_P_SM5_parken_SM1},
     { "getriebeWahlhebelNach_P", SSM_st_getriebeWahlhebelNach_P_SM5_parken_SM1},
-    { "EPB_nicht_angezogen", SSM_st_EPB_nicht_angezogen_SM5_parken_SM1},
-    { "EPB_nicht_angezogen", SSM_st_EPB_nicht_angezogen_SM5_parken_SM1},
+    { "EPB_angezogen", SSM_st_EPB_angezogen_SM5_parken_SM1},
+    { "EPB_angezogen", SSM_st_EPB_angezogen_SM5_parken_SM1},
 };
 const int SSM_ST_SM5_parken_SM1_nb_values = 6;
 
@@ -6078,44 +6230,46 @@ static SimEnumValUtils SSM_TR_SM1_values[] = {
     { "SSM_TR_Start_zuendungEinschalten_1_Start_SM1", SSM_TR_Start_zuendungEinschalten_1_Start_SM1},
     { "SSM_TR_zuendungEinschalten_bremspedalDurchtreten_1_zuendungEinschalten_SM1", SSM_TR_zuendungEinschalten_bremspedalDurchtreten_1_zuendungEinschalten_SM1},
     { "SSM_TR_zuendungEinschalten_bremspedalDurchtreten_1_zuendungEinschalten_SM1", SSM_TR_zuendungEinschalten_bremspedalDurchtreten_1_zuendungEinschalten_SM1},
-    { "SSM_TR_bremspedalDurchtreten_manuellModusEinstellen_1_bremspedalDurchtreten_SM1", SSM_TR_bremspedalDurchtreten_manuellModusEinstellen_1_bremspedalDurchtreten_SM1},
-    { "SSM_TR_bremspedalDurchtreten_manuellModusEinstellen_1_bremspedalDurchtreten_SM1", SSM_TR_bremspedalDurchtreten_manuellModusEinstellen_1_bremspedalDurchtreten_SM1},
-    { "SSM_TR_manuellModusEinstellen_manuellModusEingestellt_1_manuellModusEinstellen_SM1", SSM_TR_manuellModusEinstellen_manuellModusEingestellt_1_manuellModusEinstellen_SM1},
-    { "SSM_TR_manuellModusEinstellen_manuellModusEingestellt_1_manuellModusEinstellen_SM1", SSM_TR_manuellModusEinstellen_manuellModusEingestellt_1_manuellModusEinstellen_SM1},
-    { "SSM_TR_manuellModusEingestellt_cockpitanzeigeBleibtAus_1_manuellModusEingestellt_SM1", SSM_TR_manuellModusEingestellt_cockpitanzeigeBleibtAus_1_manuellModusEingestellt_SM1},
-    { "SSM_TR_manuellModusEingestellt_cockpitanzeigeBleibtAus_1_manuellModusEingestellt_SM1", SSM_TR_manuellModusEingestellt_cockpitanzeigeBleibtAus_1_manuellModusEingestellt_SM1},
+    { "SSM_TR_bremspedalDurchtreten_automastikModusEinstellen_1_bremspedalDurchtreten_SM1", SSM_TR_bremspedalDurchtreten_automastikModusEinstellen_1_bremspedalDurchtreten_SM1},
+    { "SSM_TR_bremspedalDurchtreten_automastikModusEinstellen_1_bremspedalDurchtreten_SM1", SSM_TR_bremspedalDurchtreten_automastikModusEinstellen_1_bremspedalDurchtreten_SM1},
+    { "SSM_TR_automastikModusEinstellen_automatikModusEingestellt_1_automastikModusEinstellen_SM1", SSM_TR_automastikModusEinstellen_automatikModusEingestellt_1_automastikModusEinstellen_SM1},
+    { "SSM_TR_automastikModusEinstellen_automatikModusEingestellt_1_automastikModusEinstellen_SM1", SSM_TR_automastikModusEinstellen_automatikModusEingestellt_1_automastikModusEinstellen_SM1},
+    { "SSM_TR_automatikModusEingestellt_cockpitanzeigeBleibtAus_1_automatikModusEingestellt_SM1", SSM_TR_automatikModusEingestellt_cockpitanzeigeBleibtAus_1_automatikModusEingestellt_SM1},
+    { "SSM_TR_automatikModusEingestellt_cockpitanzeigeBleibtAus_1_automatikModusEingestellt_SM1", SSM_TR_automatikModusEingestellt_cockpitanzeigeBleibtAus_1_automatikModusEingestellt_SM1},
     { "SSM_TR_cockpitanzeigeBleibtAus_betriebsbremseLoesen_1_cockpitanzeigeBleibtAus_SM1", SSM_TR_cockpitanzeigeBleibtAus_betriebsbremseLoesen_1_cockpitanzeigeBleibtAus_SM1},
     { "SSM_TR_cockpitanzeigeBleibtAus_betriebsbremseLoesen_1_cockpitanzeigeBleibtAus_SM1", SSM_TR_cockpitanzeigeBleibtAus_betriebsbremseLoesen_1_cockpitanzeigeBleibtAus_SM1},
-    { "SSM_TR_betriebsbremseLoesen_anfahrenVorbereiten_1_betriebsbremseLoesen_SM1", SSM_TR_betriebsbremseLoesen_anfahrenVorbereiten_1_betriebsbremseLoesen_SM1},
-    { "SSM_TR_betriebsbremseLoesen_anfahrenVorbereiten_1_betriebsbremseLoesen_SM1", SSM_TR_betriebsbremseLoesen_anfahrenVorbereiten_1_betriebsbremseLoesen_SM1},
-    { "SSM_TR_anfahrenVorbereiten_Taste_P_druecken_1_anfahrenVorbereiten_SM1", SSM_TR_anfahrenVorbereiten_Taste_P_druecken_1_anfahrenVorbereiten_SM1},
-    { "SSM_TR_anfahrenVorbereiten_Taste_P_druecken_1_anfahrenVorbereiten_SM1", SSM_TR_anfahrenVorbereiten_Taste_P_druecken_1_anfahrenVorbereiten_SM1},
+    { "SSM_TR_betriebsbremseLoesen_EPB_angezogen_1_betriebsbremseLoesen_SM1", SSM_TR_betriebsbremseLoesen_EPB_angezogen_1_betriebsbremseLoesen_SM1},
+    { "SSM_TR_betriebsbremseLoesen_EPB_angezogen_1_betriebsbremseLoesen_SM1", SSM_TR_betriebsbremseLoesen_EPB_angezogen_1_betriebsbremseLoesen_SM1},
+    { "SSM_TR_EPB_angezogen_anfahrenVorbereiten_1_EPB_angezogen_SM1", SSM_TR_EPB_angezogen_anfahrenVorbereiten_1_EPB_angezogen_SM1},
+    { "SSM_TR_EPB_angezogen_anfahrenVorbereiten_1_EPB_angezogen_SM1", SSM_TR_EPB_angezogen_anfahrenVorbereiten_1_EPB_angezogen_SM1},
+    { "SSM_TR_anfahrenVorbereiten_EPB_arretiert_1_anfahrenVorbereiten_SM1", SSM_TR_anfahrenVorbereiten_EPB_arretiert_1_anfahrenVorbereiten_SM1},
+    { "SSM_TR_anfahrenVorbereiten_EPB_arretiert_1_anfahrenVorbereiten_SM1", SSM_TR_anfahrenVorbereiten_EPB_arretiert_1_anfahrenVorbereiten_SM1},
+    { "SSM_TR_EPB_arretiert_anfahren_1_EPB_arretiert_SM1", SSM_TR_EPB_arretiert_anfahren_1_EPB_arretiert_SM1},
+    { "SSM_TR_EPB_arretiert_anfahren_1_EPB_arretiert_SM1", SSM_TR_EPB_arretiert_anfahren_1_EPB_arretiert_SM1},
     { "SSM_TR_anfahren_fahren_1_anfahren_SM1", SSM_TR_anfahren_fahren_1_anfahren_SM1},
     { "SSM_TR_anfahren_fahren_1_anfahren_SM1", SSM_TR_anfahren_fahren_1_anfahren_SM1},
-    { "SSM_TR_fahren_annaehern_an_Ampel_1_fahren_SM1", SSM_TR_fahren_annaehern_an_Ampel_1_fahren_SM1},
-    { "SSM_TR_fahren_annaehern_an_Ampel_1_fahren_SM1", SSM_TR_fahren_annaehern_an_Ampel_1_fahren_SM1},
-    { "SSM_TR_annaehern_an_Ampel_fzg_Steht_1_annaehern_an_Ampel_SM1", SSM_TR_annaehern_an_Ampel_fzg_Steht_1_annaehern_an_Ampel_SM1},
-    { "SSM_TR_annaehern_an_Ampel_fzg_Steht_1_annaehern_an_Ampel_SM1", SSM_TR_annaehern_an_Ampel_fzg_Steht_1_annaehern_an_Ampel_SM1},
+    { "SSM_TR_fahren_anhalten_1_fahren_SM1", SSM_TR_fahren_anhalten_1_fahren_SM1},
+    { "SSM_TR_fahren_anhalten_1_fahren_SM1", SSM_TR_fahren_anhalten_1_fahren_SM1},
+    { "SSM_TR_anhalten_fzg_Steht_1_anhalten_SM1", SSM_TR_anhalten_fzg_Steht_1_anhalten_SM1},
+    { "SSM_TR_anhalten_fzg_Steht_1_anhalten_SM1", SSM_TR_anhalten_fzg_Steht_1_anhalten_SM1},
     { "SSM_TR_fzg_Steht_erneutAnfahren_1_fzg_Steht_SM1", SSM_TR_fzg_Steht_erneutAnfahren_1_fzg_Steht_SM1},
     { "SSM_TR_fzg_Steht_erneutAnfahren_1_fzg_Steht_SM1", SSM_TR_fzg_Steht_erneutAnfahren_1_fzg_Steht_SM1},
-    { "SSM_TR_erneutAnfahren_fahren1_1_erneutAnfahren_SM1", SSM_TR_erneutAnfahren_fahren1_1_erneutAnfahren_SM1},
-    { "SSM_TR_erneutAnfahren_fahren1_1_erneutAnfahren_SM1", SSM_TR_erneutAnfahren_fahren1_1_erneutAnfahren_SM1},
-    { "SSM_TR_parken_fzgAbstellen_1_parken_SM1", SSM_TR_parken_fzgAbstellen_1_parken_SM1},
-    { "SSM_TR_parken_fzgAbstellen_1_parken_SM1", SSM_TR_parken_fzgAbstellen_1_parken_SM1},
-    { "SSM_TR_Taste_P_druecken_EPB_geloest_1_Taste_P_druecken_SM1", SSM_TR_Taste_P_druecken_EPB_geloest_1_Taste_P_druecken_SM1},
-    { "SSM_TR_Taste_P_druecken_EPB_geloest_1_Taste_P_druecken_SM1", SSM_TR_Taste_P_druecken_EPB_geloest_1_Taste_P_druecken_SM1},
-    { "SSM_TR_EPB_geloest_anfahren_1_EPB_geloest_SM1", SSM_TR_EPB_geloest_anfahren_1_EPB_geloest_SM1},
-    { "SSM_TR_EPB_geloest_anfahren_1_EPB_geloest_SM1", SSM_TR_EPB_geloest_anfahren_1_EPB_geloest_SM1},
-    { "SSM_TR_fzg_Steht1_parken_1_fzg_Steht1_SM1", SSM_TR_fzg_Steht1_parken_1_fzg_Steht1_SM1},
-    { "SSM_TR_fzg_Steht1_parken_1_fzg_Steht1_SM1", SSM_TR_fzg_Steht1_parken_1_fzg_Steht1_SM1},
-    { "SSM_TR_fahren1_anhalten_1_fahren1_SM1", SSM_TR_fahren1_anhalten_1_fahren1_SM1},
-    { "SSM_TR_fahren1_anhalten_1_fahren1_SM1", SSM_TR_fahren1_anhalten_1_fahren1_SM1},
-    { "SSM_TR_anhalten_fzg_Steht1_1_anhalten_SM1", SSM_TR_anhalten_fzg_Steht1_1_anhalten_SM1},
-    { "SSM_TR_anhalten_fzg_Steht1_1_anhalten_SM1", SSM_TR_anhalten_fzg_Steht1_1_anhalten_SM1},
-    { "SSM_TR_fzgAbstellen_fzgAbgestellt_1_fzgAbstellen_SM1", SSM_TR_fzgAbstellen_fzgAbgestellt_1_fzgAbstellen_SM1},
-    { "SSM_TR_fzgAbstellen_fzgAbgestellt_1_fzgAbstellen_SM1", SSM_TR_fzgAbstellen_fzgAbgestellt_1_fzgAbstellen_SM1},
+    { "SSM_TR_erneutAnfahren_autoHoldEinschalten_1_erneutAnfahren_SM1", SSM_TR_erneutAnfahren_autoHoldEinschalten_1_erneutAnfahren_SM1},
+    { "SSM_TR_erneutAnfahren_autoHoldEinschalten_1_erneutAnfahren_SM1", SSM_TR_erneutAnfahren_autoHoldEinschalten_1_erneutAnfahren_SM1},
+    { "SSM_TR_autoHoldEinschalten_anhaltenMitAutoHold_1_autoHoldEinschalten_SM1", SSM_TR_autoHoldEinschalten_anhaltenMitAutoHold_1_autoHoldEinschalten_SM1},
+    { "SSM_TR_autoHoldEinschalten_anhaltenMitAutoHold_1_autoHoldEinschalten_SM1", SSM_TR_autoHoldEinschalten_anhaltenMitAutoHold_1_autoHoldEinschalten_SM1},
+    { "SSM_TR_anhaltenMitAutoHold_haltImAutoHold_1_anhaltenMitAutoHold_SM1", SSM_TR_anhaltenMitAutoHold_haltImAutoHold_1_anhaltenMitAutoHold_SM1},
+    { "SSM_TR_anhaltenMitAutoHold_haltImAutoHold_1_anhaltenMitAutoHold_SM1", SSM_TR_anhaltenMitAutoHold_haltImAutoHold_1_anhaltenMitAutoHold_SM1},
+    { "SSM_TR_haltImAutoHold_anfahrenAusAutoHold_1_haltImAutoHold_SM1", SSM_TR_haltImAutoHold_anfahrenAusAutoHold_1_haltImAutoHold_SM1},
+    { "SSM_TR_haltImAutoHold_anfahrenAusAutoHold_1_haltImAutoHold_SM1", SSM_TR_haltImAutoHold_anfahrenAusAutoHold_1_haltImAutoHold_SM1},
+    { "SSM_TR_anfahrenAusAutoHold_anhaltenZumBeenden_1_anfahrenAusAutoHold_SM1", SSM_TR_anfahrenAusAutoHold_anhaltenZumBeenden_1_anfahrenAusAutoHold_SM1},
+    { "SSM_TR_anfahrenAusAutoHold_anhaltenZumBeenden_1_anfahrenAusAutoHold_SM1", SSM_TR_anfahrenAusAutoHold_anhaltenZumBeenden_1_anfahrenAusAutoHold_SM1},
+    { "SSM_TR_anhaltenZumBeenden_fzgSteht_1_anhaltenZumBeenden_SM1", SSM_TR_anhaltenZumBeenden_fzgSteht_1_anhaltenZumBeenden_SM1},
+    { "SSM_TR_anhaltenZumBeenden_fzgSteht_1_anhaltenZumBeenden_SM1", SSM_TR_anhaltenZumBeenden_fzgSteht_1_anhaltenZumBeenden_SM1},
+    { "SSM_TR_fzgSteht_parken_1_fzgSteht_SM1", SSM_TR_fzgSteht_parken_1_fzgSteht_SM1},
+    { "SSM_TR_fzgSteht_parken_1_fzgSteht_SM1", SSM_TR_fzgSteht_parken_1_fzgSteht_SM1},
 };
-const int SSM_TR_SM1_nb_values = 42;
+const int SSM_TR_SM1_nb_values = 44;
 
 int SSM_TR_SM1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
@@ -6550,6 +6704,156 @@ SimTypeUtils _Type_SSM_TR_SM2_erneutAnfahren_SM1_Utils = {
 };
 
 /****************************************************************
+ ** SSM_TR_SM4_autoHoldEinschalten_SM1 
+ ****************************************************************/
+
+#ifdef __cplusplus
+  #ifdef pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable_defined
+    extern struct SimTypeVTable *pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable;
+  #else 
+    struct SimTypeVTable *pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable = NULL;
+  #endif
+#else
+  struct SimTypeVTable *pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable;
+#endif
+
+static SimEnumValUtils SSM_TR_SM4_autoHoldEinschalten_SM1_values[] = {
+    { "SSM_TR_no_trans_SM4_autoHoldEinschalten_SM1", SSM_TR_no_trans_SM4_autoHoldEinschalten_SM1},
+    { "SSM_TR_no_trans_SM4_autoHoldEinschalten_SM1", SSM_TR_no_trans_SM4_autoHoldEinschalten_SM1},
+    { "SSM_TR_HoldDruecken_HoldLoesen_1_HoldDruecken_SM4_autoHoldEinschalten_SM1", SSM_TR_HoldDruecken_HoldLoesen_1_HoldDruecken_SM4_autoHoldEinschalten_SM1},
+    { "SSM_TR_HoldDruecken_HoldLoesen_1_HoldDruecken_SM4_autoHoldEinschalten_SM1", SSM_TR_HoldDruecken_HoldLoesen_1_HoldDruecken_SM4_autoHoldEinschalten_SM1},
+};
+const int SSM_TR_SM4_autoHoldEinschalten_SM1_nb_values = 4;
+
+int SSM_TR_SM4_autoHoldEinschalten_SM1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+{
+    if (pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable != NULL
+        && pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable->m_pfnGetConvInfo(SptString, SptNone) == 1) {
+       return pfnStrAppend(*(char**)pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable->m_pfnToType(SptString, pValue), pStrObj);
+    }
+    return pConverter->m_pfnEnumToString(*(SSM_TR_SM4_autoHoldEinschalten_SM1*)pValue, SSM_TR_SM4_autoHoldEinschalten_SM1_values, SSM_TR_SM4_autoHoldEinschalten_SM1_nb_values, pfnStrAppend, pStrObj); 
+}
+
+int check_SSM_TR_SM4_autoHoldEinschalten_SM1_string(const char *str, char **endptr)
+{
+    static SSM_TR_SM4_autoHoldEinschalten_SM1 rTemp;
+    return string_to_SSM_TR_SM4_autoHoldEinschalten_SM1(str, (void*)&rTemp, endptr);
+}
+
+int string_to_SSM_TR_SM4_autoHoldEinschalten_SM1(const char *str, void *pValue, char **endptr)
+{
+    int nRet = 0;
+    skip_whitespace(str);
+    if (pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable != NULL) {
+        nRet = string_to_VTable(str, pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable, pValue, endptr);
+    }
+    if (nRet == 0) {
+        int nTemp = 0;
+        nRet = pConverter->m_pfnStringToEnum(str, &nTemp, SSM_TR_SM4_autoHoldEinschalten_SM1_values, SSM_TR_SM4_autoHoldEinschalten_SM1_nb_values, endptr);
+        if (pValue != NULL && nRet != 0)
+            *(SSM_TR_SM4_autoHoldEinschalten_SM1*)pValue = (SSM_TR_SM4_autoHoldEinschalten_SM1)nTemp;
+    }
+    return nRet;
+}
+
+int is_SSM_TR_SM4_autoHoldEinschalten_SM1_double_conversion_allowed()
+{
+    if (pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable != NULL) {
+        return is_VTable_double_conversion_allowed(pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable);
+    }
+    return 1;
+}
+
+int SSM_TR_SM4_autoHoldEinschalten_SM1_to_double(const void *pValue, double *nValue)
+{
+    if (pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable != NULL) {
+        return VTable_to_double(pValue, pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable, nValue);
+    }
+    *nValue = (double)*((SSM_TR_SM4_autoHoldEinschalten_SM1*)pValue);
+    return 1;
+}
+
+int is_SSM_TR_SM4_autoHoldEinschalten_SM1_long_conversion_allowed()
+{
+    if (pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable != NULL) {
+        return is_VTable_long_conversion_allowed(pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable);
+    }
+    return 1;
+}
+
+int SSM_TR_SM4_autoHoldEinschalten_SM1_to_long(const void *pValue, long *nValue)
+{
+    if (pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable != NULL) {
+        return VTable_to_long(pValue, pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable, nValue);
+    }
+    *nValue = (long)*((SSM_TR_SM4_autoHoldEinschalten_SM1*)pValue);
+    return 1;
+}
+
+void compare_SSM_TR_SM4_autoHoldEinschalten_SM1(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
+{
+    int unitResult = 0;
+    /* Customized comparison */
+    if (pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable != NULL
+        && pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable->m_version >= Scv612
+        && pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable->m_pfnCompare != NULL) {
+        if (pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable->m_version >= Scv65) {
+            /* R15 and higher: VTable Compare function shall UPDATE *pResult global flag (*pResult |= SIM_CMP_RES_LT/...): */
+            unitResult = pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable->m_pfnCompare(pResult, pValue1, pValue2);
+        } else {
+            /* Before R15: VTable Compare function shall SET *pResult global flag (*pResult = -1/1/0): */
+            pSimSSM_TR_SM4_autoHoldEinschalten_SM1VTable->m_pfnCompare(&unitResult, pValue1, pValue2);
+            updateCompareResult(unitResult, pResult);
+        }
+    } else {
+        /* Predefined comparison */
+        unitResult = predef_compare_enum(pResult, (int)(*(SSM_TR_SM4_autoHoldEinschalten_SM1*)pValue1), (int)(*(SSM_TR_SM4_autoHoldEinschalten_SM1*)pValue2));
+    }
+    UNUSED(pTol);
+    if (unitResult != 0 && pfnStrListAppend != NULL && pszPath != NULL && *pszPath != 0 && pListErrPaths != NULL)
+        pfnStrListAppend(pszPath, pListErrPaths);
+}
+
+int get_SSM_TR_SM4_autoHoldEinschalten_SM1_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
+{
+    return pConverter->m_pfnGetEnumSignature(SSM_TR_SM4_autoHoldEinschalten_SM1_values, SSM_TR_SM4_autoHoldEinschalten_SM1_nb_values, pfnStrAppend, pStrObj);
+}
+
+int init_SSM_TR_SM4_autoHoldEinschalten_SM1(void *pValue)
+{
+    *(SSM_TR_SM4_autoHoldEinschalten_SM1*)pValue = SSM_TR_no_trans_SM4_autoHoldEinschalten_SM1;
+    return 1;
+}
+
+int release_SSM_TR_SM4_autoHoldEinschalten_SM1(void *pValue)
+{
+    UNUSED(pValue);
+    return 1;
+}
+
+int copy_SSM_TR_SM4_autoHoldEinschalten_SM1(void *pToValue, const void *pFromValue)
+{
+    *((SSM_TR_SM4_autoHoldEinschalten_SM1*)pToValue) = *((SSM_TR_SM4_autoHoldEinschalten_SM1*)pFromValue);
+    return 1;
+}
+
+SimTypeUtils _Type_SSM_TR_SM4_autoHoldEinschalten_SM1_Utils = {
+    SSM_TR_SM4_autoHoldEinschalten_SM1_to_string,
+    check_SSM_TR_SM4_autoHoldEinschalten_SM1_string,
+    string_to_SSM_TR_SM4_autoHoldEinschalten_SM1,
+    is_SSM_TR_SM4_autoHoldEinschalten_SM1_double_conversion_allowed,
+    SSM_TR_SM4_autoHoldEinschalten_SM1_to_double,
+    is_SSM_TR_SM4_autoHoldEinschalten_SM1_long_conversion_allowed,
+    SSM_TR_SM4_autoHoldEinschalten_SM1_to_long,
+    compare_SSM_TR_SM4_autoHoldEinschalten_SM1,
+    get_SSM_TR_SM4_autoHoldEinschalten_SM1_signature,
+    init_SSM_TR_SM4_autoHoldEinschalten_SM1,
+    release_SSM_TR_SM4_autoHoldEinschalten_SM1,
+    copy_SSM_TR_SM4_autoHoldEinschalten_SM1,
+    sizeof(SSM_TR_SM4_autoHoldEinschalten_SM1)
+};
+
+/****************************************************************
  ** SSM_TR_SM5_parken_SM1 
  ****************************************************************/
 
@@ -6568,8 +6872,8 @@ static SimEnumValUtils SSM_TR_SM5_parken_SM1_values[] = {
     { "SSM_TR_no_trans_SM5_parken_SM1", SSM_TR_no_trans_SM5_parken_SM1},
     { "SSM_TR_bremseDurchtreten_getriebeWahlhebelNach_P_1_bremseDurchtreten_SM5_parken_SM1", SSM_TR_bremseDurchtreten_getriebeWahlhebelNach_P_1_bremseDurchtreten_SM5_parken_SM1},
     { "SSM_TR_bremseDurchtreten_getriebeWahlhebelNach_P_1_bremseDurchtreten_SM5_parken_SM1", SSM_TR_bremseDurchtreten_getriebeWahlhebelNach_P_1_bremseDurchtreten_SM5_parken_SM1},
-    { "SSM_TR_getriebeWahlhebelNach_P_EPB_nicht_angezogen_1_getriebeWahlhebelNach_P_SM5_parken_SM1", SSM_TR_getriebeWahlhebelNach_P_EPB_nicht_angezogen_1_getriebeWahlhebelNach_P_SM5_parken_SM1},
-    { "SSM_TR_getriebeWahlhebelNach_P_EPB_nicht_angezogen_1_getriebeWahlhebelNach_P_SM5_parken_SM1", SSM_TR_getriebeWahlhebelNach_P_EPB_nicht_angezogen_1_getriebeWahlhebelNach_P_SM5_parken_SM1},
+    { "SSM_TR_getriebeWahlhebelNach_P_EPB_angezogen_1_getriebeWahlhebelNach_P_SM5_parken_SM1", SSM_TR_getriebeWahlhebelNach_P_EPB_angezogen_1_getriebeWahlhebelNach_P_SM5_parken_SM1},
+    { "SSM_TR_getriebeWahlhebelNach_P_EPB_angezogen_1_getriebeWahlhebelNach_P_SM5_parken_SM1", SSM_TR_getriebeWahlhebelNach_P_EPB_angezogen_1_getriebeWahlhebelNach_P_SM5_parken_SM1},
 };
 const int SSM_TR_SM5_parken_SM1_nb_values = 6;
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="manModus_autoHold">
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" name="manModus_o_autoHold">
 	<inputs>
 		<Variable name="betriebsBremse">
 			<type>
@@ -10126,7 +10126,7 @@
 	<pragmas>
 		<ed:Operator oid="!ed/154a0/4F44/36F0/5ece188b686b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 			<diagrams>
-				<NetDiagram name="manModus_autoHold_1" landscape="true" format="A4 (210 297)" oid="!ed/154a1/4F44/36F0/5ece188b3dca">
+				<NetDiagram name="manModus_o_autoHold_1" landscape="true" format="A4 (210 297)" oid="!ed/154a1/4F44/36F0/5ece188b3dca">
 					<presentationElements>
 						<StateMachineGE presentable="!ed/15a2a/4F44/36F0/5ece19eb665d">
 							<position>
@@ -10783,7 +10783,7 @@
 						</Edge>
 					</presentationElements>
 				</NetDiagram>
-				<NetDiagram name="manModus_autoHold_inputs" landscape="true" format="A4 (210 297)" oid="!ed/167d6/4F44/36F0/5ece2bad4c04">
+				<NetDiagram name="manModus_o_autoHold_inputs" landscape="true" format="A4 (210 297)" oid="!ed/167d6/4F44/36F0/5ece2bad4c04">
 					<presentationElements>
 						<EquationGE presentable="!ed/167d7/4F44/36F0/5ece2c232bd1">
 							<position>

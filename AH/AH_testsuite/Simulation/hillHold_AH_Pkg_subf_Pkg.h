@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/Christopher/Nextcloud/Ostfalia/4. Semester/SoftwareSichereSysteme/Scade_Loesung/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-05-27T11:32:07
+** Command: kcg66.exe -config C:/Users/ma2/Desktop/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-27T15:47:01
 *************************************************************$ */
 #ifndef _hillHold_AH_Pkg_subf_Pkg_H_
 #define _hillHold_AH_Pkg_subf_Pkg_H_
@@ -85,6 +85,6 @@ extern void hillHold_init_AH_Pkg_subf_Pkg(outC_hillHold_AH_Pkg_subf_Pkg *outC);
 #endif /* _hillHold_AH_Pkg_subf_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** hillHold_AH_Pkg_subf_Pkg.h
-** Generation date: 2020-05-27T11:32:07
+** Generation date: 2020-05-27T15:47:01
 *************************************************************$ */
 

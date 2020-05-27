@@ -1,8 +1,8 @@
 mapping.xml
 kcg_metrics.txt
-testManModus_autoHold_AH_testSuite_Pkg_tests_Pkg.c
-manModus_autoHold_AH_testSuite_Pkg_divFahrer.c
+testAutoModus_autoHold_AH_testSuite_Pkg_tests_Pkg.c
 systemUhr_AhTypes_Pkg_utils_Pkg.c
+autoModus_autoHold_AH_testSuite_Pkg_divFahrer.c
 fzgIntegration_simEnv_Pkg_mainPkg.c
 EpbCtrl_AH_Pkg_main_Pkg.c
 bestimmeAutoHoldModus_AH_Pkg_subf_Pkg.c
@@ -29,9 +29,9 @@ fahrzeug_simEnv_Pkg_mainPkg.c
 fahrDynamik_simEnv_Pkg_mainPkg_subf_Pkg.c
 Square_mathext_float64.c
 fahrweg_simEnv_Pkg_mainPkg.c
-testManModus_autoHold_AH_testSuite_Pkg_tests_Pkg.h
-manModus_autoHold_AH_testSuite_Pkg_divFahrer.h
+testAutoModus_autoHold_AH_testSuite_Pkg_tests_Pkg.h
 systemUhr_AhTypes_Pkg_utils_Pkg.h
+autoModus_autoHold_AH_testSuite_Pkg_divFahrer.h
 fzgIntegration_simEnv_Pkg_mainPkg.h
 EpbCtrl_AH_Pkg_main_Pkg.h
 bestimmeAutoHoldModus_AH_Pkg_subf_Pkg.h

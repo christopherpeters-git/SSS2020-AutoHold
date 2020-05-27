@@ -1114,7 +1114,7 @@
 				<ed:Equation oid="!ed/159b3/380D/B9C/5ece2fc24a9"/>
 			</pragmas>
 		</Equation>
-		<!-- _L37, _L38, _L39, _L40, _L41, _L42, _L43, _L44, _L45 = divFahrer::manModus_autoHo... -->
+		<!-- _L37, _L38, _L39, _L40, _L41, _L42, _L43, _L44, _L45 = divFahrer::manModus_o_auto... -->
 		<Equation>
 			<lefts>
 				<VariableRef name="_L37"/>
@@ -1128,12 +1128,12 @@
 				<VariableRef name="_L45"/>
 			</lefts>
 			<right>
-				<!-- divFahrer::manModus_autoHold(_L26, _L23, _L22, _L28, _L27, _L25, _L36, _L24, _L20... -->
+				<!-- divFahrer::manModus_o_autoHold(_L26, _L23, _L22, _L28, _L27, _L25, _L36, _L24, _L... -->
 				<CallExpression>
 					<operator>
 						<OpCall name="1">
 							<operator>
-								<OperatorRef name="divFahrer::manModus_autoHold"/>
+								<OperatorRef name="divFahrer::manModus_o_autoHold"/>
 							</operator>
 						</OpCall>
 					</operator>

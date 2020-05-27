@@ -40,6 +40,9 @@ BEGIN
         {"!ed/1527f/BD2/77EC/5ea829b62401", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
 Deshalb bleibt die Anzeige aus. " },
         {"!ed/20ecb/BD2/77EC/5ea850165d7c", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" },
-        {"!ed/37aaf/BD2/77EC/5ea86a5f264e", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" }}
+        {"!ed/37aaf/BD2/77EC/5ea86a5f264e", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" },
+        {"!ed/15ea3/7CC/2670/5ece4af81498", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
+Deshalb bleibt die Anzeige aus. " },
+        {"!ed/160a8/7CC/2670/5ece4af862de", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" }}
 END
 

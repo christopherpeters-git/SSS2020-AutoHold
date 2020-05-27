@@ -7,7 +7,7 @@
 #define UNUSED(x) (void)(x)
 /* context */
 
-outC_testManModus_autoHold_AH_testSuite_Pkg_tests_Pkg outputs_ctx;
+outC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_Pkg outputs_ctx;
 
 static void _SCSIM_RestoreInterface(void) {
     memset((void*)&outputs_ctx, 0, sizeof(outputs_ctx));
@@ -24,7 +24,7 @@ extern "C" {
 
 const int  rt_version = Srtv62;
 
-const char* _SCSIM_CheckSum = "17a94817fabd442d98567f8fa71f4ff1";
+const char* _SCSIM_CheckSum = "185d4ae8b931dd7ee3481caac3a2a487";
 const char* _SCSIM_SmuTypesCheckSum = "6757860ac1d8ce9bd3fc91d925ceefb8";
 
 /* simulation */
@@ -36,7 +36,7 @@ int SimInit(void) {
     BeforeSimInit();
 #endif
 #ifndef KCG_USER_DEFINED_INIT
-    testManModus_autoHold_init_AH_testSuite_Pkg_tests_Pkg(&outputs_ctx);
+    testAutoModus_autoHold_init_AH_testSuite_Pkg_tests_Pkg(&outputs_ctx);
     nRet = 1;
 #else
     nRet = 0;
@@ -54,7 +54,7 @@ int SimReset(void) {
     BeforeSimInit();
 #endif
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
-    testManModus_autoHold_reset_AH_testSuite_Pkg_tests_Pkg(&outputs_ctx);
+    testAutoModus_autoHold_reset_AH_testSuite_Pkg_tests_Pkg(&outputs_ctx);
     nRet = 1;
 #else
     nRet = 0;
@@ -66,21 +66,21 @@ int SimReset(void) {
 }
 
 #ifdef __cplusplus
-    #ifdef pSimoutC_testManModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable_defined
-        extern struct SimCustomInitVTable *pSimoutC_testManModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable;
+    #ifdef pSimoutC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable_defined
+        extern struct SimCustomInitVTable *pSimoutC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable;
     #else 
-        struct SimCustomInitVTable *pSimoutC_testManModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable = NULL;
+        struct SimCustomInitVTable *pSimoutC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable = NULL;
     #endif
 #else
-    struct SimCustomInitVTable *pSimoutC_testManModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable;
+    struct SimCustomInitVTable *pSimoutC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable;
 #endif
 
 int SimCustomInit(void) {
     int nRet = 0;
-    if (pSimoutC_testManModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable != NULL && 
-        pSimoutC_testManModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable->m_pfnCustomInit != NULL) {
+    if (pSimoutC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable != NULL && 
+        pSimoutC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable->m_pfnCustomInit != NULL) {
         /* VTable function provided => call it */
-        nRet = pSimoutC_testManModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable->m_pfnCustomInit ((void*)&outputs_ctx);
+        nRet = pSimoutC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_PkgCIVTable->m_pfnCustomInit ((void*)&outputs_ctx);
     }
     else {
         /* VTable misssing => error */
@@ -99,7 +99,7 @@ int SimStep(void) {
         BeforeSimStep();
 #endif
     _SCSIM_ExecuteInterface();
-    testManModus_autoHold_AH_testSuite_Pkg_tests_Pkg(&outputs_ctx);
+    testAutoModus_autoHold_AH_testSuite_Pkg_tests_Pkg(&outputs_ctx);
 #ifdef EXTENDED_SIM
     AfterSimStep();
 #endif
@@ -131,7 +131,7 @@ void SsmConnectExternalInputs(int bConnect) {
 
 int SsmGetDumpSize(void) {
     int nSize = 0;
-    nSize += sizeof(outC_testManModus_autoHold_AH_testSuite_Pkg_tests_Pkg);
+    nSize += sizeof(outC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_Pkg);
 #ifdef EXTENDED_SIM
     nSize += ExtendedGetDumpSize();
 #endif
@@ -140,8 +140,8 @@ int SsmGetDumpSize(void) {
 
 void SsmGatherDumpData(char * pData) {
     char* pCurrent = pData;
-    memcpy(pCurrent, &outputs_ctx, sizeof(outC_testManModus_autoHold_AH_testSuite_Pkg_tests_Pkg));
-    pCurrent += sizeof(outC_testManModus_autoHold_AH_testSuite_Pkg_tests_Pkg);
+    memcpy(pCurrent, &outputs_ctx, sizeof(outC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_Pkg));
+    pCurrent += sizeof(outC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_Pkg);
 #ifdef EXTENDED_SIM
     ExtendedGatherDumpData(pCurrent);
 #endif
@@ -149,8 +149,8 @@ void SsmGatherDumpData(char * pData) {
 
 void SsmRestoreDumpData(const char * pData) {
     const char* pCurrent = pData;
-    memcpy(&outputs_ctx, pCurrent, sizeof(outC_testManModus_autoHold_AH_testSuite_Pkg_tests_Pkg));
-    pCurrent += sizeof(outC_testManModus_autoHold_AH_testSuite_Pkg_tests_Pkg);
+    memcpy(&outputs_ctx, pCurrent, sizeof(outC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_Pkg));
+    pCurrent += sizeof(outC_testAutoModus_autoHold_AH_testSuite_Pkg_tests_Pkg);
 #ifdef EXTENDED_SIM
     ExtendedRestoreDumpData(pCurrent);
 #endif
