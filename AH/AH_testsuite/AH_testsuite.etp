@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="97" defaultConfiguration="23">
+<Project id="1" oid_count="105" defaultConfiguration="23">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -370,6 +370,20 @@
 						<FileRef id="97" persistAs="testAutoModus_autoHold1.xscade">
 							<props>
 								<Prop id="96" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="101" persistAs="autoModus_autoHold1.xscade">
+							<props>
+								<Prop id="100" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="105" persistAs="testAutoModus_autoHold11.xscade">
+							<props>
+								<Prop id="104" name="@SCADE:NONROOT">
 									<value>true</value>
 								</Prop>
 							</props>

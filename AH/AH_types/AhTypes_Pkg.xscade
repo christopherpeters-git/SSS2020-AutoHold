@@ -1774,6 +1774,21 @@
 								</ed:Constant>
 							</pragmas>
 						</Constant>
+						<Constant name="cGaspedalLosgelassen">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="float64"/>
+									</type>
+								</NamedType>
+							</type>
+							<value>
+								<ConstValue value="0.0"/>
+							</value>
+							<pragmas>
+								<ed:Constant oid="!ed/16162/F1A/4070/5ecf924867a"/>
+							</pragmas>
+						</Constant>
 						<Type name="on_off_element_T">
 							<definition>
 								<Enum>
