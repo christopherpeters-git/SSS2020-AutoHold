@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Christopher/Repositories/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-05-28T14:24:10
+** Generation date: 2020-05-30T21:27:49
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -71,6 +71,7 @@ void fzgIntegration_simEnv_Pkg_mainPkg(
   outC->_L17 = outC->Context_EpbCtrl_1.betriebsBremse;
   outC->_L18 = outC->Context_EpbCtrl_1.betriebsbremsSperrventil;
   outC->_L36 = outC->Context_EpbCtrl_1.epbBetriebsmodus;
+  outC->betriebsbremsSperrventil = outC->_L18;
   outC->epbBetriebsmodus = outC->_L36;
   outC->_L35 = getriebeWahlhebel;
   outC->_L34 = zuendschalter;
@@ -137,6 +138,7 @@ void fzgIntegration_init_simEnv_Pkg_mainPkg(
   outC->_L2 = kcg_lit_float64(0.0);
   outC->_L3 = kcg_lit_float64(0.0);
   outC->_L1 = kcg_lit_float64(0.0);
+  outC->betriebsbremsSperrventil = bbs_frei_AhTypes_Pkg_ah_Pkg;
   outC->epbBetriebsmodus = epbModus_automatik_AhTypes_Pkg_ah_Pkg;
   outC->fzgLaengsneigung = kcg_lit_float64(0.0);
   outC->EPB_Bremse = pBremse_angezogen_AhTypes_Pkg_ah_Pkg;
@@ -178,6 +180,6 @@ void fzgIntegration_reset_simEnv_Pkg_mainPkg(
 
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** fzgIntegration_simEnv_Pkg_mainPkg.c
-** Generation date: 2020-05-28T14:24:10
+** Generation date: 2020-05-30T21:27:49
 *************************************************************$ */
 

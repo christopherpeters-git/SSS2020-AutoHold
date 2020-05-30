@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Christopher/Repositories/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-05-28T14:24:09
+** Generation date: 2020-05-30T21:27:49
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -59,6 +59,6 @@ void RisingEdge_reset_digital(outC_RisingEdge_digital *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** RisingEdge_digital.c
-** Generation date: 2020-05-28T14:24:09
+** Generation date: 2020-05-30T21:27:49
 *************************************************************$ */
 

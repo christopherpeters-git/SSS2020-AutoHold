@@ -4,11 +4,11 @@
 #include "kcg_types.h"
 #include "kcg_sensors.h"
 #include "SmuProxy.h"
-#include "testAutoModus_Notbremse_AH_testSuite_Pkg_tests_Pkg.h"
+#include "testAutoModus_o_Autohold__AH_testSuite_Pkg_tests_Pkg.h"
 
 /* context */
 
-extern outC_testAutoModus_Notbremse_AH_testSuite_Pkg_tests_Pkg outputs_ctx;
+extern outC_testAutoModus_o_Autohold__AH_testSuite_Pkg_tests_Pkg outputs_ctx;
 
 #ifdef __cplusplus
 extern "C" {

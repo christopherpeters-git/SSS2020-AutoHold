@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Christopher/Repositories/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-05-28T14:24:09
+** Generation date: 2020-05-30T21:27:49
 *************************************************************$ */
 #ifndef _aktiviereEpbAutomatisch_AH_Pkg_subf_Pkg_H_
 #define _aktiviereEpbAutomatisch_AH_Pkg_subf_Pkg_H_
@@ -54,6 +54,6 @@ extern void aktiviereEpbAutomatisch_init_AH_Pkg_subf_Pkg(
 #endif /* _aktiviereEpbAutomatisch_AH_Pkg_subf_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** aktiviereEpbAutomatisch_AH_Pkg_subf_Pkg.h
-** Generation date: 2020-05-28T14:24:09
+** Generation date: 2020-05-30T21:27:49
 *************************************************************$ */
 

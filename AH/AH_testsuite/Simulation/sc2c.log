@@ -1,16 +1,16 @@
 $**************  SCADETOC Version 2020 R1 (build 20191209) **************
-** Generation date: 2020-05-28T14:24:07
-** Command: scade -code "C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\AH_testsuite.etp" -root AH_testSuite_Pkg::tests_Pkg::testAutoModus_Notbremse -conf Simulation -sim -all
+** Generation date: 2020-05-30T21:27:47
+** Command: scade -code "C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\AH_testsuite.etp" -root AH_testSuite_Pkg::tests_Pkg::testAutoModus_o_Autohold_HillHold -conf Simulation -sim -all
 *************************************************************$
 *** Generated Files Information (GENFIL): KCG- Generated files
   at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\mapping.xml, line 0, character 0
  ~mapping.xml
   at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\kcg_metrics.txt, line 0, character 0
  ~kcg_metrics.txt
-  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\testAutoModus_Notbremse_AH_testSuite_Pkg_tests_Pkg.c, line 0, character 0
- ~testAutoModus_Notbremse_AH_testSuite_Pkg_tests_Pkg.c
-  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer.c, line 0, character 0
- ~autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer.c
+  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\testAutoModus_o_Autohold__AH_testSuite_Pkg_tests_Pkg.c, line 0, character 0
+ ~testAutoModus_o_Autohold__AH_testSuite_Pkg_tests_Pkg.c
+  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\autoModus_o_autoHold_HillHold_AH_testSuite_Pkg_divFahrer.c, line 0, character 0
+ ~autoModus_o_autoHold_HillHold_AH_testSuite_Pkg_divFahrer.c
   at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\systemUhr_AhTypes_Pkg_utils_Pkg.c, line 0, character 0
  ~systemUhr_AhTypes_Pkg_utils_Pkg.c
   at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\fzgIntegration_simEnv_Pkg_mainPkg.c, line 0, character 0
@@ -65,10 +65,10 @@ $**************  SCADETOC Version 2020 R1 (build 20191209) **************
  ~Square_mathext_float64.c
   at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\fahrweg_simEnv_Pkg_mainPkg.c, line 0, character 0
  ~fahrweg_simEnv_Pkg_mainPkg.c
-  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\testAutoModus_Notbremse_AH_testSuite_Pkg_tests_Pkg.h, line 0, character 0
- ~testAutoModus_Notbremse_AH_testSuite_Pkg_tests_Pkg.h
-  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer.h, line 0, character 0
- ~autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer.h
+  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\testAutoModus_o_Autohold__AH_testSuite_Pkg_tests_Pkg.h, line 0, character 0
+ ~testAutoModus_o_Autohold__AH_testSuite_Pkg_tests_Pkg.h
+  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\autoModus_o_autoHold_HillHold_AH_testSuite_Pkg_divFahrer.h, line 0, character 0
+ ~autoModus_o_autoHold_HillHold_AH_testSuite_Pkg_divFahrer.h
   at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\systemUhr_AhTypes_Pkg_utils_Pkg.h, line 0, character 0
  ~systemUhr_AhTypes_Pkg_utils_Pkg.h
   at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\fzgIntegration_simEnv_Pkg_mainPkg.h, line 0, character 0
@@ -166,11 +166,11 @@ $**************  SCADETOC Version 2020 R1 (build 20191209) **************
 *** Generated Files Information (GENFIL): Build Generated files
   at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\Makefile_win64, line 0, character 0
  ~Makefile_win64
-  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\AH_testSuite_Pkg__tests_Pkg__testAutoModus_Notbremse.dll, line 0, character 0
- ~AH_testSuite_Pkg__tests_Pkg__testAutoModus_Notbremse.dll
-  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\AH_testSuite_Pkg__tests_Pkg__testAutoModus_Notbremse.exe, line 0, character 0
- ~AH_testSuite_Pkg__tests_Pkg__testAutoModus_Notbremse.exe
+  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\AH_testSuite_Pkg__tests_Pkg__testAutoModus_o_Autohold_HillHold.dll, line 0, character 0
+ ~AH_testSuite_Pkg__tests_Pkg__testAutoModus_o_Autohold_HillHold.dll
+  at file C:\Users\Christopher\Repositories\SSS2020-AutoHold\AH\AH_testsuite\Simulation\AH_testSuite_Pkg__tests_Pkg__testAutoModus_o_Autohold_HillHold.exe, line 0, character 0
+ ~AH_testSuite_Pkg__tests_Pkg__testAutoModus_o_Autohold_HillHold.exe
 $**************  SCADETOC Version 2020 R1 (build 20191209) **************
-** Generation date: 2020-05-28T14:24:14
+** Generation date: 2020-05-30T21:27:54
 ** sc2c.log
 *************************************************************$

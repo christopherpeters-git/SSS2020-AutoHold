@@ -5615,7 +5615,7 @@
 														<Size width="10504" height="3598"/>
 													</size>
 												</ActionGE>
-												<IfNodeGE labelWidth="4339" presentable="!ed/44e87/4B16/1104/5e945f195639">
+												<IfNodeGE labelWidth="4180" presentable="!ed/44e87/4B16/1104/5e945f195639">
 													<textAreas>
 														<TextArea text="(s_fzg &gt;= cS_00) and (s_fzg &lt; cS_01)" role="181"/>
 													</textAreas>
@@ -5623,7 +5623,7 @@
 														<Point x="2884" y="1640"/>
 													</position>
 												</IfNodeGE>
-												<IfNodeGE labelWidth="4339" presentable="!ed/44eb2/4B16/1104/5e945fe656ae">
+												<IfNodeGE labelWidth="4180" presentable="!ed/44eb2/4B16/1104/5e945fe656ae">
 													<textAreas>
 														<TextArea text="(s_fzg &gt;= cS_01) and (s_fzg &lt; cS_02)" role="181"/>
 													</textAreas>
@@ -5639,7 +5639,7 @@
 														<Size width="10504" height="3599"/>
 													</size>
 												</ActionGE>
-												<IfNodeGE labelWidth="4339" presentable="!ed/44ed0/4B16/1104/5e9460344d74">
+												<IfNodeGE labelWidth="4180" presentable="!ed/44ed0/4B16/1104/5e9460344d74">
 													<textAreas>
 														<TextArea text="(s_fzg &gt;= cS_02) and (s_fzg &lt; cS_03)" role="181"/>
 													</textAreas>
@@ -6041,6 +6041,18 @@
 										<ed:Variable oid="!ed/1fa16/69B/20BC/5e9eb082125c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
 											<comment>Der eingestellte EPB-Betriiebsmodus</comment>
 										</ed:Variable>
+									</pragmas>
+								</Variable>
+								<Variable name="betriebsbremsSperrventil">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Variable oid="!ed/168e3/4CCA/3DA8/5ed28ac03479"/>
 									</pragmas>
 								</Variable>
 							</outputs>
@@ -7009,6 +7021,22 @@
 										<ed:Equation oid="!ed/1fa17/69B/20BC/5e9eb08b1d61"/>
 									</pragmas>
 								</Equation>
+								<!-- betriebsbremsSperrventil = _L18; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="betriebsbremsSperrventil"/>
+									</lefts>
+									<right>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L18"/>
+											</path>
+										</IdExpression>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/168ee/4CCA/3DA8/5ed28ae87fd8"/>
+									</pragmas>
+								</Equation>
 							</data>
 							<pragmas>
 								<ed:Operator oid="!ed/33be8/4C3C/3E08/5e7a006679fb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
@@ -7034,7 +7062,7 @@
 												</EquationGE>
 												<Edge leftVarIndex="2" rightExprIndex="1" srcEquation="!ed/33bf0/4C3C/3E08/5e7a00e22b9c" dstEquation="!ed/33bea/4C3C/3E08/5e7a00e04f79">
 													<positions>
-														<Point x="34369" y="14870"/>
+														<Point x="34396" y="14870"/>
 														<Point x="35560" y="14870"/>
 														<Point x="35560" y="14870"/>
 														<Point x="36777" y="14870"/>
@@ -7106,10 +7134,10 @@
 												</EquationGE>
 												<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/33bf0/4C3C/3E08/5e7a00e22b9c" dstEquation="!ed/e1b9/5242/3780/5e81e1a155f1">
 													<positions>
-														<Point x="34369" y="9525"/>
-														<Point x="37042" y="9525"/>
-														<Point x="37042" y="9525"/>
-														<Point x="39740" y="9525"/>
+														<Point x="34396" y="9551"/>
+														<Point x="37042" y="9551"/>
+														<Point x="37042" y="9551"/>
+														<Point x="39740" y="9551"/>
 													</positions>
 												</Edge>
 												<EquationGE presentable="!ed/e1eb/5242/3780/5e81e29152a1">
@@ -7284,7 +7312,7 @@
 													<positions>
 														<Point x="8255" y="22437"/>
 														<Point x="32094" y="22437"/>
-														<Point x="32094" y="20188"/>
+														<Point x="32094" y="20214"/>
 													</positions>
 												</Edge>
 												<EquationGE presentable="!ed/1f938/65D4/4A44/5e95a6243cb9">
@@ -7508,6 +7536,22 @@
 														<Point x="18362" y="19420"/>
 														<Point x="18362" y="19420"/>
 														<Point x="18971" y="19420"/>
+													</positions>
+												</Edge>
+												<EquationGE presentable="!ed/168ee/4CCA/3DA8/5ed28ae87fd8">
+													<position>
+														<Point x="18971" y="18124"/>
+													</position>
+													<size>
+														<Size width="317" height="503"/>
+													</size>
+												</EquationGE>
+												<Edge leftVarIndex="9" rightExprIndex="1" srcEquation="!ed/33c4f/4C3C/3E08/5e7a0c36163e" dstEquation="!ed/168ee/4CCA/3DA8/5ed28ae87fd8">
+													<positions>
+														<Point x="17224" y="17806"/>
+														<Point x="18124" y="17806"/>
+														<Point x="18124" y="18389"/>
+														<Point x="19024" y="18389"/>
 													</positions>
 												</Edge>
 											</presentationElements>
