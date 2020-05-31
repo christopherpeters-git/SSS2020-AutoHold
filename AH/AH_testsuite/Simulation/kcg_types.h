@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/ma2/Desktop/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-05-31T13:05:04
+** Command: kcg66.exe -config E:/mkannathasan/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-31T14:48:10
 *************************************************************$ */
 #ifndef _KCG_TYPES_H_
 #define _KCG_TYPES_H_
@@ -281,29 +281,26 @@ typedef enum kcg_tag__2_SSM_ST_SM1 {
   SSM_st_AH_inaktiv_SM1,
   SSM_st_AH_aktiv_SM1
 } _2_SSM_ST_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_Notbremsung/SM1: */
+/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold_HillHold_NICHTFERTIG/SM1: */
 typedef enum kcg_tag_SSM_TR_SM1 {
   _11_SSM_TR_no_trans_SM1,
   SSM_TR_Start_zuendungEinschalten_1_Start_SM1,
   SSM_TR_zuendungEinschalten_bremspedalDurchtreten_1_zuendungEinschalten_SM1,
   SSM_TR_bremspedalDurchtreten_automastikModusEinstellen_1_bremspedalDurchtreten_SM1,
   SSM_TR_automastikModusEinstellen_automatikModusEingestellt_1_automastikModusEinstellen_SM1,
-  SSM_TR_automatikModusEingestellt_autoHoldEinschalten_1_automatikModusEingestellt_SM1,
+  SSM_TR_automatikModusEingestellt_cockpitanzeigeBleibtAus_1_automatikModusEingestellt_SM1,
   SSM_TR_cockpitanzeigeBleibtAus_betriebsbremseLoesen_1_cockpitanzeigeBleibtAus_SM1,
   SSM_TR_betriebsbremseLoesen_EPB_angezogen_1_betriebsbremseLoesen_SM1,
   SSM_TR_EPB_angezogen_anfahrenVorbereiten_1_EPB_angezogen_SM1,
   SSM_TR_anfahrenVorbereiten_EPB_arretiert_1_anfahrenVorbereiten_SM1,
   SSM_TR_EPB_arretiert_anfahren_1_EPB_arretiert_SM1,
-  SSM_TR_anfahren_fahren_1_anfahren_SM1,
-  SSM_TR_fahren_NotbremsungAusloesen_1_fahren_SM1,
-  SSM_TR_NotbremsungAusloesen_Notbremse_1_NotbremsungAusloesen_SM1,
-  SSM_TR_Notbremse_EPB_druecken_1_Notbremse_SM1,
-  SSM_TR_autoHoldEinschalten_cockpitanzeigeBleibtAus_1_autoHoldEinschalten_SM1,
-  SSM_TR_EPB_druecken_EPB_gedrueckt_1_EPB_druecken_SM1,
-  SSM_TR_EPB_gedrueckt_Fzg_Abstellen_1_EPB_gedrueckt_SM1,
-  SSM_TR_Fzg_Abstellen_EPB_gezogen_1_Fzg_Abstellen_SM1
+  SSM_TR_autoHoldEinschalten_fahren_1_autoHoldEinschalten_SM1,
+  SSM_TR_fahren_anhaltenMitAutoHold_1_fahren_SM1,
+  SSM_TR_anfahren_autoHoldEinschalten_1_anfahren_SM1,
+  SSM_TR_anhaltenMitAutoHold_haltImAutoHold_1_anhaltenMitAutoHold_SM1,
+  SSM_TR_haltImAutoHold_fzgSteht_1_haltImAutoHold_SM1
 } SSM_TR_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_Notbremsung/SM1: */
+/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold_HillHold_NICHTFERTIG/SM1: */
 typedef enum kcg_tag_SSM_ST_SM1 {
   SSM_st_Start_SM1,
   SSM_st_zuendungEinschalten_SM1,
@@ -315,48 +312,35 @@ typedef enum kcg_tag_SSM_ST_SM1 {
   SSM_st_EPB_angezogen_SM1,
   SSM_st_anfahrenVorbereiten_SM1,
   SSM_st_EPB_arretiert_SM1,
-  SSM_st_anfahren_SM1,
-  SSM_st_fahren_SM1,
-  SSM_st_NotbremsungAusloesen_SM1,
-  SSM_st_Notbremse_SM1,
   SSM_st_autoHoldEinschalten_SM1,
-  SSM_st_EPB_druecken_SM1,
-  SSM_st_EPB_gedrueckt_SM1,
-  SSM_st_Fzg_Abstellen_SM1,
-  SSM_st_EPB_gezogen_SM1
+  SSM_st_fahren_SM1,
+  SSM_st_anfahren_SM1,
+  SSM_st_anhaltenMitAutoHold_SM1,
+  SSM_st_haltImAutoHold_SM1,
+  SSM_st_fzgSteht_SM1
 } SSM_ST_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_Notbremsung/SM1:anfahren:SM2: */
+/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold_HillHold_NICHTFERTIG/SM1:autoHoldEinschalten:SM4: */
+typedef enum kcg_tag_SSM_TR_SM4_autoHoldEinschalten_SM1 {
+  SSM_TR_no_trans_SM4_autoHoldEinschalten_SM1,
+  SSM_TR_HoldDruecken_HoldLoesen_1_HoldDruecken_SM4_autoHoldEinschalten_SM1
+} SSM_TR_SM4_autoHoldEinschalten_SM1;
+/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold_HillHold_NICHTFERTIG/SM1:autoHoldEinschalten:SM4: */
+typedef enum kcg_tag_SSM_ST_SM4_autoHoldEinschalten_SM1 {
+  SSM_st_HoldDruecken_SM4_autoHoldEinschalten_SM1,
+  SSM_st_HoldLoesen_SM4_autoHoldEinschalten_SM1
+} SSM_ST_SM4_autoHoldEinschalten_SM1;
+/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold_HillHold_NICHTFERTIG/SM1:anfahren:SM2: */
 typedef enum kcg_tag_SSM_TR_SM2_anfahren_SM1 {
   SSM_TR_no_trans_SM2_anfahren_SM1,
   SSM_TR_bremspedalTreten_getriebe_auf_D_1_bremspedalTreten_SM2_anfahren_SM1,
   SSM_TR_getriebe_auf_D_gasGeben_1_getriebe_auf_D_SM2_anfahren_SM1
 } SSM_TR_SM2_anfahren_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_Notbremsung/SM1:anfahren:SM2: */
+/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold_HillHold_NICHTFERTIG/SM1:anfahren:SM2: */
 typedef enum kcg_tag_SSM_ST_SM2_anfahren_SM1 {
   SSM_st_bremspedalTreten_SM2_anfahren_SM1,
   SSM_st_getriebe_auf_D_SM2_anfahren_SM1,
   SSM_st_gasGeben_SM2_anfahren_SM1
 } SSM_ST_SM2_anfahren_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_Notbremsung/SM1:Notbremse:SM6: */
-typedef enum kcg_tag_SSM_TR_SM6_Notbremse_SM1 {
-  SSM_TR_no_trans_SM6_Notbremse_SM1,
-  SSM_TR_Fuss_vom_Gas_EPB_angezogen_1_Fuss_vom_Gas_SM6_Notbremse_SM1
-} SSM_TR_SM6_Notbremse_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_Notbremsung/SM1:Notbremse:SM6: */
-typedef enum kcg_tag_SSM_ST_SM6_Notbremse_SM1 {
-  SSM_st_Fuss_vom_Gas_SM6_Notbremse_SM1,
-  SSM_st_EPB_angezogen_SM6_Notbremse_SM1
-} SSM_ST_SM6_Notbremse_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_Notbremsung/SM1:autoHoldEinschalten:SM4: */
-typedef enum kcg_tag_SSM_TR_SM4_autoHoldEinschalten_SM1 {
-  SSM_TR_no_trans_SM4_autoHoldEinschalten_SM1,
-  SSM_TR_HoldDruecken_HoldLoesen_1_HoldDruecken_SM4_autoHoldEinschalten_SM1
-} SSM_TR_SM4_autoHoldEinschalten_SM1;
-/* AH_testSuite_Pkg::divFahrer::autoModus_Notbremsung/SM1:autoHoldEinschalten:SM4: */
-typedef enum kcg_tag_SSM_ST_SM4_autoHoldEinschalten_SM1 {
-  SSM_st_HoldDruecken_SM4_autoHoldEinschalten_SM1,
-  SSM_st_HoldLoesen_SM4_autoHoldEinschalten_SM1
-} SSM_ST_SM4_autoHoldEinschalten_SM1;
 /* AhTypes_Pkg::ah_Pkg::tasterHold_T/ */
 typedef on_off_element_T_AhTypes_Pkg_ah_Pkg tasterHold_T_AhTypes_Pkg_ah_Pkg;
 
@@ -393,6 +377,6 @@ typedef kcg_float64 t_in_s_T_AhTypes_Pkg_physical_Pkg;
 #endif /* _KCG_TYPES_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_types.h
-** Generation date: 2020-05-31T13:05:04
+** Generation date: 2020-05-31T14:48:10
 *************************************************************$ */
 

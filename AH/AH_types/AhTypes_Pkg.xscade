@@ -88,7 +88,7 @@
 								</NamedType>
 							</type>
 							<value>
-								<ConstValue value="0.0"/>
+								<ConstValue value="3.14"/>
 							</value>
 							<pragmas>
 								<ed:Constant oid="!ed/943b/67A6/43C4/5e6798976292" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">

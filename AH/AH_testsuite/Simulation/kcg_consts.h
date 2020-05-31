@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/ma2/Desktop/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-05-31T13:05:04
+** Command: kcg66.exe -config E:/mkannathasan/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-31T14:48:10
 *************************************************************$ */
 #ifndef _KCG_CONSTS_H_
 #define _KCG_CONSTS_H_
@@ -16,6 +16,9 @@
 
 /* AhTypes_Pkg::ah_Pkg::cMaxHillHoldAktivzeit/ */
 #define cMaxHillHoldAktivzeit_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(2.0))
+
+/* AhTypes_Pkg::ah_Pkg::cNotbremsDelay/ */
+#define cNotbremsDelay_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(2.0))
 
 /* AhTypes_Pkg::ah_Pkg::cMinGaspedalStellungFuerEpbLoesen/ */
 #define cMinGaspedalStellungFuerEpbLoesen_AhTypes_Pkg_ah_Pkg                  \
@@ -46,11 +49,11 @@
 
 /* simEnv_Pkg::mainPkg::cSteigung_5grad/ */
 #define cSteigung_5grad_simEnv_Pkg_mainPkg                                    \
-  (kcg_lit_float64(2.0) * kcg_lit_float64(0.0) * kcg_lit_float64(5.0) /       \
+  (kcg_lit_float64(2.0) * kcg_lit_float64(3.14) * kcg_lit_float64(5.0) /      \
     kcg_lit_float64(360.0))
 
 /* AhTypes_Pkg::physical_Pkg::pi/ */
-#define pi_AhTypes_Pkg_physical_Pkg (kcg_lit_float64(0.0))
+#define pi_AhTypes_Pkg_physical_Pkg (kcg_lit_float64(3.14))
 
 /* simEnv_Pkg::mainPkg::cSteigung_00/ */
 #define cSteigung_00_simEnv_Pkg_mainPkg (kcg_lit_float64(0.0))
@@ -67,17 +70,11 @@
 /* simEnv_Pkg::mainPkg::cS_00/ */
 #define cS_00_simEnv_Pkg_mainPkg (kcg_lit_float64(0.0))
 
-/* AhTypes_Pkg::ah_Pkg::cGaspedalLosgelassen/ */
-#define cGaspedalLosgelassen_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(0.0))
-
 /* AhTypes_Pkg::ah_Pkg::cBremspedalkraftLosgelassen/ */
 #define cBremspedalkraftLosgelassen_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(0.001))
 
 /* AhTypes_Pkg::ah_Pkg::cEpbModusDelay/ */
 #define cEpbModusDelay_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(5.0))
-
-/* AhTypes_Pkg::ah_Pkg::cNotbremsDelay/ */
-#define cNotbremsDelay_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(2.0))
 
 /* AhTypes_Pkg::ah_Pkg::cBremspedalkraftDurchgetreten/ */
 #define cBremspedalkraftDurchgetreten_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(0.8))
@@ -98,6 +95,6 @@
 #endif /* _KCG_CONSTS_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_consts.h
-** Generation date: 2020-05-31T13:05:04
+** Generation date: 2020-05-31T14:48:10
 *************************************************************$ */
 

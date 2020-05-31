@@ -1,17 +1,17 @@
 $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/ma2/Desktop/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-05-31T13:05:04
+** Command: kcg66.exe -config E:/mkannathasan/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-31T14:48:11
 *************************************************************$
 Data structures
   Structures
-    Max members in a single structure: 204
+    Max members in a single structure: 217
   Arrays
     Max number of dimensions for an array: 0
     Maximum size for a dimension: 0
   Enumeration
-    Max of enum constants in a single enumeration: 19
+    Max of enum constants in a single enumeration: 16
 Control structures
-  Max numbers of case labels in a switch: 19
+  Max numbers of case labels in a switch: 16
   Max number of nesting levels in compound statement: 3
 Program size
   Functions
@@ -20,10 +20,10 @@ Program size
   Expressions
     Max number of nesting levels of parenthesized expression in a full expression: 4
   Identifiers
-    Max number of identifiers with block scope declared in one block: 407
-    Max number of macro identifiers simultaneously defined in one preprocessing translation unit: 97
+    Max number of identifiers with block scope declared in one block: 344
+    Max number of macro identifiers simultaneously defined in one preprocessing translation unit: 96
     Max number of extern identifiers in one translation unit: 89
 $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_metrics.txt
-** Generation date: 2020-05-31T13:05:04
+** Generation date: 2020-05-31T14:48:11
 *************************************************************$

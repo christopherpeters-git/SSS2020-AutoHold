@@ -1,8 +1,8 @@
 *****************************
 *** Generated KCG H/Ads files ***
 *****************************
-testAutoModus_Notbremse_AH_testSuite_Pkg_tests_Pkg.h
-autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer.h
+testAutoModus_autoHold_Hi_AH_testSuite_Pkg_tests_Pkg.h
+autoModus_autoHold_HillHo_AH_testSuite_Pkg_divFahrer.h
 systemUhr_AhTypes_Pkg_utils_Pkg.h
 fzgIntegration_simEnv_Pkg_mainPkg.h
 EpbCtrl_AH_Pkg_main_Pkg.h
@@ -38,8 +38,8 @@ kcg_imported_functions.h
 *****************************
 *** Generated KCG C/Adb files ***
 *****************************
-testAutoModus_Notbremse_AH_testSuite_Pkg_tests_Pkg.c
-autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer.c
+testAutoModus_autoHold_Hi_AH_testSuite_Pkg_tests_Pkg.c
+autoModus_autoHold_HillHo_AH_testSuite_Pkg_divFahrer.c
 systemUhr_AhTypes_Pkg_utils_Pkg.c
 fzgIntegration_simEnv_Pkg_mainPkg.c
 EpbCtrl_AH_Pkg_main_Pkg.c

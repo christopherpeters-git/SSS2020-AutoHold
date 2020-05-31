@@ -1,9 +1,9 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/ma2/Desktop/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-05-31T13:05:04
+** Command: kcg66.exe -config E:/mkannathasan/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-31T14:48:11
 *************************************************************$ */
-#ifndef _autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer_H_
-#define _autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer_H_
+#ifndef _autoModus_autoHold_HillHo_AH_testSuite_Pkg_divFahrer_H_
+#define _autoModus_autoHold_HillHo_AH_testSuite_Pkg_divFahrer_H_
 
 #include "kcg_types.h"
 #include "countDownTimer_AhTypes_Pkg_utils_Pkg.h"
@@ -21,7 +21,7 @@ typedef struct {
   sicherheitsgurt_zustand_T_AhTypes_Pkg_ah_Pkg /* sicherheitsgurtSchalter/ */ sicherheitsgurtSchalter;
   tasterP_T_AhTypes_Pkg_ah_Pkg /* taste_P/ */ taste_P;
   tasterHold_T_AhTypes_Pkg_ah_Pkg /* taste_Hold/ */ taste_Hold;
-  kcg_float64 /* gaspedalStellung/ */ gaspedalStellung;
+  gaspedalstellung_T_AhTypes_Pkg_ah_Pkg /* gaspedalStellung/ */ gaspedalStellung;
   bremspedalkraft_T_AhTypes_Pkg_ah_Pkg /* bremspedalKraft/ */ bremspedalKraft;
   kcg_bool /* error/ */ error;
   /* -----------------------  no local probes  ----------------------- */
@@ -38,17 +38,13 @@ typedef struct {
   kcg_bool init8;
   kcg_bool init9;
   kcg_bool init10;
-  kcg_bool init11;
+  kcg_bool /* SM1:autoHoldEinschalten:SM4: */ SM4_reset_nxt_autoHoldEinschalten_SM1;
+  kcg_bool /* SM1:autoHoldEinschalten:SM4: */ SM4_reset_act_autoHoldEinschalten_SM1;
+  SSM_ST_SM4_autoHoldEinschalten_SM1 /* SM1:autoHoldEinschalten:SM4: */ SM4_state_nxt_autoHoldEinschalten_SM1;
   kcg_bool /* SM1:anfahren:SM2: */ SM2_reset_nxt_anfahren_SM1;
   kcg_bool /* SM1:anfahren:SM2: */ SM2_reset_act_anfahren_SM1;
   SSM_ST_SM2_anfahren_SM1 /* SM1:anfahren:SM2: */ SM2_state_nxt_anfahren_SM1;
   kcg_float64 /* SM1:anfahren:SM2:gasGeben:_L4/ */ _L4_gasGeben_SM2_anfahren_SM1;
-  kcg_bool /* SM1:Notbremse:SM6: */ SM6_reset_nxt_Notbremse_SM1;
-  kcg_bool /* SM1:Notbremse:SM6: */ SM6_reset_act_Notbremse_SM1;
-  SSM_ST_SM6_Notbremse_SM1 /* SM1:Notbremse:SM6: */ SM6_state_nxt_Notbremse_SM1;
-  kcg_bool /* SM1:autoHoldEinschalten:SM4: */ SM4_reset_nxt_autoHoldEinschalten_SM1;
-  kcg_bool /* SM1:autoHoldEinschalten:SM4: */ SM4_reset_act_autoHoldEinschalten_SM1;
-  SSM_ST_SM4_autoHoldEinschalten_SM1 /* SM1:autoHoldEinschalten:SM4: */ SM4_state_nxt_autoHoldEinschalten_SM1;
   SSM_ST_SM1 /* SM1: */ SM1_state_nxt;
   kcg_bool /* SM1: */ SM1_reset_act;
   kcg_bool /* SM1: */ SM1_reset_nxt;
@@ -59,13 +55,12 @@ typedef struct {
   outC_countDownTimer_AhTypes_Pkg_utils_Pkg /* SM1:EPB_angezogen:_L10=(AhTypes_Pkg::utils_Pkg::countDownTimer#4)/ */ Context_countDownTimer_4;
   outC_countDownTimer_AhTypes_Pkg_utils_Pkg /* SM1:EPB_arretiert:_L10=(AhTypes_Pkg::utils_Pkg::countDownTimer#5)/ */ Context_countDownTimer_5;
   outC_countDownTimer_AhTypes_Pkg_utils_Pkg /* SM1:fahren:_L1=(AhTypes_Pkg::utils_Pkg::countDownTimer#6)/ */ Context_countDownTimer_6;
-  outC_countDownTimer_AhTypes_Pkg_utils_Pkg /* SM1:NotbremsungAusloesen:_L4=(AhTypes_Pkg::utils_Pkg::countDownTimer#10)/ */ Context_countDownTimer_10;
-  outC_countDownTimer_AhTypes_Pkg_utils_Pkg /* SM1:EPB_gezogen:_L30=(AhTypes_Pkg::utils_Pkg::countDownTimer#23)/ */ Context_countDownTimer_23;
+  outC_countDownTimer_AhTypes_Pkg_utils_Pkg /* SM1:haltImAutoHold:_L9=(AhTypes_Pkg::utils_Pkg::countDownTimer#7)/ */ Context_countDownTimer_7;
+  outC_countDownTimer_AhTypes_Pkg_utils_Pkg /* SM1:fzgSteht:_L9=(AhTypes_Pkg::utils_Pkg::countDownTimer#8)/ */ Context_countDownTimer_8;
   /* ------------------ clocks of observable data -------------------- */
   kcg_bool /* SM1:automastikModusEinstellen: */ automastikModusEinstellen_weakb_clock_SM1;
-  SSM_ST_SM2_anfahren_SM1 /* SM1:anfahren:SM2: */ SM2_clock_anfahren_SM1;
-  SSM_ST_SM6_Notbremse_SM1 /* SM1:Notbremse:SM6: */ SM6_clock_Notbremse_SM1;
   SSM_ST_SM4_autoHoldEinschalten_SM1 /* SM1:autoHoldEinschalten:SM4: */ SM4_clock_autoHoldEinschalten_SM1;
+  SSM_ST_SM2_anfahren_SM1 /* SM1:anfahren:SM2: */ SM2_clock_anfahren_SM1;
   SSM_ST_SM1 /* SM1: */ SM1_state_act;
   /* -------------------- (-debug) no assertions  -------------------- */
   /* ------------------- (-debug) local variables -------------------- */
@@ -141,39 +136,6 @@ typedef struct {
   kcg_bool /* SM1:EPB_arretiert:_L13/ */ _L13_EPB_arretiert_SM1;
   kcg_bool /* SM1:EPB_arretiert:_L3/ */ _L3_EPB_arretiert_SM1;
   epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_arretiert:_L1/ */ _L1_EPB_arretiert_SM1;
-  SSM_TR_SM2_anfahren_SM1 /* SM1:anfahren:SM2: */ SM2_fired_anfahren_SM1;
-  SSM_TR_SM2_anfahren_SM1 /* SM1:anfahren:SM2: */ SM2_fired_strong_anfahren_SM1;
-  SSM_ST_SM2_anfahren_SM1 /* SM1:anfahren:SM2: */ SM2_state_act_anfahren_SM1;
-  SSM_ST_SM2_anfahren_SM1 /* SM1:anfahren:SM2: */ SM2_state_sel_anfahren_SM1;
-  bremspedalkraft_T_AhTypes_Pkg_ah_Pkg /* SM1:anfahren:SM2:gasGeben:_L7/ */ _L7_gasGeben_SM2_anfahren_SM1;
-  kcg_float64 /* SM1:anfahren:SM2:gasGeben:_L6/ */ _L6_gasGeben_SM2_anfahren_SM1;
-  kcg_float64 /* SM1:anfahren:SM2:gasGeben:_L3/ */ _L3_gasGeben_SM2_anfahren_SM1;
-  gaspedalstellung_T_AhTypes_Pkg_ah_Pkg /* SM1:anfahren:SM2:gasGeben:_L2/ */ _L2_gasGeben_SM2_anfahren_SM1;
-  kcg_bool /* SM1:anfahren:SM2:gasGeben:_L8/ */ _L8_gasGeben_SM2_anfahren_SM1;
-  getriebeWahlhebel_T_AhTypes_Pkg_ah_Pkg /* SM1:anfahren:SM2:getriebe_auf_D:_L1/ */ _L1_getriebe_auf_D_SM2_anfahren_SM1;
-  betriebsbremsdruck_T_AhTypes_Pkg_ah_Pkg /* SM1:anfahren:SM2:bremspedalTreten:_L1/ */ _L1_bremspedalTreten_SM2_anfahren_SM1;
-  kcg_bool /* SM1:anfahren:SM2:bremspedalTreten:_L2/ */ _L2_bremspedalTreten_SM2_anfahren_SM1;
-  kcg_bool /* SM1:fahren:_L2/ */ _L2_fahren_SM1;
-  kcg_bool /* SM1:fahren:_L1/ */ _L1_fahren_SM1;
-  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:fahren:_L3/ */ _L3_fahren_SM1;
-  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:fahren:_L4/ */ _L4_fahren_SM1;
-  kcg_bool /* SM1:fahren:_L5/ */ _L5_fahren_SM1;
-  kcg_bool /* SM1:fahren:_L6/ */ _L6_fahren_SM1;
-  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:NotbremsungAusloesen:_L8/ */ _L8_NotbremsungAusloesen_SM1;
-  kcg_bool /* SM1:NotbremsungAusloesen:_L2/ */ _L2_NotbremsungAusloesen_SM1;
-  kcg_bool /* SM1:NotbremsungAusloesen:_L3/ */ _L3_NotbremsungAusloesen_SM1;
-  kcg_bool /* SM1:NotbremsungAusloesen:_L5/ */ _L5_NotbremsungAusloesen_SM1;
-  kcg_bool /* SM1:NotbremsungAusloesen:_L4/ */ _L4_NotbremsungAusloesen_SM1;
-  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:NotbremsungAusloesen:_L7/ */ _L7_NotbremsungAusloesen_SM1;
-  tasterP_T_AhTypes_Pkg_ah_Pkg /* SM1:NotbremsungAusloesen:_L1/ */ _L1_NotbremsungAusloesen_SM1;
-  SSM_TR_SM6_Notbremse_SM1 /* SM1:Notbremse:SM6: */ SM6_fired_Notbremse_SM1;
-  SSM_TR_SM6_Notbremse_SM1 /* SM1:Notbremse:SM6: */ SM6_fired_strong_Notbremse_SM1;
-  SSM_ST_SM6_Notbremse_SM1 /* SM1:Notbremse:SM6: */ SM6_state_act_Notbremse_SM1;
-  SSM_ST_SM6_Notbremse_SM1 /* SM1:Notbremse:SM6: */ SM6_state_sel_Notbremse_SM1;
-  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:Notbremse:SM6:EPB_angezogen:_L3/ */ _L3_EPB_angezogen_SM6_Notbremse_SM1;
-  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:Notbremse:SM6:EPB_angezogen:_L2/ */ _L2_EPB_angezogen_SM6_Notbremse_SM1;
-  kcg_bool /* SM1:Notbremse:SM6:EPB_angezogen:_L1/ */ _L1_EPB_angezogen_SM6_Notbremse_SM1;
-  kcg_float64 /* SM1:Notbremse:SM6:Fuss_vom_Gas:_L1/ */ _L1_Fuss_vom_Gas_SM6_Notbremse_SM1;
   SSM_TR_SM4_autoHoldEinschalten_SM1 /* SM1:autoHoldEinschalten:SM4: */ SM4_fired_autoHoldEinschalten_SM1;
   SSM_TR_SM4_autoHoldEinschalten_SM1 /* SM1:autoHoldEinschalten:SM4: */ SM4_fired_strong_autoHoldEinschalten_SM1;
   SSM_ST_SM4_autoHoldEinschalten_SM1 /* SM1:autoHoldEinschalten:SM4: */ SM4_state_act_autoHoldEinschalten_SM1;
@@ -187,49 +149,100 @@ typedef struct {
   on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:autoHoldEinschalten:SM4:HoldDruecken:_L2/ */ _L2_HoldDruecken_SM4_autoHoldEinschalten_SM1;
   on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:autoHoldEinschalten:SM4:HoldDruecken:_L3/ */ _L3_HoldDruecken_SM4_autoHoldEinschalten_SM1;
   kcg_bool /* SM1:autoHoldEinschalten:SM4:HoldDruecken:_L4/ */ _L4_HoldDruecken_SM4_autoHoldEinschalten_SM1;
-  tasterP_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_druecken:_L1/ */ _L1_EPB_druecken_SM1;
-  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gedrueckt:_L10/ */ _L10_EPB_gedrueckt_SM1;
-  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gedrueckt:_L9/ */ _L9_EPB_gedrueckt_SM1;
-  kcg_bool /* SM1:EPB_gedrueckt:_L8/ */ _L8_EPB_gedrueckt_SM1;
-  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gedrueckt:_L7/ */ _L7_EPB_gedrueckt_SM1;
-  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gedrueckt:_L6/ */ _L6_EPB_gedrueckt_SM1;
-  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gedrueckt:_L5/ */ _L5_EPB_gedrueckt_SM1;
-  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gedrueckt:_L4/ */ _L4_EPB_gedrueckt_SM1;
-  kcg_bool /* SM1:EPB_gedrueckt:_L3/ */ _L3_EPB_gedrueckt_SM1;
-  kcg_bool /* SM1:EPB_gedrueckt:_L2/ */ _L2_EPB_gedrueckt_SM1;
-  kcg_bool /* SM1:EPB_gedrueckt:_L1/ */ _L1_EPB_gedrueckt_SM1;
-  getriebeWahlhebel_T_AhTypes_Pkg_ah_Pkg /* SM1:Fzg_Abstellen:_L2/ */ _L2_Fzg_Abstellen_SM1;
-  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:EPB_gezogen:_L28/ */ _L28_EPB_gezogen_SM1;
-  kcg_bool /* SM1:EPB_gezogen:_L29/ */ _L29_EPB_gezogen_SM1;
-  kcg_bool /* SM1:EPB_gezogen:_L31/ */ _L31_EPB_gezogen_SM1;
-  kcg_bool /* SM1:EPB_gezogen:_L30/ */ _L30_EPB_gezogen_SM1;
-  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:EPB_gezogen:_L32/ */ _L32_EPB_gezogen_SM1;
-  kcg_bool /* SM1:EPB_gezogen:_L33/ */ _L33_EPB_gezogen_SM1;
-  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gezogen:_L10/ */ _L10_EPB_gezogen_SM1;
-  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gezogen:_L9/ */ _L9_EPB_gezogen_SM1;
-  kcg_bool /* SM1:EPB_gezogen:_L8/ */ _L8_EPB_gezogen_SM1;
-  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gezogen:_L7/ */ _L7_EPB_gezogen_SM1;
-  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gezogen:_L6/ */ _L6_EPB_gezogen_SM1;
-  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gezogen:_L5/ */ _L5_EPB_gezogen_SM1;
-  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:EPB_gezogen:_L4/ */ _L4_EPB_gezogen_SM1;
-  kcg_bool /* SM1:EPB_gezogen:_L3/ */ _L3_EPB_gezogen_SM1;
-  kcg_bool /* SM1:EPB_gezogen:_L2/ */ _L2_EPB_gezogen_SM1;
-  kcg_bool /* SM1:EPB_gezogen:_L1/ */ _L1_EPB_gezogen_SM1;
+  kcg_bool /* SM1:fahren:_L2/ */ _L2_fahren_SM1;
+  kcg_bool /* SM1:fahren:_L1/ */ _L1_fahren_SM1;
+  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:fahren:_L3/ */ _L3_fahren_SM1;
+  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:fahren:_L4/ */ _L4_fahren_SM1;
+  kcg_bool /* SM1:fahren:_L5/ */ _L5_fahren_SM1;
+  kcg_bool /* SM1:fahren:_L6/ */ _L6_fahren_SM1;
+  SSM_TR_SM2_anfahren_SM1 /* SM1:anfahren:SM2: */ SM2_fired_anfahren_SM1;
+  SSM_TR_SM2_anfahren_SM1 /* SM1:anfahren:SM2: */ SM2_fired_strong_anfahren_SM1;
+  SSM_ST_SM2_anfahren_SM1 /* SM1:anfahren:SM2: */ SM2_state_act_anfahren_SM1;
+  SSM_ST_SM2_anfahren_SM1 /* SM1:anfahren:SM2: */ SM2_state_sel_anfahren_SM1;
+  bremspedalkraft_T_AhTypes_Pkg_ah_Pkg /* SM1:anfahren:SM2:gasGeben:_L7/ */ _L7_gasGeben_SM2_anfahren_SM1;
+  kcg_float64 /* SM1:anfahren:SM2:gasGeben:_L6/ */ _L6_gasGeben_SM2_anfahren_SM1;
+  kcg_bool /* SM1:anfahren:SM2:gasGeben:_L5/ */ _L5_gasGeben_SM2_anfahren_SM1;
+  kcg_float64 /* SM1:anfahren:SM2:gasGeben:_L3/ */ _L3_gasGeben_SM2_anfahren_SM1;
+  gaspedalstellung_T_AhTypes_Pkg_ah_Pkg /* SM1:anfahren:SM2:gasGeben:_L2/ */ _L2_gasGeben_SM2_anfahren_SM1;
+  getriebeWahlhebel_T_AhTypes_Pkg_ah_Pkg /* SM1:anfahren:SM2:getriebe_auf_D:_L1/ */ _L1_getriebe_auf_D_SM2_anfahren_SM1;
+  betriebsbremsdruck_T_AhTypes_Pkg_ah_Pkg /* SM1:anfahren:SM2:bremspedalTreten:_L1/ */ _L1_bremspedalTreten_SM2_anfahren_SM1;
+  kcg_bool /* SM1:anfahren:SM2:bremspedalTreten:_L2/ */ _L2_bremspedalTreten_SM2_anfahren_SM1;
+  betriebsbremsdruck_T_AhTypes_Pkg_ah_Pkg /* SM1:anhaltenMitAutoHold:_L26/ */ _L26_anhaltenMitAutoHold_SM1;
+  kcg_float64 /* SM1:anhaltenMitAutoHold:_L25/ */ _L25_anhaltenMitAutoHold_SM1;
+  kcg_bool /* SM1:anhaltenMitAutoHold:_L24/ */ _L24_anhaltenMitAutoHold_SM1;
+  kcg_bool /* SM1:anhaltenMitAutoHold:_L23/ */ _L23_anhaltenMitAutoHold_SM1;
+  kcg_bool /* SM1:anhaltenMitAutoHold:_L22/ */ _L22_anhaltenMitAutoHold_SM1;
+  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:anhaltenMitAutoHold:_L21/ */ _L21_anhaltenMitAutoHold_SM1;
+  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:anhaltenMitAutoHold:_L20/ */ _L20_anhaltenMitAutoHold_SM1;
+  kcg_bool /* SM1:anhaltenMitAutoHold:_L19/ */ _L19_anhaltenMitAutoHold_SM1;
+  kcg_bool /* SM1:anhaltenMitAutoHold:_L18/ */ _L18_anhaltenMitAutoHold_SM1;
+  kcg_bool /* SM1:anhaltenMitAutoHold:_L17/ */ _L17_anhaltenMitAutoHold_SM1;
+  v_in_mps_T_AhTypes_Pkg_physical_Pkg /* SM1:anhaltenMitAutoHold:_L16/ */ _L16_anhaltenMitAutoHold_SM1;
+  v_in_mps_T_AhTypes_Pkg_physical_Pkg /* SM1:anhaltenMitAutoHold:_L15/ */ _L15_anhaltenMitAutoHold_SM1;
+  kcg_bool /* SM1:anhaltenMitAutoHold:_L14/ */ _L14_anhaltenMitAutoHold_SM1;
+  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:anhaltenMitAutoHold:_L13/ */ _L13_anhaltenMitAutoHold_SM1;
+  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:anhaltenMitAutoHold:_L12/ */ _L12_anhaltenMitAutoHold_SM1;
+  kcg_float64 /* SM1:anhaltenMitAutoHold:_L11/ */ _L11_anhaltenMitAutoHold_SM1;
+  kcg_float64 /* SM1:anhaltenMitAutoHold:_L9/ */ _L9_anhaltenMitAutoHold_SM1;
+  bremspedalkraft_T_AhTypes_Pkg_ah_Pkg /* SM1:haltImAutoHold:_L57/ */ _L57_haltImAutoHold_SM1;
+  kcg_bool /* SM1:haltImAutoHold:_L55/ */ _L55_haltImAutoHold_SM1;
+  betriebsbremsdruck_T_AhTypes_Pkg_ah_Pkg /* SM1:haltImAutoHold:_L54/ */ _L54_haltImAutoHold_SM1;
+  kcg_bool /* SM1:haltImAutoHold:_L43/ */ _L43_haltImAutoHold_SM1;
+  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:haltImAutoHold:_L42/ */ _L42_haltImAutoHold_SM1;
+  kcg_bool /* SM1:haltImAutoHold:_L32/ */ _L32_haltImAutoHold_SM1;
+  kcg_bool /* SM1:haltImAutoHold:_L34/ */ _L34_haltImAutoHold_SM1;
+  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:haltImAutoHold:_L35/ */ _L35_haltImAutoHold_SM1;
+  kcg_bool /* SM1:haltImAutoHold:_L36/ */ _L36_haltImAutoHold_SM1;
+  v_in_mps_T_AhTypes_Pkg_physical_Pkg /* SM1:haltImAutoHold:_L38/ */ _L38_haltImAutoHold_SM1;
+  v_in_mps_T_AhTypes_Pkg_physical_Pkg /* SM1:haltImAutoHold:_L40/ */ _L40_haltImAutoHold_SM1;
+  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:haltImAutoHold:_L41/ */ _L41_haltImAutoHold_SM1;
+  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:haltImAutoHold:_L11/ */ _L11_haltImAutoHold_SM1;
+  kcg_bool /* SM1:haltImAutoHold:_L5/ */ _L5_haltImAutoHold_SM1;
+  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:haltImAutoHold:_L6/ */ _L6_haltImAutoHold_SM1;
+  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:haltImAutoHold:_L7/ */ _L7_haltImAutoHold_SM1;
+  kcg_bool /* SM1:haltImAutoHold:_L8/ */ _L8_haltImAutoHold_SM1;
+  kcg_bool /* SM1:haltImAutoHold:_L10/ */ _L10_haltImAutoHold_SM1;
+  kcg_bool /* SM1:haltImAutoHold:_L9/ */ _L9_haltImAutoHold_SM1;
+  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:haltImAutoHold:_L2/ */ _L2_haltImAutoHold_SM1;
+  kcg_bool /* SM1:haltImAutoHold:_L3/ */ _L3_haltImAutoHold_SM1;
+  kcg_float64 /* SM1:haltImAutoHold:_L1/ */ _L1_haltImAutoHold_SM1;
+  bremspedalkraft_T_AhTypes_Pkg_ah_Pkg /* SM1:fzgSteht:_L57/ */ _L57_fzgSteht_SM1;
+  kcg_bool /* SM1:fzgSteht:_L55/ */ _L55_fzgSteht_SM1;
+  betriebsbremsdruck_T_AhTypes_Pkg_ah_Pkg /* SM1:fzgSteht:_L54/ */ _L54_fzgSteht_SM1;
+  kcg_bool /* SM1:fzgSteht:_L43/ */ _L43_fzgSteht_SM1;
+  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:fzgSteht:_L42/ */ _L42_fzgSteht_SM1;
+  kcg_bool /* SM1:fzgSteht:_L32/ */ _L32_fzgSteht_SM1;
+  kcg_bool /* SM1:fzgSteht:_L34/ */ _L34_fzgSteht_SM1;
+  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:fzgSteht:_L35/ */ _L35_fzgSteht_SM1;
+  kcg_bool /* SM1:fzgSteht:_L36/ */ _L36_fzgSteht_SM1;
+  v_in_mps_T_AhTypes_Pkg_physical_Pkg /* SM1:fzgSteht:_L38/ */ _L38_fzgSteht_SM1;
+  v_in_mps_T_AhTypes_Pkg_physical_Pkg /* SM1:fzgSteht:_L40/ */ _L40_fzgSteht_SM1;
+  on_off_element_T_AhTypes_Pkg_ah_Pkg /* SM1:fzgSteht:_L41/ */ _L41_fzgSteht_SM1;
+  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:fzgSteht:_L11/ */ _L11_fzgSteht_SM1;
+  kcg_bool /* SM1:fzgSteht:_L5/ */ _L5_fzgSteht_SM1;
+  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:fzgSteht:_L6/ */ _L6_fzgSteht_SM1;
+  t_in_s_T_AhTypes_Pkg_physical_Pkg /* SM1:fzgSteht:_L7/ */ _L7_fzgSteht_SM1;
+  kcg_bool /* SM1:fzgSteht:_L8/ */ _L8_fzgSteht_SM1;
+  kcg_bool /* SM1:fzgSteht:_L10/ */ _L10_fzgSteht_SM1;
+  kcg_bool /* SM1:fzgSteht:_L9/ */ _L9_fzgSteht_SM1;
+  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* SM1:fzgSteht:_L2/ */ _L2_fzgSteht_SM1;
+  kcg_bool /* SM1:fzgSteht:_L3/ */ _L3_fzgSteht_SM1;
   SSM_ST_SM1 /* SM1: */ SM1_state_sel;
   SSM_TR_SM1 /* SM1: */ SM1_fired_strong;
   SSM_TR_SM1 /* SM1: */ SM1_fired;
   kcg_bool /* ready/ */ ready;
-  on_off_element_T_AhTypes_Pkg_ah_Pkg /* _L3/ */ _L3;
-  on_off_element_T_AhTypes_Pkg_ah_Pkg /* _L4/ */ _L4;
+  on_off_element_T_AhTypes_Pkg_ah_Pkg /* _L1/ */ _L1;
+  on_off_element_T_AhTypes_Pkg_ah_Pkg /* _L2/ */ _L2;
   on_off_element_T_AhTypes_Pkg_ah_Pkg /* _L5/ */ _L5;
   on_off_element_T_AhTypes_Pkg_ah_Pkg /* _L6/ */ _L6;
   betriebsbremsdruck_T_AhTypes_Pkg_ah_Pkg /* _L7/ */ _L7;
+  epbBremszustand_T_AhTypes_Pkg_ah_Pkg /* _L8/ */ _L8;
   angle_in_rad_T_AhTypes_Pkg_physical_Pkg /* _L10/ */ _L10;
-} outC_autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer;
+} outC_autoModus_autoHold_HillHo_AH_testSuite_Pkg_divFahrer;
 
 /* ===========  node initialization and cycle functions  =========== */
-/* AH_testSuite_Pkg::divFahrer::autoModus_Notbremsung/ */
-extern void autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer(
+/* AH_testSuite_Pkg::divFahrer::autoModus_autoHold_HillHold_NICHTFERTIG/ */
+extern void autoModus_autoHold_HillHo_AH_testSuite_Pkg_divFahrer(
   /* led_P/ */
   on_off_element_T_AhTypes_Pkg_ah_Pkg led_P,
   /* cockpitAnzeige_P/ */
@@ -254,23 +267,23 @@ extern void autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer(
   epbBetriebsmodus_T_AhTypes_Pkg_ah_Pkg epbBetriebsmodus,
   /* aktZeit/ */
   t_in_s_T_AhTypes_Pkg_physical_Pkg aktZeit,
-  outC_autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer *outC);
+  outC_autoModus_autoHold_HillHo_AH_testSuite_Pkg_divFahrer *outC);
 
 #ifndef KCG_NO_EXTERN_CALL_TO_RESET
-extern void autoModus_Notbremsung_reset_AH_testSuite_Pkg_divFahrer(
-  outC_autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer *outC);
+extern void autoModus_autoHold_HillHo_reset_AH_testSuite_Pkg_divFahrer(
+  outC_autoModus_autoHold_HillHo_AH_testSuite_Pkg_divFahrer *outC);
 #endif /* KCG_NO_EXTERN_CALL_TO_RESET */
 
 #ifndef KCG_USER_DEFINED_INIT
-extern void autoModus_Notbremsung_init_AH_testSuite_Pkg_divFahrer(
-  outC_autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer *outC);
+extern void autoModus_autoHold_HillHo_init_AH_testSuite_Pkg_divFahrer(
+  outC_autoModus_autoHold_HillHo_AH_testSuite_Pkg_divFahrer *outC);
 #endif /* KCG_USER_DEFINED_INIT */
 
 
 
-#endif /* _autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer_H_ */
+#endif /* _autoModus_autoHold_HillHo_AH_testSuite_Pkg_divFahrer_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer.h
-** Generation date: 2020-05-31T13:05:04
+** autoModus_autoHold_HillHo_AH_testSuite_Pkg_divFahrer.h
+** Generation date: 2020-05-31T14:48:11
 *************************************************************$ */
 

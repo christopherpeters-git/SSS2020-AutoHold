@@ -39,7 +39,6 @@ static bremspedalkraft_T_AhTypes_Pkg_ah_Pkg const TU_cBremspedalkraftLosgelassen
 static t_in_s_T_AhTypes_Pkg_physical_Pkg const TU_cMaxHillHoldAktivzeit_AhTypes_Pkg_ah_Pkg = cMaxHillHoldAktivzeit_AhTypes_Pkg_ah_Pkg;
 static kcg_float64 const TU_cSteigung2GaspedalFaktor_AhTypes_Pkg_ah_Pkg = cSteigung2GaspedalFaktor_AhTypes_Pkg_ah_Pkg;
 static t_in_s_T_AhTypes_Pkg_physical_Pkg const TU_cWartenBisEPBnachAutoHold_AhTypes_Pkg_ah_Pkg = cWartenBisEPBnachAutoHold_AhTypes_Pkg_ah_Pkg;
-static kcg_float64 const TU_cGaspedalLosgelassen_AhTypes_Pkg_ah_Pkg = cGaspedalLosgelassen_AhTypes_Pkg_ah_Pkg;
 static m_in_kg_T_AhTypes_Pkg_physical_Pkg const TU_cFzgMasse_AhTypes_Pkg_fzg_Pkg = cFzgMasse_AhTypes_Pkg_fzg_Pkg;
 static p_in_W_T_AhTypes_Pkg_physical_Pkg const TU_cFzgMaxBetriebsbremsleistung_AhTypes_Pkg_fzg_Pkg = cFzgMaxBetriebsbremsleistung_AhTypes_Pkg_fzg_Pkg;
 static p_in_W_T_AhTypes_Pkg_physical_Pkg const TU_cFzgMaxMotorleistung_AhTypes_Pkg_fzg_Pkg = cFzgMaxMotorleistung_AhTypes_Pkg_fzg_Pkg;
@@ -2842,8 +2841,6 @@ static SimConstValUtils const kcg_float64_constants[] = {
     { "cSteigung2GaspedalFaktor", &TU_cSteigung2GaspedalFaktor_AhTypes_Pkg_ah_Pkg },
     { "AhTypes_Pkg::ah_Pkg::cWartenBisEPBnachAutoHold", &TU_cWartenBisEPBnachAutoHold_AhTypes_Pkg_ah_Pkg },
     { "cWartenBisEPBnachAutoHold", &TU_cWartenBisEPBnachAutoHold_AhTypes_Pkg_ah_Pkg },
-    { "AhTypes_Pkg::ah_Pkg::cGaspedalLosgelassen", &TU_cGaspedalLosgelassen_AhTypes_Pkg_ah_Pkg },
-    { "cGaspedalLosgelassen", &TU_cGaspedalLosgelassen_AhTypes_Pkg_ah_Pkg },
     { "AhTypes_Pkg::fzg_Pkg::cFzgMasse", &TU_cFzgMasse_AhTypes_Pkg_fzg_Pkg },
     { "cFzgMasse", &TU_cFzgMasse_AhTypes_Pkg_fzg_Pkg },
     { "AhTypes_Pkg::fzg_Pkg::cFzgMaxBetriebsbremsleistung", &TU_cFzgMaxBetriebsbremsleistung_AhTypes_Pkg_fzg_Pkg },
@@ -5149,26 +5146,20 @@ static SimEnumValUtils SSM_ST_SM1_values[] = {
     { "anfahrenVorbereiten", SSM_st_anfahrenVorbereiten_SM1},
     { "EPB_arretiert", SSM_st_EPB_arretiert_SM1},
     { "EPB_arretiert", SSM_st_EPB_arretiert_SM1},
-    { "anfahren", SSM_st_anfahren_SM1},
-    { "anfahren", SSM_st_anfahren_SM1},
-    { "fahren", SSM_st_fahren_SM1},
-    { "fahren", SSM_st_fahren_SM1},
-    { "NotbremsungAusloesen", SSM_st_NotbremsungAusloesen_SM1},
-    { "NotbremsungAusloesen", SSM_st_NotbremsungAusloesen_SM1},
-    { "Notbremse", SSM_st_Notbremse_SM1},
-    { "Notbremse", SSM_st_Notbremse_SM1},
     { "autoHoldEinschalten", SSM_st_autoHoldEinschalten_SM1},
     { "autoHoldEinschalten", SSM_st_autoHoldEinschalten_SM1},
-    { "EPB_druecken", SSM_st_EPB_druecken_SM1},
-    { "EPB_druecken", SSM_st_EPB_druecken_SM1},
-    { "EPB_gedrueckt", SSM_st_EPB_gedrueckt_SM1},
-    { "EPB_gedrueckt", SSM_st_EPB_gedrueckt_SM1},
-    { "Fzg_Abstellen", SSM_st_Fzg_Abstellen_SM1},
-    { "Fzg_Abstellen", SSM_st_Fzg_Abstellen_SM1},
-    { "EPB_gezogen", SSM_st_EPB_gezogen_SM1},
-    { "EPB_gezogen", SSM_st_EPB_gezogen_SM1},
+    { "fahren", SSM_st_fahren_SM1},
+    { "fahren", SSM_st_fahren_SM1},
+    { "anfahren", SSM_st_anfahren_SM1},
+    { "anfahren", SSM_st_anfahren_SM1},
+    { "anhaltenMitAutoHold", SSM_st_anhaltenMitAutoHold_SM1},
+    { "anhaltenMitAutoHold", SSM_st_anhaltenMitAutoHold_SM1},
+    { "haltImAutoHold", SSM_st_haltImAutoHold_SM1},
+    { "haltImAutoHold", SSM_st_haltImAutoHold_SM1},
+    { "fzgSteht", SSM_st_fzgSteht_SM1},
+    { "fzgSteht", SSM_st_fzgSteht_SM1},
 };
-const int SSM_ST_SM1_nb_values = 38;
+const int SSM_ST_SM1_nb_values = 32;
 
 int SSM_ST_SM1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
@@ -5601,156 +5592,6 @@ SimTypeUtils _Type_SSM_ST_SM4_autoHoldEinschalten_SM1_Utils = {
 };
 
 /****************************************************************
- ** SSM_ST_SM6_Notbremse_SM1 
- ****************************************************************/
-
-#ifdef __cplusplus
-  #ifdef pSimSSM_ST_SM6_Notbremse_SM1VTable_defined
-    extern struct SimTypeVTable *pSimSSM_ST_SM6_Notbremse_SM1VTable;
-  #else 
-    struct SimTypeVTable *pSimSSM_ST_SM6_Notbremse_SM1VTable = NULL;
-  #endif
-#else
-  struct SimTypeVTable *pSimSSM_ST_SM6_Notbremse_SM1VTable;
-#endif
-
-static SimEnumValUtils SSM_ST_SM6_Notbremse_SM1_values[] = {
-    { "Fuss_vom_Gas", SSM_st_Fuss_vom_Gas_SM6_Notbremse_SM1},
-    { "Fuss_vom_Gas", SSM_st_Fuss_vom_Gas_SM6_Notbremse_SM1},
-    { "EPB_angezogen", SSM_st_EPB_angezogen_SM6_Notbremse_SM1},
-    { "EPB_angezogen", SSM_st_EPB_angezogen_SM6_Notbremse_SM1},
-};
-const int SSM_ST_SM6_Notbremse_SM1_nb_values = 4;
-
-int SSM_ST_SM6_Notbremse_SM1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
-{
-    if (pSimSSM_ST_SM6_Notbremse_SM1VTable != NULL
-        && pSimSSM_ST_SM6_Notbremse_SM1VTable->m_pfnGetConvInfo(SptString, SptNone) == 1) {
-       return pfnStrAppend(*(char**)pSimSSM_ST_SM6_Notbremse_SM1VTable->m_pfnToType(SptString, pValue), pStrObj);
-    }
-    return pConverter->m_pfnEnumToString(*(SSM_ST_SM6_Notbremse_SM1*)pValue, SSM_ST_SM6_Notbremse_SM1_values, SSM_ST_SM6_Notbremse_SM1_nb_values, pfnStrAppend, pStrObj); 
-}
-
-int check_SSM_ST_SM6_Notbremse_SM1_string(const char *str, char **endptr)
-{
-    static SSM_ST_SM6_Notbremse_SM1 rTemp;
-    return string_to_SSM_ST_SM6_Notbremse_SM1(str, (void*)&rTemp, endptr);
-}
-
-int string_to_SSM_ST_SM6_Notbremse_SM1(const char *str, void *pValue, char **endptr)
-{
-    int nRet = 0;
-    skip_whitespace(str);
-    if (pSimSSM_ST_SM6_Notbremse_SM1VTable != NULL) {
-        nRet = string_to_VTable(str, pSimSSM_ST_SM6_Notbremse_SM1VTable, pValue, endptr);
-    }
-    if (nRet == 0) {
-        int nTemp = 0;
-        nRet = pConverter->m_pfnStringToEnum(str, &nTemp, SSM_ST_SM6_Notbremse_SM1_values, SSM_ST_SM6_Notbremse_SM1_nb_values, endptr);
-        if (pValue != NULL && nRet != 0)
-            *(SSM_ST_SM6_Notbremse_SM1*)pValue = (SSM_ST_SM6_Notbremse_SM1)nTemp;
-    }
-    return nRet;
-}
-
-int is_SSM_ST_SM6_Notbremse_SM1_double_conversion_allowed()
-{
-    if (pSimSSM_ST_SM6_Notbremse_SM1VTable != NULL) {
-        return is_VTable_double_conversion_allowed(pSimSSM_ST_SM6_Notbremse_SM1VTable);
-    }
-    return 1;
-}
-
-int SSM_ST_SM6_Notbremse_SM1_to_double(const void *pValue, double *nValue)
-{
-    if (pSimSSM_ST_SM6_Notbremse_SM1VTable != NULL) {
-        return VTable_to_double(pValue, pSimSSM_ST_SM6_Notbremse_SM1VTable, nValue);
-    }
-    *nValue = (double)*((SSM_ST_SM6_Notbremse_SM1*)pValue);
-    return 1;
-}
-
-int is_SSM_ST_SM6_Notbremse_SM1_long_conversion_allowed()
-{
-    if (pSimSSM_ST_SM6_Notbremse_SM1VTable != NULL) {
-        return is_VTable_long_conversion_allowed(pSimSSM_ST_SM6_Notbremse_SM1VTable);
-    }
-    return 1;
-}
-
-int SSM_ST_SM6_Notbremse_SM1_to_long(const void *pValue, long *nValue)
-{
-    if (pSimSSM_ST_SM6_Notbremse_SM1VTable != NULL) {
-        return VTable_to_long(pValue, pSimSSM_ST_SM6_Notbremse_SM1VTable, nValue);
-    }
-    *nValue = (long)*((SSM_ST_SM6_Notbremse_SM1*)pValue);
-    return 1;
-}
-
-void compare_SSM_ST_SM6_Notbremse_SM1(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
-{
-    int unitResult = 0;
-    /* Customized comparison */
-    if (pSimSSM_ST_SM6_Notbremse_SM1VTable != NULL
-        && pSimSSM_ST_SM6_Notbremse_SM1VTable->m_version >= Scv612
-        && pSimSSM_ST_SM6_Notbremse_SM1VTable->m_pfnCompare != NULL) {
-        if (pSimSSM_ST_SM6_Notbremse_SM1VTable->m_version >= Scv65) {
-            /* R15 and higher: VTable Compare function shall UPDATE *pResult global flag (*pResult |= SIM_CMP_RES_LT/...): */
-            unitResult = pSimSSM_ST_SM6_Notbremse_SM1VTable->m_pfnCompare(pResult, pValue1, pValue2);
-        } else {
-            /* Before R15: VTable Compare function shall SET *pResult global flag (*pResult = -1/1/0): */
-            pSimSSM_ST_SM6_Notbremse_SM1VTable->m_pfnCompare(&unitResult, pValue1, pValue2);
-            updateCompareResult(unitResult, pResult);
-        }
-    } else {
-        /* Predefined comparison */
-        unitResult = predef_compare_enum(pResult, (int)(*(SSM_ST_SM6_Notbremse_SM1*)pValue1), (int)(*(SSM_ST_SM6_Notbremse_SM1*)pValue2));
-    }
-    UNUSED(pTol);
-    if (unitResult != 0 && pfnStrListAppend != NULL && pszPath != NULL && *pszPath != 0 && pListErrPaths != NULL)
-        pfnStrListAppend(pszPath, pListErrPaths);
-}
-
-int get_SSM_ST_SM6_Notbremse_SM1_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
-{
-    return pConverter->m_pfnGetEnumSignature(SSM_ST_SM6_Notbremse_SM1_values, SSM_ST_SM6_Notbremse_SM1_nb_values, pfnStrAppend, pStrObj);
-}
-
-int init_SSM_ST_SM6_Notbremse_SM1(void *pValue)
-{
-    *(SSM_ST_SM6_Notbremse_SM1*)pValue = SSM_st_Fuss_vom_Gas_SM6_Notbremse_SM1;
-    return 1;
-}
-
-int release_SSM_ST_SM6_Notbremse_SM1(void *pValue)
-{
-    UNUSED(pValue);
-    return 1;
-}
-
-int copy_SSM_ST_SM6_Notbremse_SM1(void *pToValue, const void *pFromValue)
-{
-    *((SSM_ST_SM6_Notbremse_SM1*)pToValue) = *((SSM_ST_SM6_Notbremse_SM1*)pFromValue);
-    return 1;
-}
-
-SimTypeUtils _Type_SSM_ST_SM6_Notbremse_SM1_Utils = {
-    SSM_ST_SM6_Notbremse_SM1_to_string,
-    check_SSM_ST_SM6_Notbremse_SM1_string,
-    string_to_SSM_ST_SM6_Notbremse_SM1,
-    is_SSM_ST_SM6_Notbremse_SM1_double_conversion_allowed,
-    SSM_ST_SM6_Notbremse_SM1_to_double,
-    is_SSM_ST_SM6_Notbremse_SM1_long_conversion_allowed,
-    SSM_ST_SM6_Notbremse_SM1_to_long,
-    compare_SSM_ST_SM6_Notbremse_SM1,
-    get_SSM_ST_SM6_Notbremse_SM1_signature,
-    init_SSM_ST_SM6_Notbremse_SM1,
-    release_SSM_ST_SM6_Notbremse_SM1,
-    copy_SSM_ST_SM6_Notbremse_SM1,
-    sizeof(SSM_ST_SM6_Notbremse_SM1)
-};
-
-/****************************************************************
  ** SSM_ST_SM_Betriebsmodus 
  ****************************************************************/
 
@@ -6077,8 +5918,8 @@ static SimEnumValUtils SSM_TR_SM1_values[] = {
     { "SSM_TR_bremspedalDurchtreten_automastikModusEinstellen_1_bremspedalDurchtreten_SM1", SSM_TR_bremspedalDurchtreten_automastikModusEinstellen_1_bremspedalDurchtreten_SM1},
     { "SSM_TR_automastikModusEinstellen_automatikModusEingestellt_1_automastikModusEinstellen_SM1", SSM_TR_automastikModusEinstellen_automatikModusEingestellt_1_automastikModusEinstellen_SM1},
     { "SSM_TR_automastikModusEinstellen_automatikModusEingestellt_1_automastikModusEinstellen_SM1", SSM_TR_automastikModusEinstellen_automatikModusEingestellt_1_automastikModusEinstellen_SM1},
-    { "SSM_TR_automatikModusEingestellt_autoHoldEinschalten_1_automatikModusEingestellt_SM1", SSM_TR_automatikModusEingestellt_autoHoldEinschalten_1_automatikModusEingestellt_SM1},
-    { "SSM_TR_automatikModusEingestellt_autoHoldEinschalten_1_automatikModusEingestellt_SM1", SSM_TR_automatikModusEingestellt_autoHoldEinschalten_1_automatikModusEingestellt_SM1},
+    { "SSM_TR_automatikModusEingestellt_cockpitanzeigeBleibtAus_1_automatikModusEingestellt_SM1", SSM_TR_automatikModusEingestellt_cockpitanzeigeBleibtAus_1_automatikModusEingestellt_SM1},
+    { "SSM_TR_automatikModusEingestellt_cockpitanzeigeBleibtAus_1_automatikModusEingestellt_SM1", SSM_TR_automatikModusEingestellt_cockpitanzeigeBleibtAus_1_automatikModusEingestellt_SM1},
     { "SSM_TR_cockpitanzeigeBleibtAus_betriebsbremseLoesen_1_cockpitanzeigeBleibtAus_SM1", SSM_TR_cockpitanzeigeBleibtAus_betriebsbremseLoesen_1_cockpitanzeigeBleibtAus_SM1},
     { "SSM_TR_cockpitanzeigeBleibtAus_betriebsbremseLoesen_1_cockpitanzeigeBleibtAus_SM1", SSM_TR_cockpitanzeigeBleibtAus_betriebsbremseLoesen_1_cockpitanzeigeBleibtAus_SM1},
     { "SSM_TR_betriebsbremseLoesen_EPB_angezogen_1_betriebsbremseLoesen_SM1", SSM_TR_betriebsbremseLoesen_EPB_angezogen_1_betriebsbremseLoesen_SM1},
@@ -6089,24 +5930,18 @@ static SimEnumValUtils SSM_TR_SM1_values[] = {
     { "SSM_TR_anfahrenVorbereiten_EPB_arretiert_1_anfahrenVorbereiten_SM1", SSM_TR_anfahrenVorbereiten_EPB_arretiert_1_anfahrenVorbereiten_SM1},
     { "SSM_TR_EPB_arretiert_anfahren_1_EPB_arretiert_SM1", SSM_TR_EPB_arretiert_anfahren_1_EPB_arretiert_SM1},
     { "SSM_TR_EPB_arretiert_anfahren_1_EPB_arretiert_SM1", SSM_TR_EPB_arretiert_anfahren_1_EPB_arretiert_SM1},
-    { "SSM_TR_anfahren_fahren_1_anfahren_SM1", SSM_TR_anfahren_fahren_1_anfahren_SM1},
-    { "SSM_TR_anfahren_fahren_1_anfahren_SM1", SSM_TR_anfahren_fahren_1_anfahren_SM1},
-    { "SSM_TR_fahren_NotbremsungAusloesen_1_fahren_SM1", SSM_TR_fahren_NotbremsungAusloesen_1_fahren_SM1},
-    { "SSM_TR_fahren_NotbremsungAusloesen_1_fahren_SM1", SSM_TR_fahren_NotbremsungAusloesen_1_fahren_SM1},
-    { "SSM_TR_NotbremsungAusloesen_Notbremse_1_NotbremsungAusloesen_SM1", SSM_TR_NotbremsungAusloesen_Notbremse_1_NotbremsungAusloesen_SM1},
-    { "SSM_TR_NotbremsungAusloesen_Notbremse_1_NotbremsungAusloesen_SM1", SSM_TR_NotbremsungAusloesen_Notbremse_1_NotbremsungAusloesen_SM1},
-    { "SSM_TR_Notbremse_EPB_druecken_1_Notbremse_SM1", SSM_TR_Notbremse_EPB_druecken_1_Notbremse_SM1},
-    { "SSM_TR_Notbremse_EPB_druecken_1_Notbremse_SM1", SSM_TR_Notbremse_EPB_druecken_1_Notbremse_SM1},
-    { "SSM_TR_autoHoldEinschalten_cockpitanzeigeBleibtAus_1_autoHoldEinschalten_SM1", SSM_TR_autoHoldEinschalten_cockpitanzeigeBleibtAus_1_autoHoldEinschalten_SM1},
-    { "SSM_TR_autoHoldEinschalten_cockpitanzeigeBleibtAus_1_autoHoldEinschalten_SM1", SSM_TR_autoHoldEinschalten_cockpitanzeigeBleibtAus_1_autoHoldEinschalten_SM1},
-    { "SSM_TR_EPB_druecken_EPB_gedrueckt_1_EPB_druecken_SM1", SSM_TR_EPB_druecken_EPB_gedrueckt_1_EPB_druecken_SM1},
-    { "SSM_TR_EPB_druecken_EPB_gedrueckt_1_EPB_druecken_SM1", SSM_TR_EPB_druecken_EPB_gedrueckt_1_EPB_druecken_SM1},
-    { "SSM_TR_EPB_gedrueckt_Fzg_Abstellen_1_EPB_gedrueckt_SM1", SSM_TR_EPB_gedrueckt_Fzg_Abstellen_1_EPB_gedrueckt_SM1},
-    { "SSM_TR_EPB_gedrueckt_Fzg_Abstellen_1_EPB_gedrueckt_SM1", SSM_TR_EPB_gedrueckt_Fzg_Abstellen_1_EPB_gedrueckt_SM1},
-    { "SSM_TR_Fzg_Abstellen_EPB_gezogen_1_Fzg_Abstellen_SM1", SSM_TR_Fzg_Abstellen_EPB_gezogen_1_Fzg_Abstellen_SM1},
-    { "SSM_TR_Fzg_Abstellen_EPB_gezogen_1_Fzg_Abstellen_SM1", SSM_TR_Fzg_Abstellen_EPB_gezogen_1_Fzg_Abstellen_SM1},
+    { "SSM_TR_autoHoldEinschalten_fahren_1_autoHoldEinschalten_SM1", SSM_TR_autoHoldEinschalten_fahren_1_autoHoldEinschalten_SM1},
+    { "SSM_TR_autoHoldEinschalten_fahren_1_autoHoldEinschalten_SM1", SSM_TR_autoHoldEinschalten_fahren_1_autoHoldEinschalten_SM1},
+    { "SSM_TR_fahren_anhaltenMitAutoHold_1_fahren_SM1", SSM_TR_fahren_anhaltenMitAutoHold_1_fahren_SM1},
+    { "SSM_TR_fahren_anhaltenMitAutoHold_1_fahren_SM1", SSM_TR_fahren_anhaltenMitAutoHold_1_fahren_SM1},
+    { "SSM_TR_anfahren_autoHoldEinschalten_1_anfahren_SM1", SSM_TR_anfahren_autoHoldEinschalten_1_anfahren_SM1},
+    { "SSM_TR_anfahren_autoHoldEinschalten_1_anfahren_SM1", SSM_TR_anfahren_autoHoldEinschalten_1_anfahren_SM1},
+    { "SSM_TR_anhaltenMitAutoHold_haltImAutoHold_1_anhaltenMitAutoHold_SM1", SSM_TR_anhaltenMitAutoHold_haltImAutoHold_1_anhaltenMitAutoHold_SM1},
+    { "SSM_TR_anhaltenMitAutoHold_haltImAutoHold_1_anhaltenMitAutoHold_SM1", SSM_TR_anhaltenMitAutoHold_haltImAutoHold_1_anhaltenMitAutoHold_SM1},
+    { "SSM_TR_haltImAutoHold_fzgSteht_1_haltImAutoHold_SM1", SSM_TR_haltImAutoHold_fzgSteht_1_haltImAutoHold_SM1},
+    { "SSM_TR_haltImAutoHold_fzgSteht_1_haltImAutoHold_SM1", SSM_TR_haltImAutoHold_fzgSteht_1_haltImAutoHold_SM1},
 };
-const int SSM_TR_SM1_nb_values = 38;
+const int SSM_TR_SM1_nb_values = 32;
 
 int SSM_TR_SM1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
 {
@@ -6536,156 +6371,6 @@ SimTypeUtils _Type_SSM_TR_SM4_autoHoldEinschalten_SM1_Utils = {
     release_SSM_TR_SM4_autoHoldEinschalten_SM1,
     copy_SSM_TR_SM4_autoHoldEinschalten_SM1,
     sizeof(SSM_TR_SM4_autoHoldEinschalten_SM1)
-};
-
-/****************************************************************
- ** SSM_TR_SM6_Notbremse_SM1 
- ****************************************************************/
-
-#ifdef __cplusplus
-  #ifdef pSimSSM_TR_SM6_Notbremse_SM1VTable_defined
-    extern struct SimTypeVTable *pSimSSM_TR_SM6_Notbremse_SM1VTable;
-  #else 
-    struct SimTypeVTable *pSimSSM_TR_SM6_Notbremse_SM1VTable = NULL;
-  #endif
-#else
-  struct SimTypeVTable *pSimSSM_TR_SM6_Notbremse_SM1VTable;
-#endif
-
-static SimEnumValUtils SSM_TR_SM6_Notbremse_SM1_values[] = {
-    { "SSM_TR_no_trans_SM6_Notbremse_SM1", SSM_TR_no_trans_SM6_Notbremse_SM1},
-    { "SSM_TR_no_trans_SM6_Notbremse_SM1", SSM_TR_no_trans_SM6_Notbremse_SM1},
-    { "SSM_TR_Fuss_vom_Gas_EPB_angezogen_1_Fuss_vom_Gas_SM6_Notbremse_SM1", SSM_TR_Fuss_vom_Gas_EPB_angezogen_1_Fuss_vom_Gas_SM6_Notbremse_SM1},
-    { "SSM_TR_Fuss_vom_Gas_EPB_angezogen_1_Fuss_vom_Gas_SM6_Notbremse_SM1", SSM_TR_Fuss_vom_Gas_EPB_angezogen_1_Fuss_vom_Gas_SM6_Notbremse_SM1},
-};
-const int SSM_TR_SM6_Notbremse_SM1_nb_values = 4;
-
-int SSM_TR_SM6_Notbremse_SM1_to_string(const void *pValue, PFN_STR_APPEND pfnStrAppend, void *pStrObj)
-{
-    if (pSimSSM_TR_SM6_Notbremse_SM1VTable != NULL
-        && pSimSSM_TR_SM6_Notbremse_SM1VTable->m_pfnGetConvInfo(SptString, SptNone) == 1) {
-       return pfnStrAppend(*(char**)pSimSSM_TR_SM6_Notbremse_SM1VTable->m_pfnToType(SptString, pValue), pStrObj);
-    }
-    return pConverter->m_pfnEnumToString(*(SSM_TR_SM6_Notbremse_SM1*)pValue, SSM_TR_SM6_Notbremse_SM1_values, SSM_TR_SM6_Notbremse_SM1_nb_values, pfnStrAppend, pStrObj); 
-}
-
-int check_SSM_TR_SM6_Notbremse_SM1_string(const char *str, char **endptr)
-{
-    static SSM_TR_SM6_Notbremse_SM1 rTemp;
-    return string_to_SSM_TR_SM6_Notbremse_SM1(str, (void*)&rTemp, endptr);
-}
-
-int string_to_SSM_TR_SM6_Notbremse_SM1(const char *str, void *pValue, char **endptr)
-{
-    int nRet = 0;
-    skip_whitespace(str);
-    if (pSimSSM_TR_SM6_Notbremse_SM1VTable != NULL) {
-        nRet = string_to_VTable(str, pSimSSM_TR_SM6_Notbremse_SM1VTable, pValue, endptr);
-    }
-    if (nRet == 0) {
-        int nTemp = 0;
-        nRet = pConverter->m_pfnStringToEnum(str, &nTemp, SSM_TR_SM6_Notbremse_SM1_values, SSM_TR_SM6_Notbremse_SM1_nb_values, endptr);
-        if (pValue != NULL && nRet != 0)
-            *(SSM_TR_SM6_Notbremse_SM1*)pValue = (SSM_TR_SM6_Notbremse_SM1)nTemp;
-    }
-    return nRet;
-}
-
-int is_SSM_TR_SM6_Notbremse_SM1_double_conversion_allowed()
-{
-    if (pSimSSM_TR_SM6_Notbremse_SM1VTable != NULL) {
-        return is_VTable_double_conversion_allowed(pSimSSM_TR_SM6_Notbremse_SM1VTable);
-    }
-    return 1;
-}
-
-int SSM_TR_SM6_Notbremse_SM1_to_double(const void *pValue, double *nValue)
-{
-    if (pSimSSM_TR_SM6_Notbremse_SM1VTable != NULL) {
-        return VTable_to_double(pValue, pSimSSM_TR_SM6_Notbremse_SM1VTable, nValue);
-    }
-    *nValue = (double)*((SSM_TR_SM6_Notbremse_SM1*)pValue);
-    return 1;
-}
-
-int is_SSM_TR_SM6_Notbremse_SM1_long_conversion_allowed()
-{
-    if (pSimSSM_TR_SM6_Notbremse_SM1VTable != NULL) {
-        return is_VTable_long_conversion_allowed(pSimSSM_TR_SM6_Notbremse_SM1VTable);
-    }
-    return 1;
-}
-
-int SSM_TR_SM6_Notbremse_SM1_to_long(const void *pValue, long *nValue)
-{
-    if (pSimSSM_TR_SM6_Notbremse_SM1VTable != NULL) {
-        return VTable_to_long(pValue, pSimSSM_TR_SM6_Notbremse_SM1VTable, nValue);
-    }
-    *nValue = (long)*((SSM_TR_SM6_Notbremse_SM1*)pValue);
-    return 1;
-}
-
-void compare_SSM_TR_SM6_Notbremse_SM1(int *pResult, const void *pValue1, const void *pValue2, SimTolerance *pTol, const char *pszPath, PFN_STR_LIST_APPEND pfnStrListAppend, void *pListErrPaths)
-{
-    int unitResult = 0;
-    /* Customized comparison */
-    if (pSimSSM_TR_SM6_Notbremse_SM1VTable != NULL
-        && pSimSSM_TR_SM6_Notbremse_SM1VTable->m_version >= Scv612
-        && pSimSSM_TR_SM6_Notbremse_SM1VTable->m_pfnCompare != NULL) {
-        if (pSimSSM_TR_SM6_Notbremse_SM1VTable->m_version >= Scv65) {
-            /* R15 and higher: VTable Compare function shall UPDATE *pResult global flag (*pResult |= SIM_CMP_RES_LT/...): */
-            unitResult = pSimSSM_TR_SM6_Notbremse_SM1VTable->m_pfnCompare(pResult, pValue1, pValue2);
-        } else {
-            /* Before R15: VTable Compare function shall SET *pResult global flag (*pResult = -1/1/0): */
-            pSimSSM_TR_SM6_Notbremse_SM1VTable->m_pfnCompare(&unitResult, pValue1, pValue2);
-            updateCompareResult(unitResult, pResult);
-        }
-    } else {
-        /* Predefined comparison */
-        unitResult = predef_compare_enum(pResult, (int)(*(SSM_TR_SM6_Notbremse_SM1*)pValue1), (int)(*(SSM_TR_SM6_Notbremse_SM1*)pValue2));
-    }
-    UNUSED(pTol);
-    if (unitResult != 0 && pfnStrListAppend != NULL && pszPath != NULL && *pszPath != 0 && pListErrPaths != NULL)
-        pfnStrListAppend(pszPath, pListErrPaths);
-}
-
-int get_SSM_TR_SM6_Notbremse_SM1_signature(PFN_STR_APPEND pfnStrAppend, void *pStrObj)
-{
-    return pConverter->m_pfnGetEnumSignature(SSM_TR_SM6_Notbremse_SM1_values, SSM_TR_SM6_Notbremse_SM1_nb_values, pfnStrAppend, pStrObj);
-}
-
-int init_SSM_TR_SM6_Notbremse_SM1(void *pValue)
-{
-    *(SSM_TR_SM6_Notbremse_SM1*)pValue = SSM_TR_no_trans_SM6_Notbremse_SM1;
-    return 1;
-}
-
-int release_SSM_TR_SM6_Notbremse_SM1(void *pValue)
-{
-    UNUSED(pValue);
-    return 1;
-}
-
-int copy_SSM_TR_SM6_Notbremse_SM1(void *pToValue, const void *pFromValue)
-{
-    *((SSM_TR_SM6_Notbremse_SM1*)pToValue) = *((SSM_TR_SM6_Notbremse_SM1*)pFromValue);
-    return 1;
-}
-
-SimTypeUtils _Type_SSM_TR_SM6_Notbremse_SM1_Utils = {
-    SSM_TR_SM6_Notbremse_SM1_to_string,
-    check_SSM_TR_SM6_Notbremse_SM1_string,
-    string_to_SSM_TR_SM6_Notbremse_SM1,
-    is_SSM_TR_SM6_Notbremse_SM1_double_conversion_allowed,
-    SSM_TR_SM6_Notbremse_SM1_to_double,
-    is_SSM_TR_SM6_Notbremse_SM1_long_conversion_allowed,
-    SSM_TR_SM6_Notbremse_SM1_to_long,
-    compare_SSM_TR_SM6_Notbremse_SM1,
-    get_SSM_TR_SM6_Notbremse_SM1_signature,
-    init_SSM_TR_SM6_Notbremse_SM1,
-    release_SSM_TR_SM6_Notbremse_SM1,
-    copy_SSM_TR_SM6_Notbremse_SM1,
-    sizeof(SSM_TR_SM6_Notbremse_SM1)
 };
 
 /****************************************************************
