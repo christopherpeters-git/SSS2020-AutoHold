@@ -1,5 +1,0 @@
-*** Instance Name Warning (WA_INSEUS): ">=" is called 2 times with same instance name: 1
-  at path AH_testSuite_Pkg::divFahrer::autoModus_autoHold_HillHold_NICHTFERTIG/
-  at path if aktZeit >= 1.0
-   restart zuendungEinschalten
-  at path _L5 = _L3 >= _L6

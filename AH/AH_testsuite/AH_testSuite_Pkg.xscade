@@ -35250,7 +35250,7 @@
 							</pragmas>
 						</Operator>
 						<Operator name="autoModus_Notbremsung" href="autoModus_autoHold1.xscade"/>
-						<Operator name="autoModus_o_autoHold_HillHold" href="Operator6.xscade"/>
+						<Operator name="autoModus_o_autoHold_HillHold_steigung" href="Operator6.xscade"/>
 						<Operator kind="node" name="autoModus_autoHold_longwait">
 							<inputs>
 								<Variable name="led_P">
@@ -56997,6 +56997,8 @@
 								</kcg:Pragma>
 							</pragmas>
 						</Operator>
+						<Operator name="autoModus_o_autoHold_HillHold_gefaelle" href="autoModus_o_autoHold_HillHold_steigung1.xscade"/>
+						<Operator name="autoModus_o_autoHold_HillHold_mit_zurueckrollen" href="autoModus_o_autoHold_HillHold_steigung11.xscade"/>
 					</declarations>
 					<pragmas>
 						<ed:Package oid="!ed/1789a/5242/3780/5e81f0a112b0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
@@ -62261,7 +62263,7 @@
 							</pragmas>
 						</Operator>
 						<Operator name="testAutoModus_Notbremse" href="testAutoModus_autoHold11.xscade"/>
-						<Operator name="testAutoModus_o_Autohold_HillHold" href="testManModus_Notbremsung1.xscade"/>
+						<Operator name="testAutoModus_o_Autohold_HillHold_steigung" href="testManModus_Notbremsung1.xscade"/>
 						<Operator kind="node" name="testAutoModus_autoHold_longwait">
 							<outputs>
 								<Variable name="led_P">
@@ -65760,6 +65762,8 @@
 								</ed:Operator>
 							</pragmas>
 						</Operator>
+						<Operator name="testAutoModus_o_Autohold_HillHold_gefaelle" href="testAutoModus_o_Autohold_HillHold_steigung1.xscade"/>
+						<Operator name="testAutoModus_o_Autohold_HillHold_mit_zurueckrollen" href="testAutoModus_o_Autohold_HillHold_gefaelle1.xscade"/>
 					</declarations>
 					<pragmas>
 						<ed:Package oid="!ed/1789e/5242/3780/5e81f0b342d6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
