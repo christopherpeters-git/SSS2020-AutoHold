@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/Christopher/Repositories/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-05-30T21:27:49
+** Command: kcg66.exe -config C:/Users/ma2/Desktop/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-31T13:05:04
 *************************************************************$ */
 #ifndef _KCG_CONSTS_H_
 #define _KCG_CONSTS_H_
@@ -14,8 +14,8 @@
 /* AhTypes_Pkg::ah_Pkg::cSteigung2GaspedalFaktor/ */
 #define cSteigung2GaspedalFaktor_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(0.1))
 
-/* AhTypes_Pkg::ah_Pkg::cNotbremsDelay/ */
-#define cNotbremsDelay_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(2.0))
+/* AhTypes_Pkg::ah_Pkg::cMaxHillHoldAktivzeit/ */
+#define cMaxHillHoldAktivzeit_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(2.0))
 
 /* AhTypes_Pkg::ah_Pkg::cMinGaspedalStellungFuerEpbLoesen/ */
 #define cMinGaspedalStellungFuerEpbLoesen_AhTypes_Pkg_ah_Pkg                  \
@@ -67,14 +67,17 @@
 /* simEnv_Pkg::mainPkg::cS_00/ */
 #define cS_00_simEnv_Pkg_mainPkg (kcg_lit_float64(0.0))
 
-/* AhTypes_Pkg::ah_Pkg::cMaxHillHoldAktivzeit/ */
-#define cMaxHillHoldAktivzeit_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(2.0))
+/* AhTypes_Pkg::ah_Pkg::cGaspedalLosgelassen/ */
+#define cGaspedalLosgelassen_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(0.0))
 
 /* AhTypes_Pkg::ah_Pkg::cBremspedalkraftLosgelassen/ */
 #define cBremspedalkraftLosgelassen_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(0.001))
 
 /* AhTypes_Pkg::ah_Pkg::cEpbModusDelay/ */
 #define cEpbModusDelay_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(5.0))
+
+/* AhTypes_Pkg::ah_Pkg::cNotbremsDelay/ */
+#define cNotbremsDelay_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(2.0))
 
 /* AhTypes_Pkg::ah_Pkg::cBremspedalkraftDurchgetreten/ */
 #define cBremspedalkraftDurchgetreten_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(0.8))
@@ -89,15 +92,12 @@
 /* AhTypes_Pkg::ah_Pkg::cV_FzgSteht/ */
 #define cV_FzgSteht_AhTypes_Pkg_ah_Pkg (kcg_lit_float64(0.01))
 
-/* AH_testSuite_Pkg::divFahrer::c_1s_warten/ */
-#define c_1s_warten_AH_testSuite_Pkg_divFahrer (kcg_lit_float64(5.0))
-
 /* AH_testSuite_Pkg::divFahrer::c_5s_warten/ */
 #define c_5s_warten_AH_testSuite_Pkg_divFahrer (kcg_lit_float64(1.0))
 
 #endif /* _KCG_CONSTS_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_consts.h
-** Generation date: 2020-05-30T21:27:49
+** Generation date: 2020-05-31T13:05:04
 *************************************************************$ */
 

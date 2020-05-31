@@ -12,7 +12,7 @@
     <Option name="warn_error" value="#off#"/>
     <Option name="short_circuit" value="#off#"/>
     <Option name="wrap_c_ops" value="#off#"/>
-    <Option name="input_file" value="C:/Users/Christopher/Repositories/SSS2020-AutoHold/AH/AH_testsuite/Simulation/scade_model_without_unused.scade"/>
+    <Option name="input_file" value="C:/Users/ma2/Desktop/SSS2020-AutoHold/AH/AH_testsuite/Simulation/scade_model_without_unused.scade"/>
     <Option name="probes" value="#on#"/>
     <Option name="no_observe" value="#off#"/>
     <Option name="observe" value="#off#"/>
@@ -28,13 +28,13 @@
     <Option name="expall" value="#off#"/>
     <Option name="noexp" value="#off#"/>
     <Option name="exp" value="#off#"/>
-    <Option name="target_dir" value="C:/Users/Christopher/Repositories/SSS2020-AutoHold/AH/AH_testsuite/Simulation"/>
+    <Option name="target_dir" value="C:/Users/ma2/Desktop/SSS2020-AutoHold/AH/AH_testsuite/Simulation"/>
     <Option name="target" value="C"/>
-    <Option name="root" value="AH_testSuite_Pkg::tests_Pkg::testAutoModus_o_Autohold_HillHold"/>
+    <Option name="root" value="AH_testSuite_Pkg::tests_Pkg::testAutoModus_Notbremse"/>
     <Option name="auth" value="#off#"/>
     <Package scadeName="AH_testSuite_Pkg">
       <Package scadeName="tests_Pkg">
-        <RootNode headerFile="testAutoModus_o_Autohold__AH_testSuite_Pkg_tests_Pkg.h" scadeName="testAutoModus_o_Autohold_HillHold" targetCycleFct="testAutoModus_o_Autohold__AH_testSuite_Pkg_tests_Pkg" targetInitFct="testAutoModus_o_Autohold__reset_AH_testSuite_Pkg_tests_Pkg" targetInitializationFct="testAutoModus_o_Autohold__init_AH_testSuite_Pkg_tests_Pkg">
+        <RootNode headerFile="testAutoModus_Notbremse_AH_testSuite_Pkg_tests_Pkg.h" scadeName="testAutoModus_Notbremse" targetCycleFct="testAutoModus_Notbremse_AH_testSuite_Pkg_tests_Pkg" targetInitFct="testAutoModus_Notbremse_reset_AH_testSuite_Pkg_tests_Pkg" targetInitializationFct="testAutoModus_Notbremse_init_AH_testSuite_Pkg_tests_Pkg">
           <Output inCtx="true" scadeName="led_P" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="led_P" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
           <Output inCtx="true" scadeName="cockpitAnzeige_P" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="cockpitAnzeige_P" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
           <Output inCtx="true" scadeName="cockpitAnzeige_AutoHoldMode" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="cockpitAnzeige_AutoHoldMode" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
@@ -48,7 +48,6 @@
           <Output inCtx="true" scadeName="aktZeit" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="aktZeit" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
           <Output inCtx="true" scadeName="error" scadeType="bool" targetName="error" targetType="kcg_bool"/>
           <Output inCtx="true" scadeName="epbBetriebsmodus" scadeType="AhTypes_Pkg::ah_Pkg::epbBetriebsmodus_T" targetName="epbBetriebsmodus" targetType="epbBetriebsmodus_T_AhTypes_Pkg_ah_Pkg"/>
-          <Output inCtx="true" scadeName="betriebsbremssperrventil" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T" targetName="betriebsbremssperrventil" targetType="betriebsbremsSperrventil_T_AhTypes_Pkg_ah_Pkg"/>
           <Local inCtx="true" scadeName="_L10" scadeType="AhTypes_Pkg::physical_Pkg::angle_in_rad_T" targetName="_L10" targetType="angle_in_rad_T_AhTypes_Pkg_physical_Pkg"/>
           <Local inCtx="true" scadeName="_L9" scadeType="AhTypes_Pkg::physical_Pkg::v_in_mps_T" targetName="_L9" targetType="v_in_mps_T_AhTypes_Pkg_physical_Pkg"/>
           <Local inCtx="true" scadeName="_L8" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L8" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
@@ -72,17 +71,16 @@
           <Local inCtx="true" scadeName="_L31" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L31" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
           <Local inCtx="true" scadeName="_L33" scadeType="AhTypes_Pkg::ah_Pkg::epbBetriebsmodus_T" targetName="_L33" targetType="epbBetriebsmodus_T_AhTypes_Pkg_ah_Pkg"/>
           <Local inCtx="true" scadeName="_L36" scadeType="AhTypes_Pkg::ah_Pkg::epbBetriebsmodus_T" targetName="_L36" targetType="epbBetriebsmodus_T_AhTypes_Pkg_ah_Pkg"/>
-          <Local inCtx="true" scadeName="_L37" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T" targetName="_L37" targetType="betriebsbremsSperrventil_T_AhTypes_Pkg_ah_Pkg"/>
-          <Local inCtx="true" scadeName="_L45" scadeType="AhTypes_Pkg::ah_Pkg::zuendSchalter_T" targetName="_L45" targetType="zuendSchalter_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L45" scadeType="bool" targetName="_L45" targetType="kcg_bool"/>
           <Local inCtx="true" scadeName="_L44" scadeType="AhTypes_Pkg::ah_Pkg::bremspedalkraft_T" targetName="_L44" targetType="bremspedalkraft_T_AhTypes_Pkg_ah_Pkg"/>
-          <Local inCtx="true" scadeName="_L43" scadeType="AhTypes_Pkg::ah_Pkg::tasterP_T" targetName="_L43" targetType="tasterP_T_AhTypes_Pkg_ah_Pkg"/>
-          <Local inCtx="true" scadeName="_L42" scadeType="bool" targetName="_L42" targetType="kcg_bool"/>
-          <Local inCtx="true" scadeName="_L41" scadeType="AhTypes_Pkg::ah_Pkg::tuerSchalter_T" targetName="_L41" targetType="tuerSchalter_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L43" scadeType="float64" targetName="_L43" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L42" scadeType="AhTypes_Pkg::ah_Pkg::tasterHold_T" targetName="_L42" targetType="tasterHold_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L41" scadeType="AhTypes_Pkg::ah_Pkg::tasterP_T" targetName="_L41" targetType="tasterP_T_AhTypes_Pkg_ah_Pkg"/>
           <Local inCtx="true" scadeName="_L40" scadeType="AhTypes_Pkg::ah_Pkg::sicherheitsgurt_zustand_T" targetName="_L40" targetType="sicherheitsgurt_zustand_T_AhTypes_Pkg_ah_Pkg"/>
-          <Local inCtx="true" scadeName="_L39" scadeType="AhTypes_Pkg::ah_Pkg::getriebeWahlhebel_T" targetName="_L39" targetType="getriebeWahlhebel_T_AhTypes_Pkg_ah_Pkg"/>
-          <Local inCtx="true" scadeName="_L38" scadeType="AhTypes_Pkg::ah_Pkg::gaspedalstellung_T" targetName="_L38" targetType="gaspedalstellung_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L39" scadeType="AhTypes_Pkg::ah_Pkg::tuerSchalter_T" targetName="_L39" targetType="tuerSchalter_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L38" scadeType="AhTypes_Pkg::ah_Pkg::getriebeWahlhebel_T" targetName="_L38" targetType="getriebeWahlhebel_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L37" scadeType="AhTypes_Pkg::ah_Pkg::zuendSchalter_T" targetName="_L37" targetType="zuendSchalter_T_AhTypes_Pkg_ah_Pkg"/>
           <Local inCtx="true" scadeName="_L46" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T" targetName="_L46" targetType="betriebsbremsSperrventil_T_AhTypes_Pkg_ah_Pkg"/>
-          <Local inCtx="true" scadeName="_L50" scadeType="AhTypes_Pkg::ah_Pkg::tasterHold_T" targetName="_L50" targetType="tasterHold_T_AhTypes_Pkg_ah_Pkg"/>
           <NodeInstance instName="1" refName="fzgIntegration_simEnv_Pkg_mainPkg" scadeName="simEnv_Pkg::mainPkg::fzgIntegration">
             <OutCtxVar targetName="Context_fzgIntegration_1"/>
           </NodeInstance>
@@ -100,10 +98,9 @@
             <OutCtxVar targetName="Context_systemUhr_1"/>
           </NodeInstance>
           <Last/>
-          <NodeInstance instName="1" refName="autoModus_o_autoHold_HillHold_AH_testSuite_Pkg_divFahrer" scadeName="AH_testSuite_Pkg::divFahrer::autoModus_o_autoHold_HillHold">
-            <OutCtxVar targetName="Context_autoModus_o_autoHold_HillHold_1"/>
+          <NodeInstance instName="1" refName="autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer" scadeName="AH_testSuite_Pkg::divFahrer::autoModus_Notbremsung">
+            <OutCtxVar targetName="Context_autoModus_Notbremsung_1"/>
           </NodeInstance>
-          <Last/>
           <Memory inCtx="true" targetName="led_P" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
           <Memory inCtx="true" targetName="cockpitAnzeige_P" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
           <Memory inCtx="true" targetName="cockpitAnzeige_AutoHoldMode" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
@@ -115,14 +112,12 @@
           <Memory inCtx="true" targetName="v_fzg" targetType="v_in_mps_T_AhTypes_Pkg_physical_Pkg"/>
           <Memory inCtx="true" targetName="fzgLaengsneigung" targetType="angle_in_rad_T_AhTypes_Pkg_physical_Pkg"/>
           <Memory inCtx="true" targetName="epbBetriebsmodus" targetType="epbBetriebsmodus_T_AhTypes_Pkg_ah_Pkg"/>
-          <Memory inCtx="true" targetName="betriebsbremssperrventil" targetType="betriebsbremsSperrventil_T_AhTypes_Pkg_ah_Pkg"/>
-          <OutCtxType targetName="outC_testAutoModus_o_Autohold__AH_testSuite_Pkg_tests_Pkg"/>
+          <OutCtxType targetName="outC_testAutoModus_Notbremse_AH_testSuite_Pkg_tests_Pkg"/>
         </RootNode>
       </Package>
       <Package scadeName="divFahrer">
         <Constant macroDef="true" scadeName="c_5s_warten" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="c_5s_warten_AH_testSuite_Pkg_divFahrer" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-        <Constant macroDef="true" scadeName="c_1s_warten" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="c_1s_warten_AH_testSuite_Pkg_divFahrer" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-        <NoExpNode headerFile="autoModus_o_autoHold_HillHold_AH_testSuite_Pkg_divFahrer.h" scadeName="autoModus_o_autoHold_HillHold" targetCycleFct="autoModus_o_autoHold_HillHold_AH_testSuite_Pkg_divFahrer" targetInitFct="autoModus_o_autoHold_HillHold_reset_AH_testSuite_Pkg_divFahrer" targetInitializationFct="autoModus_o_autoHold_HillHold_init_AH_testSuite_Pkg_divFahrer">
+        <NoExpNode headerFile="autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer.h" scadeName="autoModus_Notbremsung" targetCycleFct="autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer" targetInitFct="autoModus_Notbremsung_reset_AH_testSuite_Pkg_divFahrer" targetInitializationFct="autoModus_Notbremsung_init_AH_testSuite_Pkg_divFahrer">
           <Input scadeName="led_P" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="led_P" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
           <Input scadeName="cockpitAnzeige_P" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="cockpitAnzeige_P" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
           <Input scadeName="cockpitAnzeige_AutoHoldMode" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="cockpitAnzeige_AutoHoldMode" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
@@ -134,22 +129,23 @@
           <Input scadeName="v_fzg" scadeType="AhTypes_Pkg::physical_Pkg::v_in_mps_T" targetName="v_fzg" targetType="v_in_mps_T_AhTypes_Pkg_physical_Pkg"/>
           <Input scadeName="fzgLaengsneigung" scadeType="AhTypes_Pkg::physical_Pkg::angle_in_rad_T" targetName="fzgLaengsneigung" targetType="angle_in_rad_T_AhTypes_Pkg_physical_Pkg"/>
           <Input scadeName="epbBetriebsmodus" scadeType="AhTypes_Pkg::ah_Pkg::epbBetriebsmodus_T" targetName="epbBetriebsmodus" targetType="epbBetriebsmodus_T_AhTypes_Pkg_ah_Pkg"/>
-          <Input scadeName="betriebsbremssperrventil" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T" targetName="betriebsbremssperrventil" targetType="betriebsbremsSperrventil_T_AhTypes_Pkg_ah_Pkg"/>
           <Input scadeName="aktZeit" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="aktZeit" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
           <Output inCtx="true" scadeName="zuendschalter" scadeType="AhTypes_Pkg::ah_Pkg::zuendSchalter_T" targetName="zuendschalter" targetType="zuendSchalter_T_AhTypes_Pkg_ah_Pkg"/>
           <Output inCtx="true" scadeName="getriebeWahlhebel" scadeType="AhTypes_Pkg::ah_Pkg::getriebeWahlhebel_T" targetName="getriebeWahlhebel" targetType="getriebeWahlhebel_T_AhTypes_Pkg_ah_Pkg"/>
           <Output inCtx="true" scadeName="fahrertuerSchalter" scadeType="AhTypes_Pkg::ah_Pkg::tuerSchalter_T" targetName="fahrertuerSchalter" targetType="tuerSchalter_T_AhTypes_Pkg_ah_Pkg"/>
           <Output inCtx="true" scadeName="sicherheitsgurtSchalter" scadeType="AhTypes_Pkg::ah_Pkg::sicherheitsgurt_zustand_T" targetName="sicherheitsgurtSchalter" targetType="sicherheitsgurt_zustand_T_AhTypes_Pkg_ah_Pkg"/>
           <Output inCtx="true" scadeName="taste_P" scadeType="AhTypes_Pkg::ah_Pkg::tasterP_T" targetName="taste_P" targetType="tasterP_T_AhTypes_Pkg_ah_Pkg"/>
-          <Output inCtx="true" scadeName="gaspedalStellung" scadeType="AhTypes_Pkg::ah_Pkg::gaspedalstellung_T" targetName="gaspedalStellung" targetType="gaspedalstellung_T_AhTypes_Pkg_ah_Pkg"/>
-          <Output inCtx="true" scadeName="error" scadeType="bool" targetName="error" targetType="kcg_bool"/>
-          <Output inCtx="true" scadeName="bremspedalKraft" scadeType="AhTypes_Pkg::ah_Pkg::bremspedalkraft_T" targetName="bremspedalKraft" targetType="bremspedalkraft_T_AhTypes_Pkg_ah_Pkg"/>
           <Output inCtx="true" scadeName="taste_Hold" scadeType="AhTypes_Pkg::ah_Pkg::tasterHold_T" targetName="taste_Hold" targetType="tasterHold_T_AhTypes_Pkg_ah_Pkg"/>
+          <Output inCtx="true" scadeName="gaspedalStellung" scadeType="float64" targetName="gaspedalStellung" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="bremspedalKraft" scadeType="AhTypes_Pkg::ah_Pkg::bremspedalkraft_T" targetName="bremspedalKraft" targetType="bremspedalkraft_T_AhTypes_Pkg_ah_Pkg"/>
+          <Output inCtx="true" scadeName="error" scadeType="bool" targetName="error" targetType="kcg_bool"/>
           <Local inCtx="true" scadeName="ready" scadeType="bool" targetName="ready" targetType="kcg_bool"/>
-          <Local inCtx="true" scadeName="_L12" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L12" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
-          <Local inCtx="true" scadeName="_L13" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L13" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
-          <Local inCtx="true" scadeName="_L14" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L14" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
-          <Local inCtx="true" scadeName="_L15" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L15" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L3" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L3" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L4" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L4" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L5" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L5" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L6" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L6" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L7" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsdruck_T" targetName="_L7" targetType="betriebsbremsdruck_T_AhTypes_Pkg_ah_Pkg"/>
+          <Local inCtx="true" scadeName="_L10" scadeType="AhTypes_Pkg::physical_Pkg::angle_in_rad_T" targetName="_L10" targetType="angle_in_rad_T_AhTypes_Pkg_physical_Pkg"/>
           <Automaton scadeName="SM1" targetStatesType="SSM_ST_SM1" targetTransitionsType="SSM_TR_SM1">
             <State scadeName="Start" targetName="SSM_st_Start_SM1">
               <Fork priority="1">
@@ -215,7 +211,7 @@
               </NodeInstance>
               <Fork priority="1">
                 <Condition/>
-                <Transition kind="weak" scadeDest="cockpitanzeigeBleibtAus" targetName="SSM_TR_automatikModusEingestellt_cockpitanzeigeBleibtAus_1_automatikModusEingestellt_SM1"/>
+                <Transition kind="weak" scadeDest="autoHoldEinschalten" targetName="SSM_TR_automatikModusEingestellt_autoHoldEinschalten_1_automatikModusEingestellt_SM1"/>
               </Fork>
             </State>
             <State scadeName="cockpitanzeigeBleibtAus" targetName="SSM_st_cockpitanzeigeBleibtAus_SM1">
@@ -281,30 +277,26 @@
               <Local clockVal="SSM_st_anfahrenVorbereiten_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L8" scadeType="AhTypes_Pkg::ah_Pkg::sicherheitsgurt_zustand_T" targetName="_L8_anfahrenVorbereiten_SM1" targetType="sicherheitsgurt_zustand_T_AhTypes_Pkg_ah_Pkg"/>
               <Fork priority="1">
                 <Condition/>
-                <Transition kind="weak" scadeDest="EPB_arretiert_und_HHVentil_frei" targetName="SSM_TR_anfahrenVorbereiten_EPB_arretiert_und_HHVentil_frei_1_anfahrenVorbereiten_SM1"/>
+                <Transition kind="weak" scadeDest="EPB_arretiert" targetName="SSM_TR_anfahrenVorbereiten_EPB_arretiert_1_anfahrenVorbereiten_SM1"/>
               </Fork>
             </State>
-            <State scadeName="EPB_arretiert_und_HHVentil_frei" targetName="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1">
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L1_EPB_arretiert_und_HHVentil_frei_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_EPB_arretiert_und_HHVentil_frei_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L13" scadeType="bool" targetName="_L13_EPB_arretiert_und_HHVentil_frei_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L12" scadeType="bool" targetName="_L12_EPB_arretiert_und_HHVentil_frei_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10_EPB_arretiert_und_HHVentil_frei_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L11" scadeType="bool" targetName="_L11_EPB_arretiert_und_HHVentil_frei_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L9" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L9_EPB_arretiert_und_HHVentil_frei_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L8" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L8_EPB_arretiert_und_HHVentil_frei_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L15" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L15_EPB_arretiert_und_HHVentil_frei_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L16" scadeType="bool" targetName="_L16_EPB_arretiert_und_HHVentil_frei_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L17" scadeType="bool" targetName="_L17_EPB_arretiert_und_HHVentil_frei_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L18" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T" targetName="_L18_EPB_arretiert_und_HHVentil_frei_SM1" targetType="betriebsbremsSperrventil_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L19" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T" targetName="_L19_EPB_arretiert_und_HHVentil_frei_SM1" targetType="betriebsbremsSperrventil_T_AhTypes_Pkg_ah_Pkg"/>
-              <NodeInstance clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" instName="5" refName="countDownTimer_AhTypes_Pkg_utils_Pkg" scadeName="AhTypes_Pkg::utils_Pkg::countDownTimer">
-                <OutCtxVar clockVal="SSM_st_EPB_arretiert_und_HHVentil_frei_SM1" clockVar="SM1_state_act" targetName="Context_countDownTimer_5"/>
+            <State scadeName="EPB_arretiert" targetName="SSM_st_EPB_arretiert_SM1">
+              <Local clockVal="SSM_st_EPB_arretiert_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L1_EPB_arretiert_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_arretiert_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_EPB_arretiert_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_arretiert_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L13" scadeType="bool" targetName="_L13_EPB_arretiert_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_arretiert_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L12" scadeType="bool" targetName="_L12_EPB_arretiert_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_arretiert_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10_EPB_arretiert_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_arretiert_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L11" scadeType="bool" targetName="_L11_EPB_arretiert_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_arretiert_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L9" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L9_EPB_arretiert_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
+              <Local clockVal="SSM_st_EPB_arretiert_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L8" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L8_EPB_arretiert_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
+              <Local clockVal="SSM_st_EPB_arretiert_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L15" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L15_EPB_arretiert_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
+              <NodeInstance clockVal="SSM_st_EPB_arretiert_SM1" clockVar="SM1_state_act" instName="5" refName="countDownTimer_AhTypes_Pkg_utils_Pkg" scadeName="AhTypes_Pkg::utils_Pkg::countDownTimer">
+                <OutCtxVar clockVal="SSM_st_EPB_arretiert_SM1" clockVar="SM1_state_act" targetName="Context_countDownTimer_5"/>
               </NodeInstance>
               <InitOp instName="5"/>
               <Fork priority="1">
                 <Condition/>
-                <Transition kind="weak" scadeDest="anfahren" targetName="SSM_TR_EPB_arretiert_und_HHVentil_frei_anfahren_1_EPB_arretiert_und_HHVentil_frei_SM1"/>
+                <Transition kind="weak" scadeDest="anfahren" targetName="SSM_TR_EPB_arretiert_anfahren_1_EPB_arretiert_SM1"/>
               </Fork>
             </State>
             <State scadeName="anfahren" targetName="SSM_st_anfahren_SM1">
@@ -314,25 +306,25 @@
                   <Local clockVal="SSM_st_bremspedalTreten_SM2_anfahren_SM1" clockVar="SM2_clock_anfahren_SM1" inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2_bremspedalTreten_SM2_anfahren_SM1" targetType="kcg_bool"/>
                   <Fork priority="1">
                     <Condition/>
-                    <Transition kind="weak" scadeDest="getriebe_auf_D" targetName="_13_SSM_TR_bremspedalTreten_getriebe_auf_D_1_bremspedalTreten_SM2_anfahren_SM1"/>
+                    <Transition kind="weak" scadeDest="getriebe_auf_D" targetName="SSM_TR_bremspedalTreten_getriebe_auf_D_1_bremspedalTreten_SM2_anfahren_SM1"/>
                   </Fork>
                 </State>
                 <State scadeName="getriebe_auf_D" targetName="SSM_st_getriebe_auf_D_SM2_anfahren_SM1">
                   <Local clockVal="SSM_st_getriebe_auf_D_SM2_anfahren_SM1" clockVar="SM2_clock_anfahren_SM1" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::getriebeWahlhebel_T" targetName="_L1_getriebe_auf_D_SM2_anfahren_SM1" targetType="getriebeWahlhebel_T_AhTypes_Pkg_ah_Pkg"/>
                   <Fork priority="1">
                     <Condition/>
-                    <Transition kind="weak" scadeDest="gasGeben" targetName="_12_SSM_TR_getriebe_auf_D_gasGeben_1_getriebe_auf_D_SM2_anfahren_SM1"/>
+                    <Transition kind="weak" scadeDest="gasGeben" targetName="SSM_TR_getriebe_auf_D_gasGeben_1_getriebe_auf_D_SM2_anfahren_SM1"/>
                   </Fork>
                 </State>
                 <State scadeName="gasGeben" targetName="SSM_st_gasGeben_SM2_anfahren_SM1">
                   <Local clockVal="SSM_st_gasGeben_SM2_anfahren_SM1" clockVar="SM2_clock_anfahren_SM1" inCtx="true" scadeName="_L7" scadeType="AhTypes_Pkg::ah_Pkg::bremspedalkraft_T" targetName="_L7_gasGeben_SM2_anfahren_SM1" targetType="bremspedalkraft_T_AhTypes_Pkg_ah_Pkg"/>
                   <Local clockVal="SSM_st_gasGeben_SM2_anfahren_SM1" clockVar="SM2_clock_anfahren_SM1" inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6_gasGeben_SM2_anfahren_SM1" targetType="kcg_float64"/>
-                  <Local clockVal="SSM_st_gasGeben_SM2_anfahren_SM1" clockVar="SM2_clock_anfahren_SM1" inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5_gasGeben_SM2_anfahren_SM1" targetType="kcg_bool"/>
                   <Local clockVal="SSM_st_gasGeben_SM2_anfahren_SM1" clockVar="SM2_clock_anfahren_SM1" inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4_gasGeben_SM2_anfahren_SM1" targetType="kcg_float64"/>
                   <Local clockVal="SSM_st_gasGeben_SM2_anfahren_SM1" clockVar="SM2_clock_anfahren_SM1" inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_gasGeben_SM2_anfahren_SM1" targetType="kcg_float64"/>
                   <Local clockVal="SSM_st_gasGeben_SM2_anfahren_SM1" clockVar="SM2_clock_anfahren_SM1" inCtx="true" scadeName="_L2" scadeType="AhTypes_Pkg::ah_Pkg::gaspedalstellung_T" targetName="_L2_gasGeben_SM2_anfahren_SM1" targetType="gaspedalstellung_T_AhTypes_Pkg_ah_Pkg"/>
+                  <Local clockVal="SSM_st_gasGeben_SM2_anfahren_SM1" clockVar="SM2_clock_anfahren_SM1" inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8_gasGeben_SM2_anfahren_SM1" targetType="kcg_bool"/>
                   <FbyOp instName="1">
-                    <Init inCtx="true" targetName="init7" targetType="kcg_bool"/>
+                    <Init inCtx="true" targetName="init5" targetType="kcg_bool"/>
                     <Memory inCtx="true" targetName="_L4_gasGeben_SM2_anfahren_SM1" targetType="kcg_float64"/>
                   </FbyOp>
                 </State>
@@ -350,207 +342,148 @@
               </Fork>
             </State>
             <State scadeName="fahren" targetName="SSM_st_fahren_SM1">
-              <Fork priority="1">
-                <Condition/>
-                <Transition kind="weak" scadeDest="haltenAmBerg" targetName="SSM_TR_fahren_haltenAmBerg_1_fahren_SM1"/>
-              </Fork>
-            </State>
-            <State scadeName="haltenAmBerg" targetName="SSM_st_haltenAmBerg_SM1">
-              <Local clockVal="SSM_st_haltenAmBerg_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L9" scadeType="float64" targetName="_L9_haltenAmBerg_SM1" targetType="kcg_float64"/>
-              <Local clockVal="SSM_st_haltenAmBerg_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L15" scadeType="AhTypes_Pkg::ah_Pkg::bremspedalkraft_T" targetName="_L15_haltenAmBerg_SM1" targetType="bremspedalkraft_T_AhTypes_Pkg_ah_Pkg"/>
-              <Fork priority="1">
-                <Condition/>
-                <Transition kind="weak" scadeDest="fzg_Steht_HHVentil_gesperrt" targetName="SSM_TR_haltenAmBerg_fzg_Steht_HHVentil_gesperrt_1_haltenAmBerg_SM1"/>
-              </Fork>
-            </State>
-            <State scadeName="fzg_Steht_HHVentil_gesperrt" targetName="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1">
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L4" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L4_fzg_Steht_HHVentil_gesperrt_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_fzg_Steht_HHVentil_gesperrt_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L2" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L2_fzg_Steht_HHVentil_gesperrt_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L9" scadeType="bool" targetName="_L9_fzg_Steht_HHVentil_gesperrt_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10_fzg_Steht_HHVentil_gesperrt_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8_fzg_Steht_HHVentil_gesperrt_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L7" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L7_fzg_Steht_HHVentil_gesperrt_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L6" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L6_fzg_Steht_HHVentil_gesperrt_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5_fzg_Steht_HHVentil_gesperrt_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L11" scadeType="bool" targetName="_L11_fzg_Steht_HHVentil_gesperrt_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L12" scadeType="bool" targetName="_L12_fzg_Steht_HHVentil_gesperrt_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L14" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T" targetName="_L14_fzg_Steht_HHVentil_gesperrt_SM1" targetType="betriebsbremsSperrventil_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L15" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T" targetName="_L15_fzg_Steht_HHVentil_gesperrt_SM1" targetType="betriebsbremsSperrventil_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L17" scadeType="AhTypes_Pkg::physical_Pkg::v_in_mps_T" targetName="_L17_fzg_Steht_HHVentil_gesperrt_SM1" targetType="v_in_mps_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L20" scadeType="bool" targetName="_L20_fzg_Steht_HHVentil_gesperrt_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L21" scadeType="AhTypes_Pkg::physical_Pkg::v_in_mps_T" targetName="_L21_fzg_Steht_HHVentil_gesperrt_SM1" targetType="v_in_mps_T_AhTypes_Pkg_physical_Pkg"/>
-              <InitOp instName="7"/>
-              <NodeInstance clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" instName="7" refName="countDownTimer_AhTypes_Pkg_utils_Pkg" scadeName="AhTypes_Pkg::utils_Pkg::countDownTimer">
-                <OutCtxVar clockVal="SSM_st_fzg_Steht_HHVentil_gesperrt_SM1" clockVar="SM1_state_act" targetName="Context_countDownTimer_7"/>
+              <Local clockVal="SSM_st_fahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L6" scadeType="bool" targetName="_L6_fahren_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_fahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5_fahren_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_fahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L4" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L4_fahren_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
+              <Local clockVal="SSM_st_fahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L3" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L3_fahren_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
+              <Local clockVal="SSM_st_fahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_fahren_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_fahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2_fahren_SM1" targetType="kcg_bool"/>
+              <NodeInstance clockVal="SSM_st_fahren_SM1" clockVar="SM1_state_act" instName="6" refName="countDownTimer_AhTypes_Pkg_utils_Pkg" scadeName="AhTypes_Pkg::utils_Pkg::countDownTimer">
+                <OutCtxVar clockVal="SSM_st_fahren_SM1" clockVar="SM1_state_act" targetName="Context_countDownTimer_6"/>
               </NodeInstance>
+              <InitOp instName="6"/>
               <Fork priority="1">
                 <Condition/>
-                <Transition kind="weak" scadeDest="zurueckrollen" targetName="SSM_TR_fzg_Steht_HHVentil_gesperrt_zurueckrollen_1_fzg_Steht_HHVentil_gesperrt_SM1"/>
+                <Transition kind="weak" scadeDest="NotbremsungAusloesen" targetName="SSM_TR_fahren_NotbremsungAusloesen_1_fahren_SM1"/>
               </Fork>
             </State>
-            <State scadeName="erneutAnfahren" targetName="SSM_st_erneutAnfahren_SM1">
-              <Automaton scadeName="SM2" targetStatesType="SSM_ST_SM2_erneutAnfahren_SM1" targetTransitionsType="SSM_TR_SM2_erneutAnfahren_SM1">
-                <State scadeName="bremspedalTreten" targetName="SSM_st_bremspedalTreten_SM2_erneutAnfahren_SM1">
-                  <Local clockVal="SSM_st_bremspedalTreten_SM2_erneutAnfahren_SM1" clockVar="SM2_clock_erneutAnfahren_SM1" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsdruck_T" targetName="_L1_bremspedalTreten_SM2_erneutAnfahren_SM1" targetType="betriebsbremsdruck_T_AhTypes_Pkg_ah_Pkg"/>
-                  <Local clockVal="SSM_st_bremspedalTreten_SM2_erneutAnfahren_SM1" clockVar="SM2_clock_erneutAnfahren_SM1" inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2_bremspedalTreten_SM2_erneutAnfahren_SM1" targetType="kcg_bool"/>
-                  <Fork priority="1">
-                    <Condition/>
-                    <Transition kind="weak" scadeDest="getriebe_auf_D" targetName="SSM_TR_bremspedalTreten_getriebe_auf_D_1_bremspedalTreten_SM2_erneutAnfahren_SM1"/>
-                  </Fork>
-                </State>
-                <State scadeName="getriebe_auf_D" targetName="SSM_st_getriebe_auf_D_SM2_erneutAnfahren_SM1">
-                  <Local clockVal="SSM_st_getriebe_auf_D_SM2_erneutAnfahren_SM1" clockVar="SM2_clock_erneutAnfahren_SM1" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::getriebeWahlhebel_T" targetName="_L1_getriebe_auf_D_SM2_erneutAnfahren_SM1" targetType="getriebeWahlhebel_T_AhTypes_Pkg_ah_Pkg"/>
-                  <Fork priority="1">
-                    <Condition/>
-                    <Transition kind="weak" scadeDest="gasGeben" targetName="SSM_TR_getriebe_auf_D_gasGeben_1_getriebe_auf_D_SM2_erneutAnfahren_SM1"/>
-                  </Fork>
-                </State>
-                <State scadeName="gasGeben" targetName="SSM_st_gasGeben_SM2_erneutAnfahren_SM1">
-                  <Local clockVal="SSM_st_gasGeben_SM2_erneutAnfahren_SM1" clockVar="SM2_clock_erneutAnfahren_SM1" inCtx="true" scadeName="_L2" scadeType="AhTypes_Pkg::ah_Pkg::gaspedalstellung_T" targetName="_L2_gasGeben_SM2_erneutAnfahren_SM1" targetType="gaspedalstellung_T_AhTypes_Pkg_ah_Pkg"/>
-                  <Local clockVal="SSM_st_gasGeben_SM2_erneutAnfahren_SM1" clockVar="SM2_clock_erneutAnfahren_SM1" inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_gasGeben_SM2_erneutAnfahren_SM1" targetType="kcg_float64"/>
-                  <Local clockVal="SSM_st_gasGeben_SM2_erneutAnfahren_SM1" clockVar="SM2_clock_erneutAnfahren_SM1" inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4_gasGeben_SM2_erneutAnfahren_SM1" targetType="kcg_float64"/>
-                  <Local clockVal="SSM_st_gasGeben_SM2_erneutAnfahren_SM1" clockVar="SM2_clock_erneutAnfahren_SM1" inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5_gasGeben_SM2_erneutAnfahren_SM1" targetType="kcg_bool"/>
-                  <Local clockVal="SSM_st_gasGeben_SM2_erneutAnfahren_SM1" clockVar="SM2_clock_erneutAnfahren_SM1" inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6_gasGeben_SM2_erneutAnfahren_SM1" targetType="kcg_float64"/>
-                  <Local clockVal="SSM_st_gasGeben_SM2_erneutAnfahren_SM1" clockVar="SM2_clock_erneutAnfahren_SM1" inCtx="true" scadeName="_L7" scadeType="AhTypes_Pkg::ah_Pkg::bremspedalkraft_T" targetName="_L7_gasGeben_SM2_erneutAnfahren_SM1" targetType="bremspedalkraft_T_AhTypes_Pkg_ah_Pkg"/>
-                  <FbyOp instName="2">
-                    <Init inCtx="true" targetName="init4" targetType="kcg_bool"/>
-                    <Memory inCtx="true" targetName="_L4_gasGeben_SM2_erneutAnfahren_SM1" targetType="kcg_float64"/>
-                  </FbyOp>
-                </State>
-                <ActiveState inCtx="true" targetName="SM2_state_act_erneutAnfahren_SM1"/>
-                <SelectedState inCtx="true" targetName="SM2_state_sel_erneutAnfahren_SM1"/>
-                <NextState inCtx="true" mem="true" targetName="SM2_state_nxt_erneutAnfahren_SM1"/>
-                <ResetActiveState inCtx="true" mem="true" targetName="SM2_reset_act_erneutAnfahren_SM1"/>
-                <ResetNextState inCtx="true" mem="true" targetName="SM2_reset_nxt_erneutAnfahren_SM1"/>
-                <StrongTransition inCtx="true" targetName="SM2_fired_strong_erneutAnfahren_SM1"/>
-                <WeakTransition inCtx="true" targetName="SM2_fired_erneutAnfahren_SM1"/>
-              </Automaton>
-              <Fork priority="1">
-                <Condition/>
-                <Transition kind="weak" scadeDest="weiterfahren" targetName="SSM_TR_erneutAnfahren_weiterfahren_1_erneutAnfahren_SM1"/>
-              </Fork>
-            </State>
-            <State scadeName="anhaltenZumBeenden" targetName="SSM_st_anhaltenZumBeenden_SM1">
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L9" scadeType="float64" targetName="_L9_anhaltenZumBeenden_SM1" targetType="kcg_float64"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L11" scadeType="float64" targetName="_L11_anhaltenZumBeenden_SM1" targetType="kcg_float64"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L12" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L12_anhaltenZumBeenden_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L13" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L13_anhaltenZumBeenden_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L14" scadeType="bool" targetName="_L14_anhaltenZumBeenden_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L15" scadeType="AhTypes_Pkg::physical_Pkg::v_in_mps_T" targetName="_L15_anhaltenZumBeenden_SM1" targetType="v_in_mps_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L16" scadeType="AhTypes_Pkg::physical_Pkg::v_in_mps_T" targetName="_L16_anhaltenZumBeenden_SM1" targetType="v_in_mps_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L17" scadeType="bool" targetName="_L17_anhaltenZumBeenden_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L18" scadeType="bool" targetName="_L18_anhaltenZumBeenden_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L19" scadeType="bool" targetName="_L19_anhaltenZumBeenden_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L20" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L20_anhaltenZumBeenden_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L21" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L21_anhaltenZumBeenden_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L22" scadeType="bool" targetName="_L22_anhaltenZumBeenden_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L23" scadeType="bool" targetName="_L23_anhaltenZumBeenden_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L24" scadeType="bool" targetName="_L24_anhaltenZumBeenden_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L25" scadeType="float64" targetName="_L25_anhaltenZumBeenden_SM1" targetType="kcg_float64"/>
-              <Local clockVal="SSM_st_anhaltenZumBeenden_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L26" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsdruck_T" targetName="_L26_anhaltenZumBeenden_SM1" targetType="betriebsbremsdruck_T_AhTypes_Pkg_ah_Pkg"/>
-              <Fork priority="1">
-                <Condition/>
-                <Transition kind="weak" scadeDest="fzgSteht" targetName="SSM_TR_anhaltenZumBeenden_fzgSteht_1_anhaltenZumBeenden_SM1"/>
-              </Fork>
-            </State>
-            <State scadeName="fzgSteht" targetName="SSM_st_fzgSteht_SM1">
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_fzgSteht_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L2" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L2_fzgSteht_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L9" scadeType="bool" targetName="_L9_fzgSteht_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10_fzgSteht_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8_fzgSteht_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L7" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L7_fzgSteht_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L6" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L6_fzgSteht_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5_fzgSteht_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L11" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L11_fzgSteht_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L41" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L41_fzgSteht_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L40" scadeType="AhTypes_Pkg::physical_Pkg::v_in_mps_T" targetName="_L40_fzgSteht_SM1" targetType="v_in_mps_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L38" scadeType="AhTypes_Pkg::physical_Pkg::v_in_mps_T" targetName="_L38_fzgSteht_SM1" targetType="v_in_mps_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L36" scadeType="bool" targetName="_L36_fzgSteht_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L35" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L35_fzgSteht_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L34" scadeType="bool" targetName="_L34_fzgSteht_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L32" scadeType="bool" targetName="_L32_fzgSteht_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L42" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L42_fzgSteht_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L43" scadeType="bool" targetName="_L43_fzgSteht_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L54" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsdruck_T" targetName="_L54_fzgSteht_SM1" targetType="betriebsbremsdruck_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L55" scadeType="bool" targetName="_L55_fzgSteht_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L57" scadeType="AhTypes_Pkg::ah_Pkg::bremspedalkraft_T" targetName="_L57_fzgSteht_SM1" targetType="bremspedalkraft_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L58" scadeType="AhTypes_Pkg::ah_Pkg::bremspedalkraft_T" targetName="_L58_fzgSteht_SM1" targetType="bremspedalkraft_T_AhTypes_Pkg_ah_Pkg"/>
-              <Local clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_fzgSteht_SM1" targetType="kcg_float64"/>
-              <InitOp instName="8"/>
-              <NodeInstance clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" instName="8" refName="countDownTimer_AhTypes_Pkg_utils_Pkg" scadeName="AhTypes_Pkg::utils_Pkg::countDownTimer">
-                <OutCtxVar clockVal="SSM_st_fzgSteht_SM1" clockVar="SM1_state_act" targetName="Context_countDownTimer_8"/>
-              </NodeInstance>
-              <Fork priority="1">
-                <Condition/>
-                <Transition kind="weak" scadeDest="parken" targetName="SSM_TR_fzgSteht_parken_1_fzgSteht_SM1"/>
-              </Fork>
-            </State>
-            <State scadeName="parken" targetName="SSM_st_parken_SM1">
-              <Automaton scadeName="SM5" targetStatesType="SSM_ST_SM5_parken_SM1" targetTransitionsType="SSM_TR_SM5_parken_SM1">
-                <State scadeName="bremseDurchtreten" targetName="SSM_st_bremseDurchtreten_SM5_parken_SM1">
-                  <Local clockVal="SSM_st_bremseDurchtreten_SM5_parken_SM1" clockVar="SM5_clock_parken_SM1" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::betriebsbremsdruck_T" targetName="_L1_bremseDurchtreten_SM5_parken_SM1" targetType="betriebsbremsdruck_T_AhTypes_Pkg_ah_Pkg"/>
-                  <Fork priority="1">
-                    <Condition/>
-                    <Transition kind="weak" scadeDest="getriebeWahlhebelNach_P" targetName="SSM_TR_bremseDurchtreten_getriebeWahlhebelNach_P_1_bremseDurchtreten_SM5_parken_SM1"/>
-                  </Fork>
-                </State>
-                <State scadeName="getriebeWahlhebelNach_P" targetName="SSM_st_getriebeWahlhebelNach_P_SM5_parken_SM1">
-                  <Local clockVal="SSM_st_getriebeWahlhebelNach_P_SM5_parken_SM1" clockVar="SM5_clock_parken_SM1" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::getriebeWahlhebel_T" targetName="_L1_getriebeWahlhebelNach_P_SM5_parken_SM1" targetType="getriebeWahlhebel_T_AhTypes_Pkg_ah_Pkg"/>
-                  <Fork priority="1">
-                    <Condition/>
-                    <Transition kind="weak" scadeDest="EPB_angezogen" targetName="SSM_TR_getriebeWahlhebelNach_P_EPB_angezogen_1_getriebeWahlhebelNach_P_SM5_parken_SM1"/>
-                  </Fork>
-                </State>
-                <State scadeName="EPB_angezogen" targetName="SSM_st_EPB_angezogen_SM5_parken_SM1">
-                  <Local clockVal="SSM_st_EPB_angezogen_SM5_parken_SM1" clockVar="SM5_clock_parken_SM1" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L1_EPB_angezogen_SM5_parken_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
-                  <Local clockVal="SSM_st_EPB_angezogen_SM5_parken_SM1" clockVar="SM5_clock_parken_SM1" inCtx="true" scadeName="_L2" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L2_EPB_angezogen_SM5_parken_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
-                  <Local clockVal="SSM_st_EPB_angezogen_SM5_parken_SM1" clockVar="SM5_clock_parken_SM1" inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_EPB_angezogen_SM5_parken_SM1" targetType="kcg_bool"/>
-                </State>
-                <ActiveState inCtx="true" targetName="SM5_state_act_parken_SM1"/>
-                <SelectedState inCtx="true" targetName="SM5_state_sel_parken_SM1"/>
-                <NextState inCtx="true" mem="true" targetName="SM5_state_nxt_parken_SM1"/>
-                <ResetActiveState inCtx="true" mem="true" targetName="SM5_reset_act_parken_SM1"/>
-                <ResetNextState inCtx="true" mem="true" targetName="SM5_reset_nxt_parken_SM1"/>
-                <StrongTransition inCtx="true" targetName="SM5_fired_strong_parken_SM1"/>
-                <WeakTransition inCtx="true" targetName="SM5_fired_parken_SM1"/>
-              </Automaton>
-            </State>
-            <State scadeName="weiterfahren" targetName="SSM_st_weiterfahren_SM1">
-              <Local clockVal="SSM_st_weiterfahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L6" scadeType="bool" targetName="_L6_weiterfahren_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_weiterfahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5_weiterfahren_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_weiterfahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L4" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L4_weiterfahren_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_weiterfahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L3" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L3_weiterfahren_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_weiterfahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_weiterfahren_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_weiterfahren_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2_weiterfahren_SM1" targetType="kcg_bool"/>
-              <NodeInstance clockVal="SSM_st_weiterfahren_SM1" clockVar="SM1_state_act" instName="9" refName="countDownTimer_AhTypes_Pkg_utils_Pkg" scadeName="AhTypes_Pkg::utils_Pkg::countDownTimer">
-                <OutCtxVar clockVal="SSM_st_weiterfahren_SM1" clockVar="SM1_state_act" targetName="Context_countDownTimer_9"/>
-              </NodeInstance>
-              <InitOp instName="9"/>
-              <Fork priority="1">
-                <Condition/>
-                <Transition kind="weak" scadeDest="anhaltenZumBeenden" targetName="SSM_TR_weiterfahren_anhaltenZumBeenden_1_weiterfahren_SM1"/>
-              </Fork>
-            </State>
-            <State scadeName="zurueckrollen" targetName="SSM_st_zurueckrollen_SM1">
-              <Local clockVal="SSM_st_zurueckrollen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4_zurueckrollen_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_zurueckrollen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5_zurueckrollen_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_zurueckrollen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_zurueckrollen_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_zurueckrollen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2_zurueckrollen_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_zurueckrollen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L1_zurueckrollen_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_zurueckrollen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L8" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L8_zurueckrollen_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_zurueckrollen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L9" scadeType="bool" targetName="_L9_zurueckrollen_SM1" targetType="kcg_bool"/>
-              <Local clockVal="SSM_st_zurueckrollen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L10" scadeType="AhTypes_Pkg::physical_Pkg::v_in_mps_T" targetName="_L10_zurueckrollen_SM1" targetType="v_in_mps_T_AhTypes_Pkg_physical_Pkg"/>
-              <Local clockVal="SSM_st_zurueckrollen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L11" scadeType="AhTypes_Pkg::physical_Pkg::v_in_mps_T" targetName="_L11_zurueckrollen_SM1" targetType="v_in_mps_T_AhTypes_Pkg_physical_Pkg"/>
+            <State scadeName="NotbremsungAusloesen" targetName="SSM_st_NotbremsungAusloesen_SM1">
+              <Local clockVal="SSM_st_NotbremsungAusloesen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::tasterP_T" targetName="_L1_NotbremsungAusloesen_SM1" targetType="tasterP_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_NotbremsungAusloesen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L7" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L7_NotbremsungAusloesen_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
+              <Local clockVal="SSM_st_NotbremsungAusloesen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4_NotbremsungAusloesen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_NotbremsungAusloesen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5_NotbremsungAusloesen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_NotbremsungAusloesen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_NotbremsungAusloesen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_NotbremsungAusloesen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2_NotbremsungAusloesen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_NotbremsungAusloesen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L8" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L8_NotbremsungAusloesen_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
               <InitOp instName="10"/>
-              <NodeInstance clockVal="SSM_st_zurueckrollen_SM1" clockVar="SM1_state_act" instName="10" refName="countDownTimer_AhTypes_Pkg_utils_Pkg" scadeName="AhTypes_Pkg::utils_Pkg::countDownTimer">
-                <OutCtxVar clockVal="SSM_st_zurueckrollen_SM1" clockVar="SM1_state_act" targetName="Context_countDownTimer_10"/>
+              <NodeInstance clockVal="SSM_st_NotbremsungAusloesen_SM1" clockVar="SM1_state_act" instName="10" refName="countDownTimer_AhTypes_Pkg_utils_Pkg" scadeName="AhTypes_Pkg::utils_Pkg::countDownTimer">
+                <OutCtxVar clockVal="SSM_st_NotbremsungAusloesen_SM1" clockVar="SM1_state_act" targetName="Context_countDownTimer_10"/>
               </NodeInstance>
               <Fork priority="1">
                 <Condition/>
-                <Transition kind="weak" scadeDest="erneutAnfahren" targetName="SSM_TR_zurueckrollen_erneutAnfahren_1_zurueckrollen_SM1"/>
+                <Transition kind="weak" scadeDest="Notbremse" targetName="SSM_TR_NotbremsungAusloesen_Notbremse_1_NotbremsungAusloesen_SM1"/>
               </Fork>
+            </State>
+            <State scadeName="Notbremse" targetName="SSM_st_Notbremse_SM1">
+              <Automaton scadeName="SM6" targetStatesType="SSM_ST_SM6_Notbremse_SM1" targetTransitionsType="SSM_TR_SM6_Notbremse_SM1">
+                <State scadeName="Fuss_vom_Gas" targetName="SSM_st_Fuss_vom_Gas_SM6_Notbremse_SM1">
+                  <Local clockVal="SSM_st_Fuss_vom_Gas_SM6_Notbremse_SM1" clockVar="SM6_clock_Notbremse_SM1" inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_Fuss_vom_Gas_SM6_Notbremse_SM1" targetType="kcg_float64"/>
+                  <Fork priority="1">
+                    <Condition/>
+                    <Transition kind="weak" scadeDest="EPB_angezogen" targetName="SSM_TR_Fuss_vom_Gas_EPB_angezogen_1_Fuss_vom_Gas_SM6_Notbremse_SM1"/>
+                  </Fork>
+                </State>
+                <State scadeName="EPB_angezogen" targetName="SSM_st_EPB_angezogen_SM6_Notbremse_SM1">
+                  <Local clockVal="SSM_st_EPB_angezogen_SM6_Notbremse_SM1" clockVar="SM6_clock_Notbremse_SM1" inCtx="true" scadeName="_L3" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L3_EPB_angezogen_SM6_Notbremse_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
+                  <Local clockVal="SSM_st_EPB_angezogen_SM6_Notbremse_SM1" clockVar="SM6_clock_Notbremse_SM1" inCtx="true" scadeName="_L2" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L2_EPB_angezogen_SM6_Notbremse_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
+                  <Local clockVal="SSM_st_EPB_angezogen_SM6_Notbremse_SM1" clockVar="SM6_clock_Notbremse_SM1" inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_EPB_angezogen_SM6_Notbremse_SM1" targetType="kcg_bool"/>
+                </State>
+                <ActiveState inCtx="true" targetName="SM6_state_act_Notbremse_SM1"/>
+                <SelectedState inCtx="true" targetName="SM6_state_sel_Notbremse_SM1"/>
+                <NextState inCtx="true" mem="true" targetName="SM6_state_nxt_Notbremse_SM1"/>
+                <ResetActiveState inCtx="true" mem="true" targetName="SM6_reset_act_Notbremse_SM1"/>
+                <ResetNextState inCtx="true" mem="true" targetName="SM6_reset_nxt_Notbremse_SM1"/>
+                <StrongTransition inCtx="true" targetName="SM6_fired_strong_Notbremse_SM1"/>
+                <WeakTransition inCtx="true" targetName="SM6_fired_Notbremse_SM1"/>
+              </Automaton>
+              <Fork priority="1">
+                <Condition/>
+                <Transition kind="weak" scadeDest="EPB_druecken" targetName="SSM_TR_Notbremse_EPB_druecken_1_Notbremse_SM1"/>
+              </Fork>
+            </State>
+            <State scadeName="autoHoldEinschalten" targetName="SSM_st_autoHoldEinschalten_SM1">
+              <Automaton scadeName="SM4" targetStatesType="SSM_ST_SM4_autoHoldEinschalten_SM1" targetTransitionsType="SSM_TR_SM4_autoHoldEinschalten_SM1">
+                <State scadeName="HoldDruecken" targetName="SSM_st_HoldDruecken_SM4_autoHoldEinschalten_SM1">
+                  <Local clockVal="SSM_st_HoldDruecken_SM4_autoHoldEinschalten_SM1" clockVar="SM4_clock_autoHoldEinschalten_SM1" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L1_HoldDruecken_SM4_autoHoldEinschalten_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+                  <Local clockVal="SSM_st_HoldDruecken_SM4_autoHoldEinschalten_SM1" clockVar="SM4_clock_autoHoldEinschalten_SM1" inCtx="true" scadeName="_L2" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L2_HoldDruecken_SM4_autoHoldEinschalten_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+                  <Local clockVal="SSM_st_HoldDruecken_SM4_autoHoldEinschalten_SM1" clockVar="SM4_clock_autoHoldEinschalten_SM1" inCtx="true" scadeName="_L3" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L3_HoldDruecken_SM4_autoHoldEinschalten_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+                  <Local clockVal="SSM_st_HoldDruecken_SM4_autoHoldEinschalten_SM1" clockVar="SM4_clock_autoHoldEinschalten_SM1" inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4_HoldDruecken_SM4_autoHoldEinschalten_SM1" targetType="kcg_bool"/>
+                  <Fork priority="1">
+                    <Condition/>
+                    <Transition kind="weak" scadeDest="HoldLoesen" targetName="SSM_TR_HoldDruecken_HoldLoesen_1_HoldDruecken_SM4_autoHoldEinschalten_SM1"/>
+                  </Fork>
+                </State>
+                <State scadeName="HoldLoesen" targetName="SSM_st_HoldLoesen_SM4_autoHoldEinschalten_SM1">
+                  <Local clockVal="SSM_st_HoldLoesen_SM4_autoHoldEinschalten_SM1" clockVar="SM4_clock_autoHoldEinschalten_SM1" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L1_HoldLoesen_SM4_autoHoldEinschalten_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+                  <Local clockVal="SSM_st_HoldLoesen_SM4_autoHoldEinschalten_SM1" clockVar="SM4_clock_autoHoldEinschalten_SM1" inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4_HoldLoesen_SM4_autoHoldEinschalten_SM1" targetType="kcg_bool"/>
+                  <Local clockVal="SSM_st_HoldLoesen_SM4_autoHoldEinschalten_SM1" clockVar="SM4_clock_autoHoldEinschalten_SM1" inCtx="true" scadeName="_L3" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L3_HoldLoesen_SM4_autoHoldEinschalten_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+                  <Local clockVal="SSM_st_HoldLoesen_SM4_autoHoldEinschalten_SM1" clockVar="SM4_clock_autoHoldEinschalten_SM1" inCtx="true" scadeName="_L2" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L2_HoldLoesen_SM4_autoHoldEinschalten_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+                  <Local clockVal="SSM_st_HoldLoesen_SM4_autoHoldEinschalten_SM1" clockVar="SM4_clock_autoHoldEinschalten_SM1" inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5_HoldLoesen_SM4_autoHoldEinschalten_SM1" targetType="kcg_bool"/>
+                </State>
+                <ActiveState inCtx="true" targetName="SM4_state_act_autoHoldEinschalten_SM1"/>
+                <SelectedState inCtx="true" targetName="SM4_state_sel_autoHoldEinschalten_SM1"/>
+                <NextState inCtx="true" mem="true" targetName="SM4_state_nxt_autoHoldEinschalten_SM1"/>
+                <ResetActiveState inCtx="true" mem="true" targetName="SM4_reset_act_autoHoldEinschalten_SM1"/>
+                <ResetNextState inCtx="true" mem="true" targetName="SM4_reset_nxt_autoHoldEinschalten_SM1"/>
+                <StrongTransition inCtx="true" targetName="SM4_fired_strong_autoHoldEinschalten_SM1"/>
+                <WeakTransition inCtx="true" targetName="SM4_fired_autoHoldEinschalten_SM1"/>
+              </Automaton>
+              <Fork priority="1">
+                <Condition/>
+                <Transition kind="weak" scadeDest="cockpitanzeigeBleibtAus" targetName="SSM_TR_autoHoldEinschalten_cockpitanzeigeBleibtAus_1_autoHoldEinschalten_SM1"/>
+              </Fork>
+            </State>
+            <State scadeName="EPB_druecken" targetName="SSM_st_EPB_druecken_SM1">
+              <Local clockVal="SSM_st_EPB_druecken_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="AhTypes_Pkg::ah_Pkg::tasterP_T" targetName="_L1_EPB_druecken_SM1" targetType="tasterP_T_AhTypes_Pkg_ah_Pkg"/>
+              <Fork priority="1">
+                <Condition/>
+                <Transition kind="weak" scadeDest="EPB_gedrueckt" targetName="SSM_TR_EPB_druecken_EPB_gedrueckt_1_EPB_druecken_SM1"/>
+              </Fork>
+            </State>
+            <State scadeName="EPB_gedrueckt" targetName="SSM_st_EPB_gedrueckt_SM1">
+              <Local clockVal="SSM_st_EPB_gedrueckt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_EPB_gedrueckt_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gedrueckt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2_EPB_gedrueckt_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gedrueckt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_EPB_gedrueckt_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gedrueckt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L4" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L4_EPB_gedrueckt_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gedrueckt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L5" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L5_EPB_gedrueckt_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gedrueckt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L6" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L6_EPB_gedrueckt_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gedrueckt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L7" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L7_EPB_gedrueckt_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gedrueckt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8_EPB_gedrueckt_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gedrueckt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L9" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L9_EPB_gedrueckt_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gedrueckt_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L10" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L10_EPB_gedrueckt_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
+              <Fork priority="1">
+                <Condition/>
+                <Transition kind="weak" scadeDest="Fzg_Abstellen" targetName="SSM_TR_EPB_gedrueckt_Fzg_Abstellen_1_EPB_gedrueckt_SM1"/>
+              </Fork>
+            </State>
+            <State scadeName="Fzg_Abstellen" targetName="SSM_st_Fzg_Abstellen_SM1">
+              <Local clockVal="SSM_st_Fzg_Abstellen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L2" scadeType="AhTypes_Pkg::ah_Pkg::getriebeWahlhebel_T" targetName="_L2_Fzg_Abstellen_SM1" targetType="getriebeWahlhebel_T_AhTypes_Pkg_ah_Pkg"/>
+              <Fork priority="1">
+                <Condition/>
+                <Transition kind="weak" scadeDest="EPB_gezogen" targetName="SSM_TR_Fzg_Abstellen_EPB_gezogen_1_Fzg_Abstellen_SM1"/>
+              </Fork>
+            </State>
+            <State scadeName="EPB_gezogen" targetName="SSM_st_EPB_gezogen_SM1">
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_EPB_gezogen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2_EPB_gezogen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_EPB_gezogen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L4" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L4_EPB_gezogen_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L5" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L5_EPB_gezogen_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L6" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L6_EPB_gezogen_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L7" scadeType="AhTypes_Pkg::ah_Pkg::on_off_element_T" targetName="_L7_EPB_gezogen_SM1" targetType="on_off_element_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8_EPB_gezogen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L9" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L9_EPB_gezogen_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L10" scadeType="AhTypes_Pkg::ah_Pkg::epbBremszustand_T" targetName="_L10_EPB_gezogen_SM1" targetType="epbBremszustand_T_AhTypes_Pkg_ah_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L33" scadeType="bool" targetName="_L33_EPB_gezogen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L32" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L32_EPB_gezogen_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L30" scadeType="bool" targetName="_L30_EPB_gezogen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L31" scadeType="bool" targetName="_L31_EPB_gezogen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L29" scadeType="bool" targetName="_L29_EPB_gezogen_SM1" targetType="kcg_bool"/>
+              <Local clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L28" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="_L28_EPB_gezogen_SM1" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
+              <NodeInstance clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" instName="23" refName="countDownTimer_AhTypes_Pkg_utils_Pkg" scadeName="AhTypes_Pkg::utils_Pkg::countDownTimer">
+                <OutCtxVar clockVal="SSM_st_EPB_gezogen_SM1" clockVar="SM1_state_act" targetName="Context_countDownTimer_23"/>
+              </NodeInstance>
+              <InitOp instName="23"/>
             </State>
             <ActiveState inCtx="true" targetName="SM1_state_act"/>
             <SelectedState inCtx="true" targetName="SM1_state_sel"/>
@@ -565,9 +498,10 @@
           <Memory inCtx="true" targetName="fahrertuerSchalter" targetType="tuerSchalter_T_AhTypes_Pkg_ah_Pkg"/>
           <Memory inCtx="true" targetName="sicherheitsgurtSchalter" targetType="sicherheitsgurt_zustand_T_AhTypes_Pkg_ah_Pkg"/>
           <Memory inCtx="true" targetName="taste_P" targetType="tasterP_T_AhTypes_Pkg_ah_Pkg"/>
-          <Memory inCtx="true" targetName="gaspedalStellung" targetType="gaspedalstellung_T_AhTypes_Pkg_ah_Pkg"/>
-          <Memory inCtx="true" targetName="error" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="taste_Hold" targetType="tasterHold_T_AhTypes_Pkg_ah_Pkg"/>
+          <Memory inCtx="true" targetName="gaspedalStellung" targetType="kcg_float64"/>
           <Memory inCtx="true" targetName="bremspedalKraft" targetType="bremspedalkraft_T_AhTypes_Pkg_ah_Pkg"/>
+          <Memory inCtx="true" targetName="error" targetType="kcg_bool"/>
           <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
           <Init inCtx="true" targetName="init1" targetType="kcg_bool"/>
           <Init inCtx="true" targetName="init2" targetType="kcg_bool"/>
@@ -580,19 +514,16 @@
           <Init inCtx="true" targetName="init9" targetType="kcg_bool"/>
           <Init inCtx="true" targetName="init10" targetType="kcg_bool"/>
           <Init inCtx="true" targetName="init11" targetType="kcg_bool"/>
-          <Init inCtx="true" targetName="init12" targetType="kcg_bool"/>
-          <Init inCtx="true" targetName="init13" targetType="kcg_bool"/>
           <Memory inCtx="true" targetName="SM2_state_nxt_anfahren_SM1" targetType="SSM_ST_SM2_anfahren_SM1"/>
           <Memory inCtx="true" targetName="_L4_gasGeben_SM2_anfahren_SM1" targetType="kcg_float64"/>
-          <Memory inCtx="true" targetName="SM2_state_nxt_erneutAnfahren_SM1" targetType="SSM_ST_SM2_erneutAnfahren_SM1"/>
-          <Memory inCtx="true" targetName="_L4_gasGeben_SM2_erneutAnfahren_SM1" targetType="kcg_float64"/>
-          <Memory inCtx="true" targetName="SM5_state_nxt_parken_SM1" targetType="SSM_ST_SM5_parken_SM1"/>
+          <Memory inCtx="true" targetName="SM6_state_nxt_Notbremse_SM1" targetType="SSM_ST_SM6_Notbremse_SM1"/>
+          <Memory inCtx="true" targetName="SM4_state_nxt_autoHoldEinschalten_SM1" targetType="SSM_ST_SM4_autoHoldEinschalten_SM1"/>
           <Memory inCtx="true" targetName="SM1_state_nxt" targetType="SSM_ST_SM1"/>
           <Clock clockVal="SSM_st_anfahren_SM1" clockVar="SM1_state_act" inCtx="true" targetName="SM2_clock_anfahren_SM1" targetType="SSM_ST_SM2_anfahren_SM1"/>
-          <Clock clockVal="SSM_st_erneutAnfahren_SM1" clockVar="SM1_state_act" inCtx="true" targetName="SM2_clock_erneutAnfahren_SM1" targetType="SSM_ST_SM2_erneutAnfahren_SM1"/>
-          <Clock clockVal="SSM_st_parken_SM1" clockVar="SM1_state_act" inCtx="true" targetName="SM5_clock_parken_SM1" targetType="SSM_ST_SM5_parken_SM1"/>
+          <Clock clockVal="SSM_st_Notbremse_SM1" clockVar="SM1_state_act" inCtx="true" targetName="SM6_clock_Notbremse_SM1" targetType="SSM_ST_SM6_Notbremse_SM1"/>
+          <Clock clockVal="SSM_st_autoHoldEinschalten_SM1" clockVar="SM1_state_act" inCtx="true" targetName="SM4_clock_autoHoldEinschalten_SM1" targetType="SSM_ST_SM4_autoHoldEinschalten_SM1"/>
           <Clock inCtx="true" targetName="SM1_state_act" targetType="SSM_ST_SM1"/>
-          <OutCtxType targetName="outC_autoModus_o_autoHold_HillHold_AH_testSuite_Pkg_divFahrer"/>
+          <OutCtxType targetName="outC_autoModus_Notbremsung_AH_testSuite_Pkg_divFahrer"/>
         </NoExpNode>
       </Package>
     </Package>
@@ -937,6 +868,7 @@
         <Constant macroDef="true" scadeName="cMaxHillHoldAktivzeit" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="cMaxHillHoldAktivzeit_AhTypes_Pkg_ah_Pkg" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
         <Constant macroDef="true" scadeName="cSteigung2GaspedalFaktor" scadeType="float64" targetName="cSteigung2GaspedalFaktor_AhTypes_Pkg_ah_Pkg" targetType="kcg_float64"/>
         <Constant macroDef="true" scadeName="cWartenBisEPBnachAutoHold" scadeType="AhTypes_Pkg::physical_Pkg::t_in_s_T" targetName="cWartenBisEPBnachAutoHold_AhTypes_Pkg_ah_Pkg" targetType="t_in_s_T_AhTypes_Pkg_physical_Pkg"/>
+        <Constant macroDef="true" scadeName="cGaspedalLosgelassen" scadeType="float64" targetName="cGaspedalLosgelassen_AhTypes_Pkg_ah_Pkg" targetType="kcg_float64"/>
         <EnumType scadeName="getriebeWahlhebel_T" targetName="getriebeWahlhebel_T_AhTypes_Pkg_ah_Pkg">
           <EnumVal scadeName="getriebeWahl_P" targetName="getriebeWahl_P_AhTypes_Pkg_ah_Pkg"/>
           <EnumVal scadeName="getriebeWahl_R" targetName="getriebeWahl_R_AhTypes_Pkg_ah_Pkg"/>

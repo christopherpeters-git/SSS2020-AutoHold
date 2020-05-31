@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/Christopher/Repositories/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-05-30T21:27:49
+** Command: kcg66.exe -config C:/Users/ma2/Desktop/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
+** Generation date: 2020-05-31T13:05:04
 *************************************************************$ */
 #ifndef _countDownTimer_AhTypes_Pkg_utils_Pkg_H_
 #define _countDownTimer_AhTypes_Pkg_utils_Pkg_H_
@@ -96,6 +96,6 @@ extern void countDownTimer_init_AhTypes_Pkg_utils_Pkg(
 #endif /* _countDownTimer_AhTypes_Pkg_utils_Pkg_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** countDownTimer_AhTypes_Pkg_utils_Pkg.h
-** Generation date: 2020-05-30T21:27:49
+** Generation date: 2020-05-31T13:05:04
 *************************************************************$ */
 
