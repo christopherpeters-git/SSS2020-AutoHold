@@ -14,7 +14,7 @@
 								</NamedType>
 							</type>
 							<value>
-								<ConstValue value="1.0"/>
+								<ConstValue value="5.0"/>
 							</value>
 							<pragmas>
 								<ed:Constant oid="!ed/2539d/69B/20BC/5e9eba64bc9"/>
@@ -29,7 +29,7 @@
 								</NamedType>
 							</type>
 							<value>
-								<ConstValue value="5.0"/>
+								<ConstValue value="1.0"/>
 							</value>
 							<pragmas>
 								<ed:Constant oid="!ed/253c5/69B/20BC/5e9ebaa5d91"/>
@@ -52486,14 +52486,14 @@
 														<ed:Equation oid="!ed/18483/269E/2AFC/5ed4b8e32d43"/>
 													</pragmas>
 												</Equation>
-												<!-- _L20 = _L17 <> _L21; -->
+												<!-- _L20 = _L17 > _L21; -->
 												<Equation>
 													<lefts>
 														<VariableRef name="_L20"/>
 													</lefts>
 													<right>
-														<!-- _L17 <> _L21 -->
-														<BinaryOp name="8" operator="&lt;&gt;">
+														<!-- _L17 > _L21 -->
+														<BinaryOp name="4" operator="&gt;">
 															<operands>
 																<IdExpression>
 																	<path>
@@ -52512,13 +52512,17 @@
 														<ed:Equation oid="!ed/18484/269E/2AFC/5ed4b8e34ac4"/>
 													</pragmas>
 												</Equation>
-												<!-- _L21 = 0.0; -->
+												<!-- _L21 = AhTypes_Pkg::ah_Pkg::cV_FzgSteht; -->
 												<Equation>
 													<lefts>
 														<VariableRef name="_L21"/>
 													</lefts>
 													<right>
-														<ConstValue value="0.0"/>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="AhTypes_Pkg::ah_Pkg::cV_FzgSteht"/>
+															</path>
+														</IdExpression>
 													</right>
 													<pragmas>
 														<ed:Equation oid="!ed/18485/269E/2AFC/5ed4b8e361e4"/>
@@ -52801,22 +52805,6 @@
 																		<Size width="1005" height="661"/>
 																	</size>
 																</EquationGE>
-																<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/18484/269E/2AFC/5ed4b8e34ac4" dstEquation="!ed/1847f/269E/2AFC/5ed4b8e374ff">
-																	<positions>
-																		<Point x="12753" y="5345"/>
-																		<Point x="14340" y="5345"/>
-																		<Point x="14340" y="2619"/>
-																		<Point x="15293" y="2619"/>
-																	</positions>
-																</Edge>
-																<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/18483/269E/2AFC/5ed4b8e32d43" dstEquation="!ed/18484/269E/2AFC/5ed4b8e34ac4">
-																	<positions>
-																		<Point x="8758" y="4974"/>
-																		<Point x="10239" y="4974"/>
-																		<Point x="10239" y="5212"/>
-																		<Point x="11748" y="5212"/>
-																	</positions>
-																</Edge>
 																<EquationGE kind="OBJ_LIT" presentable="!ed/18485/269E/2AFC/5ed4b8e361e4">
 																	<position>
 																		<Point x="8520" y="5503"/>
@@ -52825,12 +52813,28 @@
 																		<Size width="211" height="318"/>
 																	</size>
 																</EquationGE>
+																<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/18484/269E/2AFC/5ed4b8e34ac4" dstEquation="!ed/1847f/269E/2AFC/5ed4b8e374ff">
+																	<positions>
+																		<Point x="12753" y="5345"/>
+																		<Point x="14340" y="5345"/>
+																		<Point x="14340" y="2619"/>
+																		<Point x="15293" y="2619"/>
+																	</positions>
+																</Edge>
 																<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/18485/269E/2AFC/5ed4b8e361e4" dstEquation="!ed/18484/269E/2AFC/5ed4b8e34ac4">
 																	<positions>
 																		<Point x="8731" y="5662"/>
 																		<Point x="10239" y="5662"/>
 																		<Point x="10239" y="5450"/>
 																		<Point x="11748" y="5450"/>
+																	</positions>
+																</Edge>
+																<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/18483/269E/2AFC/5ed4b8e32d43" dstEquation="!ed/18484/269E/2AFC/5ed4b8e34ac4">
+																	<positions>
+																		<Point x="8758" y="4974"/>
+																		<Point x="10239" y="4974"/>
+																		<Point x="10239" y="5212"/>
+																		<Point x="11748" y="5212"/>
 																	</positions>
 																</Edge>
 															</presentationElements>

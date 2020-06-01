@@ -90,6 +90,7 @@ Deshalb bleibt die Anzeige aus. " },
         {"!ed/1725f/5A1E/2BC/5ed374ee50aa", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" },
         {"!ed/17383/5A1E/2BC/5ed374fcbf2", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" },
         {"!ed/1839f/269E/2AFC/5ed4b8e3450f", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
-Deshalb bleibt die Anzeige aus. " }}
+Deshalb bleibt die Anzeige aus. " },
+        {"!ed/18479/269E/2AFC/5ed4b8e3648c", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , 154.173228 , 2.086614 , "Warten bis kurz bevor Hill Hold deaktiviert wird." }}
 END
 

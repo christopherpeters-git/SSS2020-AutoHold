@@ -38,6 +38,7 @@ Notes-Values { Esterel-Technologies }  DEFINITIONS ::=
 BEGIN
     Graphical_not_inC ::= {
         {"!ed/18662/371D/994/5ed3e6365fe", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
-Deshalb bleibt die Anzeige aus. " }}
+Deshalb bleibt die Anzeige aus. " },
+        {"!ed/1873c/371D/994/5ed3e63669c5", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , 169.803150 , -3.110236 , "Warten bis kurz bevor Hill Hold deaktiviert wird." }}
 END
 
