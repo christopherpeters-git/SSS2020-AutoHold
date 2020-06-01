@@ -76,10 +76,7 @@ BEGIN
     Graphical ::= {
         {"!ed/1736a/5A1E/2BC/5ed374fc5139", "Graphical_1",T , T , T , "RELATIVE" , 2 , 463.543304 , -143.740158 , "Wait 180 sec.
 Um EPB_Bremse zu aktivieren" , T },
-        {"!ed/16eb0/5A1E/2BC/5ed3713d4400", "Graphical_1",T , T , T , "RELATIVE" , 2 , 737.519714 , 1542.716553 , "Aktivieren von AutoHold nur möglich, wenn GetriebeWahlHebel  <> P" , T },
-        {"!ed/17031/6C64/BC0/5ed394562b46", "Graphical_1",T , T , T , "RELATIVE" , 2 , 463.543304 , -143.740158 , "Wait 180 sec.
-Um EPB_Bremse zu aktivieren" , T },
-        {"!ed/17060/6C64/BC0/5ed39456415f", "Graphical_1",T , T , T , "RELATIVE" , 2 , 737.519714 , 1542.716553 , "Aktivieren von AutoHold nur möglich, wenn GetriebeWahlHebel  <> P" , T }}
+        {"!ed/16eb0/5A1E/2BC/5ed3713d4400", "Graphical_1",T , T , T , "RELATIVE" , 2 , 737.519714 , 1542.716553 , "Aktivieren von AutoHold nur möglich, wenn GetriebeWahlHebel  <> P" , T }}
     Graphical_not_inC ::= {
         {"!ed/1527f/BD2/77EC/5ea829b62401", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
 Deshalb bleibt die Anzeige aus. " },
@@ -92,9 +89,7 @@ Deshalb bleibt die Anzeige aus. " },
 Deshalb bleibt die Anzeige aus. " },
         {"!ed/1725f/5A1E/2BC/5ed374ee50aa", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" },
         {"!ed/17383/5A1E/2BC/5ed374fcbf2", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" },
-        {"!ed/16ee4/6C64/BC0/5ed394562fb3", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
-Deshalb bleibt die Anzeige aus. " },
-        {"!ed/17015/6C64/BC0/5ed394561331", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" },
-        {"!ed/17047/6C64/BC0/5ed394563af7", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" }}
+        {"!ed/1839f/269E/2AFC/5ed4b8e3450f", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
+Deshalb bleibt die Anzeige aus. " }}
 END
 
