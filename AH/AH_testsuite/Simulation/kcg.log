@@ -1,16 +1,17 @@
 $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config C:/Users/Simon/SSS2020-AutoHold/AH/AH_testsuite/Simulation/config.txt
-** Generation date: 2020-06-01T13:33:32
+** Generation date: 2020-06-02T11:32:43
 *************************************************************$
-*** Type Error (ERR_100): Type mismatch
-  at file C:/Users/Simon/SSS2020-AutoHold/AH/AH_testsuite/Simulation/scade_model_without_unused.scade, line 5525, character 22
-  at path AH_testSuite_Pkg::divFahrer::autoModus_o_autoHold_HillHold_gefaelle/SM1:erneutAnfahren:SM2:gasGeben:_L12=
- This expression has type (float64, float32)
- but should have type ('1_numeric, '1_numeric)
-No warning was found
-1 error was found
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/Users/Simon/SSS2020-AutoHold/AH/AH_testsuite/Simulation/scade_model_without_unused.scade, line 534, character 0
+  at path AH_testSuite_Pkg::tests_Pkg::testAutoModus_o_Autohold_HillHold_gefaelle/
+ Interface element
+ testAutoModus_o_Autohold_HillHold_gefaelle_AH_testSuite_Pkg_tests_Pkg has been
+ renamed because it is too long
+1 warning was found
+No error was found
 No failure occurred
 $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg.log
-** Generation date: 2020-06-01T13:33:32
+** Generation date: 2020-06-02T11:32:44
 *************************************************************$

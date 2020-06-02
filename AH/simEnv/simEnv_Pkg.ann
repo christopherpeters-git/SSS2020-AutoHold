@@ -1,5 +1,37 @@
 Notes-Types { Esterel-Technologies }  DEFINITIONS ::=
 BEGIN
+    Graphical_not_inC ::= SEQUENCE OF { SEQUENCE {
+    annot_object OID,
+    name STRING,
+        note_graphical_information {
+            NT_INCRUSTABLE BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_PERMANENT BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_MODIFY BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_LOCATION STRING
+            {
+            	 NT_DEFAULT_VALUE "RELATIVE" },
+            NT_FONT INTEGER
+            {
+            	 NT_DEFAULT_VALUE 2 },
+            NT_POS_X REAL
+            {
+            	 NT_DEFAULT_VALUE -1 },
+            NT_POS_Y REAL
+            {
+            	 NT_DEFAULT_VALUE -1 }
+        },
+        information {
+            Text TEXT
+            {
+            	 NT_INCRUSTABLE T }
+    } } }
+
     ImageFile ::= SEQUENCE OF { SEQUENCE {
     annot_object OID,
     name STRING,
@@ -47,6 +79,29 @@ END
 
 Notes-Values { Esterel-Technologies }  DEFINITIONS ::=
 BEGIN
+    Graphical_not_inC ::= {
+        {"!ed/54099/41A/CEC/5ed618f128a1", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -42.716535 , 30.196850 , "Leistung:
+P_res = (gaspedalstellung * maxAntriebsleistung) - (sinR(fzgLaengsneigung) * fzgMasse * 0.1) - (bremsdruck * maxBremsleistung)
+
+Geschwindigkeit:
+v2_sq = v1 ^ 2 + ((2.0 * P_res) / fzgMasse) * dt für dt > cEpsilon und fzgMasse > cEpsilon
+Wenn v2_sq > cEpsilon
+    v_fzg = sqrt(v2_sq)
+sonst
+    v_fzg = 0
+
+Weg:
+s_fzg = (v1+v2)/2 * dt + s_fzg(dt)
+
+
+Die Geschwindigkeit wird anhand der Leistung berechnet. Eine Negative Leistung bedeutet, dass gebremst wird bzw. Bergauf gefahren wird wodurch die
+Geschwindigkeit veringert wird.
+
+Allerdings kann die Geschwindigkeit niemals negativ werden, wodurch das Fahrzeug, sobald es am Hang steht, nicht rückwärts rollen kann. 
+
+
+Der Versuch das rückwärts Rollen zu Implementieren ist gescheitert.
+" }}
     ImageFile ::= {
         {"!ed/20e1f3/40F9/574/5e8f41102811", "ImageFile_1",T , T , "RELATIVE" , T , 2 , T , 577 , 664 , 10.433071 , 10.433071 , "..\ba_types\Geschwindigkeitsberechnung.jpg" }}
 END

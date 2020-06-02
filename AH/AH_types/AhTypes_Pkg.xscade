@@ -113,6 +113,23 @@
 								</ed:Constant>
 							</pragmas>
 						</Constant>
+						<Constant name="cSteigung0">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="float64"/>
+									</type>
+								</NamedType>
+							</type>
+							<value>
+								<ConstValue value="0.0"/>
+							</value>
+							<pragmas>
+								<ed:Constant oid="!ed/18067/41A/CEC/5ed606764a68" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+									<comment>Steigung = 0</comment>
+								</ed:Constant>
+							</pragmas>
+						</Constant>
 						<Type name="v_in_mps_T">
 							<definition>
 								<NamedType>

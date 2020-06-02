@@ -1042,7 +1042,7 @@ node #pragma ed <Operator oid="!ed/173c6/371D/994/5ed3dd006355">
 				</StateGE>
 				<StateGE display="split" presentable="!ed/17542/371D/994/5ed3dd007131">
 					<position>
-						<Point x="5689" y="59081"/>
+						<Point x="5715" y="61357"/>
 					</position>
 					<size>
 						<Size width="10954" height="1667"/>
@@ -1050,7 +1050,7 @@ node #pragma ed <Operator oid="!ed/173c6/371D/994/5ed3dd006355">
 				</StateGE>
 				<StateGE display="split" presentable="!ed/17578/371D/994/5ed3dd005e73">
 					<position>
-						<Point x="5874" y="61807"/>
+						<Point x="5900" y="64082"/>
 					</position>
 					<size>
 						<Size width="10769" height="1482"/>
@@ -1304,38 +1304,21 @@ node #pragma ed <Operator oid="!ed/173c6/371D/994/5ed3dd006355">
 						<Point x="7911" y="52176"/>
 					</slashPos>
 				</TransitionGE>
-				<TransitionGE presentable="!ed/17540/371D/994/5ed3dd00ea8">
-					<positions>
-						<Point x="6588" y="57811"/>
-						<Point x="6165" y="58235"/>
-						<Point x="7250" y="58711"/>
-						<Point x="7541" y="59081"/>
-					</positions>
-					<labelSize>
-						<Size width="1852" height="953"/>
-					</labelSize>
-					<labelPos>
-						<Point x="6509" y="58206"/>
-					</labelPos>
-					<slashPos>
-						<Point x="7567" y="58208"/>
-					</slashPos>
-				</TransitionGE>
 				<TransitionGE presentable="!ed/17576/371D/994/5ed3dd0014ed">
 					<positions>
-						<Point x="7355" y="60748"/>
-						<Point x="6668" y="61383"/>
-						<Point x="6985" y="61516"/>
-						<Point x="7276" y="61807"/>
+						<Point x="7382" y="63024"/>
+						<Point x="6694" y="63659"/>
+						<Point x="7011" y="63791"/>
+						<Point x="7303" y="64082"/>
 					</positions>
 					<labelSize>
 						<Size width="2275" height="1588"/>
 					</labelSize>
 					<labelPos>
-						<Point x="5158" y="61276"/>
+						<Point x="5185" y="63551"/>
 					</labelPos>
 					<slashPos>
-						<Point x="6641" y="61278"/>
+						<Point x="6668" y="63553"/>
 					</slashPos>
 				</TransitionGE>
 				<TransitionGE presentable="!ed/1759e/371D/994/5ed3dd0077f7">
@@ -1415,6 +1398,48 @@ node #pragma ed <Operator oid="!ed/173c6/371D/994/5ed3dd006355">
 					</labelPos>
 					<slashPos>
 						<Point x="7382" y="49160"/>
+					</slashPos>
+				</TransitionGE>
+				<StateGE display="split" presentable="!ed/17a36/41A/CEC/5ed5f01e4e23">
+					<position>
+						<Point x="5398" y="58579"/>
+					</position>
+					<size>
+						<Size width="11324" height="1773"/>
+					</size>
+				</StateGE>
+				<TransitionGE presentable="!ed/17a62/41A/CEC/5ed5f047467a">
+					<positions>
+						<Point x="7646" y="57811"/>
+						<Point x="7673" y="58050"/>
+						<Point x="7699" y="58288"/>
+						<Point x="7752" y="58579"/>
+					</positions>
+					<labelSize>
+						<Size width="3731" height="1588"/>
+					</labelSize>
+					<labelPos>
+						<Point x="4683" y="58050"/>
+					</labelPos>
+					<slashPos>
+						<Point x="7620" y="58050"/>
+					</slashPos>
+				</TransitionGE>
+				<TransitionGE presentable="!ed/17a81/41A/CEC/5ed5f058feb">
+					<positions>
+						<Point x="7885" y="60351"/>
+						<Point x="7911" y="60669"/>
+						<Point x="7938" y="60986"/>
+						<Point x="7990" y="61357"/>
+					</positions>
+					<labelSize>
+						<Size width="2910" height="953"/>
+					</labelSize>
+					<labelPos>
+						<Point x="4312" y="60748"/>
+					</labelPos>
+					<slashPos>
+						<Point x="6429" y="60748"/>
 					</slashPos>
 				</TransitionGE>
 			</presentationElements>
@@ -5292,120 +5317,6 @@ _L1 : AhTypes_Pkg::ah_Pkg::getriebeWahlhebel_T;
 						<Point x="17621" y="5794"/>
 					</positions>
 				</Edge>
-				<EquationGE presentable="!ed/18037/5261/3494/5ed4e5ee14bb">
-					<position>
-						<Point x="11033" y="12171"/>
-					</position>
-					<size>
-						<Size width="265" height="502"/>
-					</size>
-				</EquationGE>
-				<EquationGE kind="OBJ_LIT" presentable="!ed/18041/5261/3494/5ed4e5f17d67">
-					<position>
-						<Point x="10980" y="13917"/>
-					</position>
-					<size>
-						<Size width="212" height="318"/>
-					</size>
-				</EquationGE>
-				<EquationGE presentable="!ed/18053/5261/3494/5ed4e600342c">
-					<position>
-						<Point x="14817" y="13150"/>
-					</position>
-					<size>
-						<Size width="1005" height="661"/>
-					</size>
-				</EquationGE>
-				<EquationGE presentable="!ed/18059/5261/3494/5ed4e6043938">
-					<position>
-						<Point x="23680" y="10821"/>
-					</position>
-					<size>
-						<Size width="318" height="503"/>
-					</size>
-				</EquationGE>
-				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/18037/5261/3494/5ed4e5ee14bb" dstEquation="!ed/18053/5261/3494/5ed4e600342c">
-					<positions>
-						<Point x="11298" y="12435"/>
-						<Point x="13044" y="12435"/>
-						<Point x="13044" y="13361"/>
-						<Point x="14817" y="13361"/>
-					</positions>
-				</Edge>
-				<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/18041/5261/3494/5ed4e5f17d67" dstEquation="!ed/18053/5261/3494/5ed4e600342c">
-					<positions>
-						<Point x="11192" y="14076"/>
-						<Point x="12991" y="14076"/>
-						<Point x="12991" y="13600"/>
-						<Point x="14817" y="13600"/>
-					</positions>
-				</Edge>
-				<EquationGE presentable="!ed/18063/5261/3494/5ed4e6ef5032">
-					<position>
-						<Point x="18971" y="10663"/>
-					</position>
-					<size>
-						<Size width="1005" height="661"/>
-					</size>
-				</EquationGE>
-				<EquationGE presentable="!ed/1806d/5261/3494/5ed4e709669c">
-					<position>
-						<Point x="14790" y="9446"/>
-					</position>
-					<size>
-						<Size width="1006" height="661"/>
-					</size>
-				</EquationGE>
-				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/17507/371D/994/5ed3dd001be3" dstEquation="!ed/1806d/5261/3494/5ed4e709669c">
-					<positions>
-						<Point x="15134" y="4154"/>
-						<Point x="15981" y="4154"/>
-						<Point x="15981" y="5821"/>
-						<Point x="11880" y="5821"/>
-						<Point x="11880" y="9657"/>
-						<Point x="14790" y="9657"/>
-					</positions>
-				</Edge>
-				<EquationGE kind="OBJ_LIT" presentable="!ed/18077/5261/3494/5ed4e715f5e">
-					<position>
-						<Point x="8916" y="10028"/>
-					</position>
-					<size>
-						<Size width="212" height="317"/>
-					</size>
-				</EquationGE>
-				<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/18077/5261/3494/5ed4e715f5e" dstEquation="!ed/1806d/5261/3494/5ed4e709669c">
-					<positions>
-						<Point x="9128" y="10186"/>
-						<Point x="11959" y="10186"/>
-						<Point x="11959" y="9895"/>
-						<Point x="14790" y="9895"/>
-					</positions>
-				</Edge>
-				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1806d/5261/3494/5ed4e709669c" dstEquation="!ed/18063/5261/3494/5ed4e6ef5032">
-					<positions>
-						<Point x="15796" y="9790"/>
-						<Point x="17383" y="9790"/>
-						<Point x="17383" y="10874"/>
-						<Point x="18971" y="10874"/>
-					</positions>
-				</Edge>
-				<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/18053/5261/3494/5ed4e600342c" dstEquation="!ed/18063/5261/3494/5ed4e6ef5032">
-					<positions>
-						<Point x="15822" y="13494"/>
-						<Point x="17383" y="13494"/>
-						<Point x="17383" y="11113"/>
-						<Point x="18971" y="11113"/>
-					</positions>
-				</Edge>
-				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/18063/5261/3494/5ed4e6ef5032" dstEquation="!ed/18059/5261/3494/5ed4e6043938">
-					<positions>
-						<Point x="19976" y="11007"/>
-						<Point x="21855" y="11007"/>
-						<Point x="21855" y="11086"/>
-						<Point x="23733" y="11086"/>
-					</positions>
-				</Edge>
 			</presentationElements>
 		</NetDiagram>
 	</diagrams>
@@ -5438,30 +5349,6 @@ _L6 : float64;
 #end
 
 _L7 : AhTypes_Pkg::ah_Pkg::bremspedalkraft_T;
-                              #pragma ed                <Variable oid="!ed/18038/5261/3494/5ed4e5ee1139"/>
-#end
-
-_L8 : AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T;
-                              #pragma ed                <Variable oid="!ed/18042/5261/3494/5ed4e5f144b4"/>
-#end
-
-_L9 : AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T;
-                              #pragma ed                <Variable oid="!ed/18054/5261/3494/5ed4e60053fe"/>
-#end
-
-_L10 : bool;
-                              #pragma ed                <Variable oid="!ed/18064/5261/3494/5ed4e6ef44f"/>
-#end
-
-_L11 : bool;
-                              #pragma ed                <Variable oid="!ed/1806e/5261/3494/5ed4e70958b4"/>
-#end
-
-_L12 : bool;
-                              #pragma ed                <Variable oid="!ed/18078/5261/3494/5ed4e71515bf"/>
-#end
-
-_L13 : float32;
             let
                #pragma ed                <Equation oid="!ed/17505/371D/994/5ed3dd0011c0"/>
 #end
@@ -5499,34 +5386,6 @@ _L13 : float32;
 #end
 
                _L7 = AhTypes_Pkg::ah_Pkg::cBremspedalkraftLosgelassen;
-               #pragma ed                <Equation oid="!ed/18037/5261/3494/5ed4e5ee14bb"/>
-#end
-
-               _L8 = betriebsbremssperrventil;
-               #pragma ed                <Equation oid="!ed/18041/5261/3494/5ed4e5f17d67"/>
-#end
-
-               _L9 = AhTypes_Pkg::ah_Pkg::bbs_gesperrt;
-               #pragma ed                <Equation oid="!ed/18053/5261/3494/5ed4e600342c"/>
-#end
-
-               _L10 = _L8 #5  = _L9;
-               #pragma ed                <Equation oid="!ed/18059/5261/3494/5ed4e6043938"/>
-#end
-
-               error = _L11;
-               #pragma ed                <Equation oid="!ed/18063/5261/3494/5ed4e6ef5032"/>
-#end
-
-               _L11 = _L12 #2  and _L10;
-               #pragma ed                <Equation oid="!ed/1806d/5261/3494/5ed4e709669c"/>
-#end
-
-               _L12 = _L3 #103  >= _L13;
-               #pragma ed                <Equation oid="!ed/18077/5261/3494/5ed4e715f5e"/>
-#end
-
-               _L13 = 0.07;
             tel
          returns .. ;
       tel
@@ -6022,11 +5881,11 @@ _L26 : AhTypes_Pkg::ah_Pkg::betriebsbremsdruck_T;
          _L26 = AhTypes_Pkg::ah_Pkg::cBremspedalkraftDurchgetreten;
       tel
       until
-         #pragma ed          <Transition oid="!ed/17540/371D/994/5ed3dd00ea8"/>
+         #pragma ed          <Transition oid="!ed/17a62/41A/CEC/5ed5f047467a"/>
 #end
 
-         if ready do 
-            restart fzgSteht;
+         if ready
+            restart Bremsen;
 
             #pragma ed       <State oid="!ed/17542/371D/994/5ed3dd007131">
 	<diagrams>
@@ -6375,54 +6234,6 @@ _L26 : AhTypes_Pkg::ah_Pkg::betriebsbremsdruck_T;
 						<Size width="212" height="318"/>
 					</size>
 				</EquationGE>
-				<EquationGE presentable="!ed/1755d/371D/994/5ed3dd006cd3">
-					<position>
-						<Point x="14182" y="661"/>
-					</position>
-					<size>
-						<Size width="317" height="503"/>
-					</size>
-				</EquationGE>
-				<EquationGE kind="OBJ_LIT" presentable="!ed/1755c/371D/994/5ed3dd001eef">
-					<position>
-						<Point x="11007" y="767"/>
-					</position>
-					<size>
-						<Size width="212" height="317"/>
-					</size>
-				</EquationGE>
-				<EquationGE presentable="!ed/1755b/371D/994/5ed3dd003cf0">
-					<position>
-						<Point x="14155" y="1693"/>
-					</position>
-					<size>
-						<Size width="317" height="502"/>
-					</size>
-				</EquationGE>
-				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1755c/371D/994/5ed3dd001eef" dstEquation="!ed/1755d/371D/994/5ed3dd006cd3">
-					<positions>
-						<Point x="11218" y="926"/>
-						<Point x="12726" y="926"/>
-						<Point x="12726" y="926"/>
-						<Point x="14235" y="926"/>
-					</positions>
-				</Edge>
-				<EquationGE kind="OBJ_LIT" presentable="!ed/1755a/371D/994/5ed3dd00632e">
-					<position>
-						<Point x="11139" y="1879"/>
-					</position>
-					<size>
-						<Size width="212" height="317"/>
-					</size>
-				</EquationGE>
-				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1755a/371D/994/5ed3dd00632e" dstEquation="!ed/1755b/371D/994/5ed3dd003cf0">
-					<positions>
-						<Point x="11351" y="2037"/>
-						<Point x="12779" y="2037"/>
-						<Point x="12779" y="1958"/>
-						<Point x="14208" y="1958"/>
-					</positions>
-				</Edge>
 				<Edge leftVarIndex="1" rightExprIndex="5" srcEquation="!ed/17558/371D/994/5ed3dd001ecd" dstEquation="!ed/17551/371D/994/5ed3dd005d52">
 					<positions>
 						<Point x="8546" y="14605"/>
@@ -6539,14 +6350,6 @@ _L55 : bool;
 #end
 
 _L57 : AhTypes_Pkg::ah_Pkg::bremspedalkraft_T;
-                  #pragma ed          <Variable oid="!ed/17574/371D/994/5ed3dd0018dd"/>
-#end
-
-_L58 : AhTypes_Pkg::ah_Pkg::bremspedalkraft_T;
-                  #pragma ed          <Variable oid="!ed/17575/371D/994/5ed3dd003a6f"/>
-#end
-
-_L1 : float64;
       let
          #pragma ed          <Equation oid="!ed/17543/371D/994/5ed3dd003ca7"/>
 #end
@@ -6640,22 +6443,6 @@ _L1 : float64;
 #end
 
          _L57 = AhTypes_Pkg::ah_Pkg::cBremspedalkraftLosgelassen;
-         #pragma ed          <Equation oid="!ed/1755a/371D/994/5ed3dd00632e"/>
-#end
-
-         _L58 = AhTypes_Pkg::ah_Pkg::cBremspedalkraftLosgelassen;
-         #pragma ed          <Equation oid="!ed/1755b/371D/994/5ed3dd003cf0"/>
-#end
-
-         bremspedalKraft = _L58;
-         #pragma ed          <Equation oid="!ed/1755c/371D/994/5ed3dd001eef"/>
-#end
-
-         _L1 = 0.0;
-         #pragma ed          <Equation oid="!ed/1755d/371D/994/5ed3dd006cd3"/>
-#end
-
-         gaspedalStellung = _L1;
       tel
       until
          #pragma ed          <Transition oid="!ed/17576/371D/994/5ed3dd0014ed"/>
@@ -7263,6 +7050,99 @@ _L1 : float64;
 
          if true
             restart fzg_Steht_HHVentil_gesperrt;
+
+            #pragma ed       <State oid="!ed/17a36/41A/CEC/5ed5f01e4e23">
+	<diagrams>
+		<NetDiagram name="Bremsen_1" landscape="true" format="A4 (210 297)" oid="!ed/17a46/41A/CEC/5ed5f0307bbc">
+			<presentationElements>
+				<EquationGE kind="OBJ_LIT" presentable="!ed/17aba/41A/CEC/5ed5f077f6">
+					<position>
+						<Point x="7699" y="3043"/>
+					</position>
+					<size>
+						<Size width="211" height="318"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/17abc/41A/CEC/5ed5f0772106">
+					<position>
+						<Point x="10874" y="2937"/>
+					</position>
+					<size>
+						<Size width="317" height="502"/>
+					</size>
+				</EquationGE>
+				<EquationGE kind="OBJ_LIT" presentable="!ed/17abd/41A/CEC/5ed5f0776d55">
+					<position>
+						<Point x="7594" y="4075"/>
+					</position>
+					<size>
+						<Size width="212" height="318"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/17abf/41A/CEC/5ed5f0771eba">
+					<position>
+						<Point x="10848" y="3969"/>
+					</position>
+					<size>
+						<Size width="318" height="503"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/17aba/41A/CEC/5ed5f077f6" dstEquation="!ed/17abc/41A/CEC/5ed5f0772106">
+					<positions>
+						<Point x="7911" y="3201"/>
+						<Point x="9419" y="3201"/>
+						<Point x="9419" y="3201"/>
+						<Point x="10927" y="3201"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/17abd/41A/CEC/5ed5f0776d55" dstEquation="!ed/17abf/41A/CEC/5ed5f0771eba">
+					<positions>
+						<Point x="7805" y="4233"/>
+						<Point x="9472" y="4233"/>
+						<Point x="9472" y="4233"/>
+						<Point x="10901" y="4233"/>
+					</positions>
+				</Edge>
+			</presentationElements>
+		</NetDiagram>
+	</diagrams>
+      </State>
+#end
+
+state Bremsen
+      var
+                  #pragma ed          <Variable oid="!ed/17abe/41A/CEC/5ed5f0771ce3"/>
+#end
+
+_L2 : AhTypes_Pkg::ah_Pkg::bremspedalkraft_T;
+                  #pragma ed          <Variable oid="!ed/17abb/41A/CEC/5ed5f077258c"/>
+#end
+
+_L1 : float64;
+      let
+         #pragma ed          <Equation oid="!ed/17aba/41A/CEC/5ed5f077f6"/>
+#end
+
+         _L1 = AhTypes_Pkg::ah_Pkg::cGaspedalLosgelassen;
+         #pragma ed          <Equation oid="!ed/17abc/41A/CEC/5ed5f0772106"/>
+#end
+
+         gaspedalStellung = _L1;
+         #pragma ed          <Equation oid="!ed/17abd/41A/CEC/5ed5f0776d55"/>
+#end
+
+         _L2 = AhTypes_Pkg::ah_Pkg::cBremspedalkraftLosgelassen;
+         #pragma ed          <Equation oid="!ed/17abf/41A/CEC/5ed5f0771eba"/>
+#end
+
+         bremspedalKraft = _L2;
+      tel
+      until
+         #pragma ed          <Transition oid="!ed/17a81/41A/CEC/5ed5f058feb"/>
+#end
+
+         if true
+            restart fzgSteht;
 
    returns .. ;
    #pragma ed    <Equation oid="!ed/175b8/371D/994/5ed3dd00158b"/>
@@ -9728,7 +9608,7 @@ node #pragma ed <Operator oid="!ed/20e1a0/40F9/574/5e8f411056f3">
 				</Edge>
 				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1a251/65D4/4A44/5e95a2ca77f5" dstEquation="!ed/1f665/4B16/1104/5e9457fe1d8a">
 					<positions>
-						<Point x="20346" y="7938"/>
+						<Point x="20373" y="7938"/>
 						<Point x="21273" y="7938"/>
 						<Point x="21273" y="7938"/>
 						<Point x="22225" y="7938"/>
@@ -10266,7 +10146,33 @@ node #pragma ed <Operator oid="!ed/20e1a0/40F9/574/5e8f411056f3">
 				</Edge>
 			</presentationElements>
 		</NetDiagram>
-		<NetDiagram name="d_formeln" landscape="true" format="A4 (210 297)" oid="!ed/20e1f3/40F9/574/5e8f41102811"/>
+		<NetDiagram name="d_formeln" landscape="true" format="A4 (210 297)" oid="!ed/20e1f3/40F9/574/5e8f41102811">
+			<presentationElements>
+				<EquationGE kind="OBJ_LIT" presentable="!ed/54099/41A/CEC/5ed618f128a1">
+					<position>
+						<Point x="4471" y="1032"/>
+					</position>
+					<size>
+						<Size width="212" height="317"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/540b7/41A/CEC/5ed619751ad9">
+					<position>
+						<Point x="4445" y="265"/>
+					</position>
+					<size>
+						<Size width="503" height="502"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/54099/41A/CEC/5ed618f128a1" dstEquation="!ed/540b7/41A/CEC/5ed619751ad9">
+					<positions>
+						<Point x="4683" y="1191"/>
+						<Point x="4683" y="529"/>
+						<Point x="4710" y="529"/>
+					</positions>
+				</Edge>
+			</presentationElements>
+		</NetDiagram>
 	</diagrams>
 </Operator>
 #end
@@ -10522,6 +10428,10 @@ _L85 : float64;
 #end
 
 _L86 : float64;
+      #pragma ed    <Variable oid="!ed/5409a/41A/CEC/5ed618f11499"/>
+#end
+
+_L87 : int8;
 let
    #pragma ed    <Equation oid="!ed/20e1a1/40F9/574/5e8f41101268"/>
 #end
@@ -10903,6 +10813,14 @@ _L1 : float64;
 #end
 
    _L86 = 0.0;
+   #pragma ed    <Equation oid="!ed/54099/41A/CEC/5ed618f128a1"/>
+#end
+
+   _L87 = 0;
+   #pragma ed    <Equation oid="!ed/540b7/41A/CEC/5ed619751ad9"/>
+#end
+
+   _ = _L87;
 tel
 
          end;
@@ -10926,6 +10844,11 @@ pi : float64 = 3.14;
 #end
 
 cEpsilon : float64 = 0.00001;
+         -- Steigung = 0
+#pragma ed <Constant oid="!ed/18067/41A/CEC/5ed606764a68"/>
+#end
+
+cSteigung0 : float64 = 0.0;
 
       type
          -- Weg in m
@@ -11024,6 +10947,10 @@ cSteigung2GaspedalFaktor : float64 = 0.1;
 #end
 
 cWartenBisEPBnachAutoHold : physical_Pkg::t_in_s_T = 3.0 * 60.0;
+         #pragma ed <Constant oid="!ed/16162/F1A/4070/5ecf924867a"/>
+#end
+
+cGaspedalLosgelassen : float64 = 0.0;
 
       type
          -- Schaltzustaende des Getriebewahlhebels
@@ -20342,40 +20269,40 @@ node #pragma ed <Operator oid="!ed/1362dd/40F9/574/5e8edf272cf1">
 					<positions>
 						<Point x="2937" y="2275"/>
 						<Point x="3784" y="2275"/>
-						<Point x="3784" y="2275"/>
-						<Point x="4577" y="2275"/>
+						<Point x="3784" y="2143"/>
+						<Point x="4577" y="2143"/>
 					</positions>
 				</Edge>
 				<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/136328/40F9/574/5e8edfa438ad" dstEquation="!ed/1362df/40F9/574/5e8edf38755c">
 					<positions>
 						<Point x="2937" y="3307"/>
 						<Point x="3784" y="3307"/>
-						<Point x="3784" y="3307"/>
-						<Point x="4577" y="3307"/>
+						<Point x="3784" y="3043"/>
+						<Point x="4577" y="3043"/>
 					</positions>
 				</Edge>
 				<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/13632a/40F9/574/5e8edfa44aef" dstEquation="!ed/1362df/40F9/574/5e8edf38755c">
 					<positions>
 						<Point x="2937" y="4339"/>
 						<Point x="3784" y="4339"/>
-						<Point x="3784" y="4392"/>
-						<Point x="4577" y="4392"/>
+						<Point x="3784" y="3942"/>
+						<Point x="4577" y="3942"/>
 					</positions>
 				</Edge>
 				<Edge leftVarIndex="1" rightExprIndex="4" srcEquation="!ed/13632c/40F9/574/5e8edfa4487a" dstEquation="!ed/1362df/40F9/574/5e8edf38755c">
 					<positions>
 						<Point x="2937" y="5371"/>
 						<Point x="3784" y="5371"/>
-						<Point x="3784" y="5424"/>
-						<Point x="4577" y="5424"/>
+						<Point x="3784" y="4815"/>
+						<Point x="4577" y="4815"/>
 					</positions>
 				</Edge>
 				<Edge leftVarIndex="1" rightExprIndex="5" srcEquation="!ed/13632e/40F9/574/5e8edfa420a7" dstEquation="!ed/1362df/40F9/574/5e8edf38755c">
 					<positions>
 						<Point x="2937" y="6456"/>
 						<Point x="3784" y="6456"/>
-						<Point x="3784" y="6456"/>
-						<Point x="4577" y="6456"/>
+						<Point x="3784" y="5715"/>
+						<Point x="4577" y="5715"/>
 					</positions>
 				</Edge>
 				<EquationGE presentable="!ed/140b1a/40F9/574/5e8ee09761c">
@@ -20516,6 +20443,22 @@ node #pragma ed <Operator oid="!ed/1362dd/40F9/574/5e8edf272cf1">
 						<Point x="22966" y="12303"/>
 					</positions>
 				</Edge>
+				<EquationGE presentable="!ed/463fc/41A/CEC/5ed607591963">
+					<position>
+						<Point x="2619" y="7038"/>
+					</position>
+					<size>
+						<Size width="265" height="503"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="6" srcEquation="!ed/463fc/41A/CEC/5ed607591963" dstEquation="!ed/1362df/40F9/574/5e8edf38755c">
+					<positions>
+						<Point x="2884" y="7303"/>
+						<Point x="3731" y="7303"/>
+						<Point x="3731" y="6615"/>
+						<Point x="4577" y="6615"/>
+					</positions>
+				</Edge>
 			</presentationElements>
 		</NetDiagram>
 	</diagrams>
@@ -20630,11 +20573,15 @@ _L25 : AhTypes_Pkg::ah_Pkg::epbBremszustand_T;
 #end
 
 _L26 : AhTypes_Pkg::physical_Pkg::angle_in_rad_T;
+      #pragma ed    <Variable oid="!ed/463fd/41A/CEC/5ed60759b4b"/>
+#end
+
+_L27 : AhTypes_Pkg::physical_Pkg::angle_in_rad_T;
 let
    #pragma ed    <Equation oid="!ed/1362df/40F9/574/5e8edf38755c"/>
 #end
 
-   _L1 =  #1 aktiviereHillHold(_L8, _L9, _L10, _L11, _L12);
+   _L1 =  #1 aktiviereHillHold(_L8, _L9, _L10, _L11, _L12, _L27);
    #pragma ed    <Equation oid="!ed/1362e5/40F9/574/5e8edf4a5435"/>
 #end
 
@@ -20748,6 +20695,10 @@ _L1 : AhTypes_Pkg::ah_Pkg::betriebsbremsSperrventil_T;
          _L1 = AhTypes_Pkg::ah_Pkg::bbs_gesperrt;
       tel
    returns .. ;
+   #pragma ed    <Equation oid="!ed/463fc/41A/CEC/5ed607591963"/>
+#end
+
+   _L27 = fzgLaengsNeigung;
 tel
 
 -- Prueft die Bedingungen zum Aktivieren der HillHold-Funktion
@@ -20958,8 +20909,8 @@ node #pragma ed <Operator oid="!ed/8a77d/40F9/574/5e8ec9b544ed">
 					<positions>
 						<Point x="10239" y="13018"/>
 						<Point x="14420" y="13018"/>
-						<Point x="14420" y="13018"/>
-						<Point x="18600" y="13018"/>
+						<Point x="14420" y="12726"/>
+						<Point x="18600" y="12726"/>
 					</positions>
 				</Edge>
 				<EquationGE presentable="!ed/a44a7/40F9/574/5e8ece9d5d67">
@@ -20974,8 +20925,8 @@ node #pragma ed <Operator oid="!ed/8a77d/40F9/574/5e8ec9b544ed">
 					<positions>
 						<Point x="12832" y="8043"/>
 						<Point x="15716" y="8043"/>
-						<Point x="15716" y="12330"/>
-						<Point x="18600" y="12330"/>
+						<Point x="15716" y="12118"/>
+						<Point x="18600" y="12118"/>
 					</positions>
 				</Edge>
 				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/a4437/40F9/574/5e8eccf21a21" dstEquation="!ed/a44a1/40F9/574/5e8ece8830bb">
@@ -20990,8 +20941,8 @@ node #pragma ed <Operator oid="!ed/8a77d/40F9/574/5e8ec9b544ed">
 					<positions>
 						<Point x="12488" y="18336"/>
 						<Point x="16351" y="18336"/>
-						<Point x="16351" y="14446"/>
-						<Point x="18600" y="14446"/>
+						<Point x="16351" y="13944"/>
+						<Point x="18600" y="13944"/>
 					</positions>
 				</Edge>
 				<EquationGE presentable="!ed/a44b6/40F9/574/5e8ecf295aab">
@@ -21014,8 +20965,8 @@ node #pragma ed <Operator oid="!ed/8a77d/40F9/574/5e8ec9b544ed">
 					<positions>
 						<Point x="10213" y="2117"/>
 						<Point x="16378" y="2117"/>
-						<Point x="16378" y="11615"/>
-						<Point x="18600" y="11615"/>
+						<Point x="16378" y="11509"/>
+						<Point x="18600" y="11509"/>
 					</positions>
 				</Edge>
 				<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/8a7af/40F9/574/5e8ecaa619c" dstEquation="!ed/8a7b5/40F9/574/5e8ecaac1386">
@@ -21038,8 +20989,56 @@ node #pragma ed <Operator oid="!ed/8a77d/40F9/574/5e8ec9b544ed">
 					<positions>
 						<Point x="14711" y="15716"/>
 						<Point x="15769" y="15716"/>
-						<Point x="15769" y="13732"/>
-						<Point x="18600" y="13732"/>
+						<Point x="15769" y="13335"/>
+						<Point x="18600" y="13335"/>
+					</positions>
+				</Edge>
+				<EquationGE presentable="!ed/18036/41A/CEC/5ed60557788a">
+					<position>
+						<Point x="3493" y="20320"/>
+					</position>
+					<size>
+						<Size width="265" height="502"/>
+					</size>
+				</EquationGE>
+				<EquationGE presentable="!ed/1803e/41A/CEC/5ed60570555e">
+					<position>
+						<Point x="11483" y="21405"/>
+					</position>
+					<size>
+						<Size width="1006" height="661"/>
+					</size>
+				</EquationGE>
+				<EquationGE kind="OBJ_LIT" presentable="!ed/18046/41A/CEC/5ed60579c2f">
+					<position>
+						<Point x="4815" y="22543"/>
+					</position>
+					<size>
+						<Size width="212" height="317"/>
+					</size>
+				</EquationGE>
+				<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/18046/41A/CEC/5ed60579c2f" dstEquation="!ed/1803e/41A/CEC/5ed60570555e">
+					<positions>
+						<Point x="5027" y="22701"/>
+						<Point x="7276" y="22701"/>
+						<Point x="7276" y="21855"/>
+						<Point x="11483" y="21855"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/18036/41A/CEC/5ed60557788a" dstEquation="!ed/1803e/41A/CEC/5ed60570555e">
+					<positions>
+						<Point x="3757" y="20585"/>
+						<Point x="7620" y="20585"/>
+						<Point x="7620" y="21616"/>
+						<Point x="11483" y="21616"/>
+					</positions>
+				</Edge>
+				<Edge leftVarIndex="1" rightExprIndex="6" srcEquation="!ed/1803e/41A/CEC/5ed60570555e" dstEquation="!ed/a44a7/40F9/574/5e8ece9d5d67">
+					<positions>
+						<Point x="12488" y="21749"/>
+						<Point x="17489" y="21749"/>
+						<Point x="17489" y="14552"/>
+						<Point x="18600" y="14552"/>
 					</positions>
 				</Edge>
 			</presentationElements>
@@ -21073,7 +21072,12 @@ gaspedalStellung : AhTypes_Pkg::ah_Pkg::gaspedalstellung_T;
       #pragma ed    <Variable oid="!ed/8a79a/40F9/574/5e8eca006743"/>
 #end
 
-v_fzg : AhTypes_Pkg::physical_Pkg::v_in_mps_T)
+v_fzg : AhTypes_Pkg::physical_Pkg::v_in_mps_T; 
+   -- Neigung des Fahrzeugs in Laengsrichtung
+      #pragma ed    <Variable oid="!ed/18035/41A/CEC/5ed605556f9f"/>
+#end
+
+fzgLaengsNeigung : AhTypes_Pkg::physical_Pkg::angle_in_rad_T)
 returns (
       #pragma ed    <Variable oid="!ed/a44ad/40F9/574/5e8ecf1c7d37"/>
 #end
@@ -21148,6 +21152,18 @@ _L20 : bool;
 #end
 
 _L21 : bool;
+      #pragma ed    <Variable oid="!ed/18037/41A/CEC/5ed605576212"/>
+#end
+
+_L22 : AhTypes_Pkg::physical_Pkg::angle_in_rad_T;
+      #pragma ed    <Variable oid="!ed/1803f/41A/CEC/5ed605703e4d"/>
+#end
+
+_L23 : bool;
+      #pragma ed    <Variable oid="!ed/18047/41A/CEC/5ed60579f2f"/>
+#end
+
+_L24 : float64;
 let
    #pragma ed    <Equation oid="!ed/8a7a9/40F9/574/5e8eca8c31ca"/>
 #end
@@ -21219,11 +21235,23 @@ let
    #pragma ed    <Equation oid="!ed/a44a7/40F9/574/5e8ece9d5d67"/>
 #end
 
-   _L21 = _L3 #2  and _L13 and _L4 and _L20 and _L8;
+   _L21 = _L3 #2  and _L13 and _L4 and _L20 and _L8 and _L23;
    #pragma ed    <Equation oid="!ed/a44b6/40F9/574/5e8ecf295aab"/>
 #end
 
    aktiviere = _L21;
+   #pragma ed    <Equation oid="!ed/18036/41A/CEC/5ed60557788a"/>
+#end
+
+   _L22 = fzgLaengsNeigung;
+   #pragma ed    <Equation oid="!ed/1803e/41A/CEC/5ed60570555e"/>
+#end
+
+   _L23 = _L22 #1  <> _L24;
+   #pragma ed    <Equation oid="!ed/18046/41A/CEC/5ed60579c2f"/>
+#end
+
+   _L24 = AhTypes_Pkg::physical_Pkg::cSteigung0;
 tel
 
 -- Prueft die Bedingungen zum Loesen der HillHold-Funktion

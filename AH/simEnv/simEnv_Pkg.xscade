@@ -748,6 +748,18 @@
 												<ed:Variable oid="!ed/1a25c/65D4/4A44/5e95a2e64029"/>
 											</pragmas>
 										</Variable>
+										<Variable name="_L87">
+											<type>
+												<NamedType>
+													<type>
+														<TypeRef name="int8"/>
+													</type>
+												</NamedType>
+											</type>
+											<pragmas>
+												<ed:Variable oid="!ed/5409a/41A/CEC/5ed618f11499"/>
+											</pragmas>
+										</Variable>
 									</locals>
 									<data>
 										<!-- s_fzg = _L20; -->
@@ -2456,6 +2468,34 @@
 												<ed:Equation oid="!ed/1a25b/65D4/4A44/5e95a2e63c6"/>
 											</pragmas>
 										</Equation>
+										<!-- _L87 = 0; -->
+										<Equation>
+											<lefts>
+												<VariableRef name="_L87"/>
+											</lefts>
+											<right>
+												<ConstValue value="0"/>
+											</right>
+											<pragmas>
+												<ed:Equation oid="!ed/54099/41A/CEC/5ed618f128a1"/>
+											</pragmas>
+										</Equation>
+										<!-- _ = _L87; -->
+										<Equation>
+											<lefts>
+												<VariableRef name="_"/>
+											</lefts>
+											<right>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="_L87"/>
+													</path>
+												</IdExpression>
+											</right>
+											<pragmas>
+												<ed:Equation oid="!ed/540b7/41A/CEC/5ed619751ad9"/>
+											</pragmas>
+										</Equation>
 									</data>
 									<pragmas>
 										<ed:Operator oid="!ed/20e1a0/40F9/574/5e8f411056f3" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
@@ -3040,7 +3080,7 @@
 														</Edge>
 														<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/1a251/65D4/4A44/5e95a2ca77f5" dstEquation="!ed/1f665/4B16/1104/5e9457fe1d8a">
 															<positions>
-																<Point x="20346" y="7938"/>
+																<Point x="20373" y="7938"/>
 																<Point x="21273" y="7938"/>
 																<Point x="21273" y="7938"/>
 																<Point x="22225" y="7938"/>
@@ -3578,7 +3618,33 @@
 														</Edge>
 													</presentationElements>
 												</NetDiagram>
-												<NetDiagram name="d_formeln" landscape="true" format="A4 (210 297)" oid="!ed/20e1f3/40F9/574/5e8f41102811"/>
+												<NetDiagram name="d_formeln" landscape="true" format="A4 (210 297)" oid="!ed/20e1f3/40F9/574/5e8f41102811">
+													<presentationElements>
+														<EquationGE kind="OBJ_LIT" presentable="!ed/54099/41A/CEC/5ed618f128a1">
+															<position>
+																<Point x="4471" y="1032"/>
+															</position>
+															<size>
+																<Size width="212" height="317"/>
+															</size>
+														</EquationGE>
+														<EquationGE presentable="!ed/540b7/41A/CEC/5ed619751ad9">
+															<position>
+																<Point x="4445" y="265"/>
+															</position>
+															<size>
+																<Size width="503" height="502"/>
+															</size>
+														</EquationGE>
+														<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/54099/41A/CEC/5ed618f128a1" dstEquation="!ed/540b7/41A/CEC/5ed619751ad9">
+															<positions>
+																<Point x="4683" y="1191"/>
+																<Point x="4683" y="529"/>
+																<Point x="4710" y="529"/>
+															</positions>
+														</Edge>
+													</presentationElements>
+												</NetDiagram>
 											</diagrams>
 										</ed:Operator>
 									</pragmas>

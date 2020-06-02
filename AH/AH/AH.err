@@ -1,0 +1,4 @@
+*** Type Error (ERR_100): Type mismatch
+  at file C:\Users\Simon\AppData\Local\Temp\ScadeChecker\3308\checker_file.scade, line 552, character 10
+  at path AH_Pkg::subf_Pkg::aktiviereHillHold/_L23=
+ This expression has type (float64, float32) but should have type ('1, '1)

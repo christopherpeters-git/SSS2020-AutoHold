@@ -38,6 +38,8 @@ Notes-Values { Esterel-Technologies }  DEFINITIONS ::=
 BEGIN
     Graphical_not_inC ::= {
         {"!ed/166ab/4CCA/3DA8/5ed284a23cb7", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
-Deshalb bleibt die Anzeige aus. " }}
+Deshalb bleibt die Anzeige aus. " },
+        {"!ed/54037/41A/CEC/5ed60a084abc", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -14.566929 , 127.086614 , "Das Fahrzeug fährt so lange bis eine Steigung ereicht wurde.
+" }}
 END
 

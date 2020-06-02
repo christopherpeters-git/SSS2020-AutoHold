@@ -1,5 +1,37 @@
 Notes-Types { Esterel-Technologies }  DEFINITIONS ::=
 BEGIN
+    Graphical_not_inC ::= SEQUENCE OF { SEQUENCE {
+    annot_object OID,
+    name STRING,
+        note_graphical_information {
+            NT_INCRUSTABLE BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_PERMANENT BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_MODIFY BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_LOCATION STRING
+            {
+            	 NT_DEFAULT_VALUE "RELATIVE" },
+            NT_FONT INTEGER
+            {
+            	 NT_DEFAULT_VALUE 2 },
+            NT_POS_X REAL
+            {
+            	 NT_DEFAULT_VALUE -1 },
+            NT_POS_Y REAL
+            {
+            	 NT_DEFAULT_VALUE -1 }
+        },
+        information {
+            Text TEXT
+            {
+            	 NT_INCRUSTABLE T }
+    } } }
+
     Graphical ::= SEQUENCE OF { SEQUENCE {
     annot_object OID,
     name STRING,
@@ -37,46 +69,10 @@ BEGIN
             	 NT_LEFT_LABEL "Propagate to generated code" }
     } } }
 
-    Graphical_not_inC ::= SEQUENCE OF { SEQUENCE {
-    annot_object OID,
-    name STRING,
-        note_graphical_information {
-            NT_INCRUSTABLE BOOLEAN
-            {
-            	 NT_DEFAULT_VALUE T },
-            NT_PERMANENT BOOLEAN
-            {
-            	 NT_DEFAULT_VALUE T },
-            NT_MODIFY BOOLEAN
-            {
-            	 NT_DEFAULT_VALUE T },
-            NT_LOCATION STRING
-            {
-            	 NT_DEFAULT_VALUE "RELATIVE" },
-            NT_FONT INTEGER
-            {
-            	 NT_DEFAULT_VALUE 2 },
-            NT_POS_X REAL
-            {
-            	 NT_DEFAULT_VALUE -1 },
-            NT_POS_Y REAL
-            {
-            	 NT_DEFAULT_VALUE -1 }
-        },
-        information {
-            Text TEXT
-            {
-            	 NT_INCRUSTABLE T }
-    } } }
-
 END
 
 Notes-Values { Esterel-Technologies }  DEFINITIONS ::=
 BEGIN
-    Graphical ::= {
-        {"!ed/1736a/5A1E/2BC/5ed374fc5139", "Graphical_1",T , T , T , "RELATIVE" , 2 , 463.543304 , -143.740158 , "Wait 180 sec.
-Um EPB_Bremse zu aktivieren" , T },
-        {"!ed/16eb0/5A1E/2BC/5ed3713d4400", "Graphical_1",T , T , T , "RELATIVE" , 2 , 737.519714 , 1542.716553 , "Aktivieren von AutoHold nur möglich, wenn GetriebeWahlHebel  <> P" , T }}
     Graphical_not_inC ::= {
         {"!ed/1527f/BD2/77EC/5ea829b62401", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
 Deshalb bleibt die Anzeige aus. " },
@@ -84,13 +80,15 @@ Deshalb bleibt die Anzeige aus. " },
         {"!ed/37aaf/BD2/77EC/5ea86a5f264e", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" },
         {"!ed/15ea3/7CC/2670/5ece4af81498", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
 Deshalb bleibt die Anzeige aus. " },
-        {"!ed/160a8/7CC/2670/5ece4af862de", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" },
         {"!ed/16c78/5A1E/2BC/5ed3713d8fe", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
 Deshalb bleibt die Anzeige aus. " },
         {"!ed/1725f/5A1E/2BC/5ed374ee50aa", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" },
-        {"!ed/17383/5A1E/2BC/5ed374fcbf2", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -77.086617 , -22.913385 , "Autohold arretiert die Betriebsbremse!" },
         {"!ed/1839f/269E/2AFC/5ed4b8e3450f", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -125.000000 , -52.086613 , "AutomatikModus ist per Default eingestellt.
 Deshalb bleibt die Anzeige aus. " },
-        {"!ed/18479/269E/2AFC/5ed4b8e3648c", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , 154.173228 , 2.086614 , "Warten bis kurz bevor Hill Hold deaktiviert wird." }}
+        {"!ed/18479/269E/2AFC/5ed4b8e3648c", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , 154.173233 , 2.086614 , "Warten bis kurz bevor Hill Hold deaktiviert wird." }}
+    Graphical ::= {
+        {"!ed/1736a/5A1E/2BC/5ed374fc5139", "Graphical_1",T , T , T , "RELATIVE" , 2 , 463.543304 , -143.740158 , "Wait 180 sec.
+Um EPB_Bremse zu aktivieren" , T },
+        {"!ed/16eb0/5A1E/2BC/5ed3713d4400", "Graphical_1",T , T , T , "RELATIVE" , 2 , 737.519714 , 1542.716553 , "Aktivieren von AutoHold nur möglich, wenn GetriebeWahlHebel  <> P" , T }}
 END
 

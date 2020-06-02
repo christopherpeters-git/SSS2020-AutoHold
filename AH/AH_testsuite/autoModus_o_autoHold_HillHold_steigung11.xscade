@@ -8293,7 +8293,7 @@
 					<until>
 						<Transition kind="restart">
 							<target>
-								<StateRef name="fzgSteht"/>
+								<StateRef name="Bremsen"/>
 							</target>
 							<condition>
 								<IdExpression>
@@ -8302,15 +8302,8 @@
 									</path>
 								</IdExpression>
 							</condition>
-							<effect>
-								<Action>
-									<pragmas>
-										<ed:Action oid="!ed/187aa/371D/994/5ed3e63654fa"/>
-									</pragmas>
-								</Action>
-							</effect>
 							<pragmas>
-								<ed:Transition oid="!ed/187a9/371D/994/5ed3e6364019"/>
+								<ed:Transition oid="!ed/17b25/41A/CEC/5ed5f0a928"/>
 							</pragmas>
 						</Transition>
 					</until>
@@ -11381,6 +11374,171 @@
 						</ed:State>
 					</pragmas>
 				</State>
+				<State name="Bremsen">
+					<locals>
+						<Variable name="_L2">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="AhTypes_Pkg::ah_Pkg::bremspedalkraft_T"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Variable oid="!ed/17b13/41A/CEC/5ed5f0a3ba4"/>
+							</pragmas>
+						</Variable>
+						<Variable name="_L1">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="float64"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Variable oid="!ed/17b14/41A/CEC/5ed5f0a37e17"/>
+							</pragmas>
+						</Variable>
+					</locals>
+					<data>
+						<!-- _L1 = AhTypes_Pkg::ah_Pkg::cGaspedalLosgelassen; -->
+						<Equation>
+							<lefts>
+								<VariableRef name="_L1"/>
+							</lefts>
+							<right>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="AhTypes_Pkg::ah_Pkg::cGaspedalLosgelassen"/>
+									</path>
+								</IdExpression>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/17b0e/41A/CEC/5ed5f0a35b4"/>
+							</pragmas>
+						</Equation>
+						<!-- gaspedalStellung = _L1; -->
+						<Equation>
+							<lefts>
+								<VariableRef name="gaspedalStellung"/>
+							</lefts>
+							<right>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L1"/>
+									</path>
+								</IdExpression>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/17b0f/41A/CEC/5ed5f0a3420"/>
+							</pragmas>
+						</Equation>
+						<!-- _L2 = AhTypes_Pkg::ah_Pkg::cBremspedalkraftLosgelassen; -->
+						<Equation>
+							<lefts>
+								<VariableRef name="_L2"/>
+							</lefts>
+							<right>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="AhTypes_Pkg::ah_Pkg::cBremspedalkraftLosgelassen"/>
+									</path>
+								</IdExpression>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/17b10/41A/CEC/5ed5f0a354e2"/>
+							</pragmas>
+						</Equation>
+						<!-- bremspedalKraft = _L2; -->
+						<Equation>
+							<lefts>
+								<VariableRef name="bremspedalKraft"/>
+							</lefts>
+							<right>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L2"/>
+									</path>
+								</IdExpression>
+							</right>
+							<pragmas>
+								<ed:Equation oid="!ed/17b11/41A/CEC/5ed5f0a320fc"/>
+							</pragmas>
+						</Equation>
+					</data>
+					<until>
+						<Transition kind="restart">
+							<target>
+								<StateRef name="fzgSteht"/>
+							</target>
+							<condition>
+								<ConstValue value="true"/>
+							</condition>
+							<pragmas>
+								<ed:Transition oid="!ed/17b46/41A/CEC/5ed5f0c6654f"/>
+							</pragmas>
+						</Transition>
+					</until>
+					<pragmas>
+						<ed:State oid="!ed/17b0d/41A/CEC/5ed5f0a31f7e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/7">
+							<diagrams>
+								<NetDiagram name="Bremsen_1" landscape="true" format="A4 (210 297)" oid="!ed/17b12/41A/CEC/5ed5f0a35a41">
+									<presentationElements>
+										<EquationGE kind="OBJ_LIT" presentable="!ed/17b0e/41A/CEC/5ed5f0a35b4">
+											<position>
+												<Point x="7699" y="3043"/>
+											</position>
+											<size>
+												<Size width="211" height="318"/>
+											</size>
+										</EquationGE>
+										<EquationGE presentable="!ed/17b0f/41A/CEC/5ed5f0a3420">
+											<position>
+												<Point x="10874" y="2937"/>
+											</position>
+											<size>
+												<Size width="317" height="502"/>
+											</size>
+										</EquationGE>
+										<EquationGE kind="OBJ_LIT" presentable="!ed/17b10/41A/CEC/5ed5f0a354e2">
+											<position>
+												<Point x="7594" y="4075"/>
+											</position>
+											<size>
+												<Size width="212" height="318"/>
+											</size>
+										</EquationGE>
+										<EquationGE presentable="!ed/17b11/41A/CEC/5ed5f0a320fc">
+											<position>
+												<Point x="10848" y="3969"/>
+											</position>
+											<size>
+												<Size width="318" height="503"/>
+											</size>
+										</EquationGE>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/17b0e/41A/CEC/5ed5f0a35b4" dstEquation="!ed/17b0f/41A/CEC/5ed5f0a3420">
+											<positions>
+												<Point x="7911" y="3201"/>
+												<Point x="9419" y="3201"/>
+												<Point x="9419" y="3201"/>
+												<Point x="10927" y="3201"/>
+											</positions>
+										</Edge>
+										<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/17b10/41A/CEC/5ed5f0a354e2" dstEquation="!ed/17b11/41A/CEC/5ed5f0a320fc">
+											<positions>
+												<Point x="7805" y="4233"/>
+												<Point x="9472" y="4233"/>
+												<Point x="9472" y="4233"/>
+												<Point x="10901" y="4233"/>
+											</positions>
+										</Edge>
+									</presentationElements>
+								</NetDiagram>
+							</diagrams>
+						</ed:State>
+					</pragmas>
+				</State>
 			</states>
 			<pragmas>
 				<ed:StateMachine oid="!ed/18630/371D/994/5ed3e636955"/>
@@ -11690,7 +11848,7 @@
 						</StateGE>
 						<StateGE display="split" presentable="!ed/187ab/371D/994/5ed3e63611f9">
 							<position>
-								<Point x="5821" y="63579"/>
+								<Point x="5821" y="66596"/>
 							</position>
 							<size>
 								<Size width="10954" height="1667"/>
@@ -11698,7 +11856,7 @@
 						</StateGE>
 						<StateGE display="split" presentable="!ed/187e1/371D/994/5ed3e636313c">
 							<position>
-								<Point x="6006" y="66305"/>
+								<Point x="6006" y="69321"/>
 							</position>
 							<size>
 								<Size width="10769" height="1482"/>
@@ -11949,41 +12107,24 @@
 								<Point x="5397" y="56672"/>
 							</labelPos>
 							<slashPos>
-								<Point x="7912" y="56673"/>
-							</slashPos>
-						</TransitionGE>
-						<TransitionGE presentable="!ed/187a9/371D/994/5ed3e6364019">
-							<positions>
-								<Point x="6720" y="62309"/>
-								<Point x="6297" y="62733"/>
-								<Point x="7382" y="63209"/>
-								<Point x="7673" y="63579"/>
-							</positions>
-							<labelSize>
-								<Size width="1852" height="953"/>
-							</labelSize>
-							<labelPos>
-								<Point x="6642" y="62703"/>
-							</labelPos>
-							<slashPos>
-								<Point x="7701" y="62705"/>
+								<Point x="7911" y="56674"/>
 							</slashPos>
 						</TransitionGE>
 						<TransitionGE presentable="!ed/187df/371D/994/5ed3e6366cde">
 							<positions>
-								<Point x="7488" y="65246"/>
-								<Point x="6800" y="65881"/>
-								<Point x="7117" y="66014"/>
-								<Point x="7408" y="66305"/>
+								<Point x="7488" y="68263"/>
+								<Point x="6800" y="68898"/>
+								<Point x="7117" y="69030"/>
+								<Point x="7408" y="69321"/>
 							</positions>
 							<labelSize>
 								<Size width="2275" height="1588"/>
 							</labelSize>
 							<labelPos>
-								<Point x="5291" y="65773"/>
+								<Point x="5291" y="68789"/>
 							</labelPos>
 							<slashPos>
-								<Point x="6775" y="65775"/>
+								<Point x="6773" y="68791"/>
 							</slashPos>
 						</TransitionGE>
 						<TransitionGE presentable="!ed/18807/371D/994/5ed3e63624bf">
@@ -12000,7 +12141,7 @@
 								<Point x="4789" y="59159"/>
 							</labelPos>
 							<slashPos>
-								<Point x="6034" y="59160"/>
+								<Point x="6033" y="59161"/>
 							</slashPos>
 						</TransitionGE>
 						<StateGE display="split" presentable="!ed/1891a/371D/994/5ed3e87a625c">
@@ -12019,13 +12160,13 @@
 								<Point x="8096" y="54716"/>
 							</positions>
 							<labelSize>
-								<Size width="1747" height="953"/>
+								<Size width="1746" height="953"/>
 							</labelSize>
 							<labelPos>
 								<Point x="6298" y="53789"/>
 							</labelPos>
 							<slashPos>
-								<Point x="7251" y="53789"/>
+								<Point x="7250" y="53790"/>
 							</slashPos>
 						</TransitionGE>
 						<StateGE display="split" presentable="!ed/17f6f/5261/3494/5ed4e21e7120">
@@ -12050,7 +12191,7 @@
 								<Point x="5000" y="50298"/>
 							</labelPos>
 							<slashPos>
-								<Point x="5953" y="50298"/>
+								<Point x="5953" y="50297"/>
 							</slashPos>
 						</TransitionGE>
 						<TransitionGE presentable="!ed/17fbf/5261/3494/5ed4e2731850">
@@ -12070,7 +12211,7 @@
 								<Point x="688" y="44212"/>
 							</labelPos>
 							<slashPos>
-								<Point x="6721" y="44212"/>
+								<Point x="6720" y="44212"/>
 							</slashPos>
 						</TransitionGE>
 						<TransitionGE presentable="!ed/17fdb/5261/3494/5ed4e298368d">
@@ -12088,6 +12229,48 @@
 							</labelPos>
 							<slashPos>
 								<Point x="6509" y="47413"/>
+							</slashPos>
+						</TransitionGE>
+						<StateGE display="split" presentable="!ed/17b0d/41A/CEC/5ed5f0a31f7e">
+							<position>
+								<Point x="5636" y="63526"/>
+							</position>
+							<size>
+								<Size width="11324" height="1773"/>
+							</size>
+						</StateGE>
+						<TransitionGE presentable="!ed/17b25/41A/CEC/5ed5f0a928">
+							<positions>
+								<Point x="7964" y="62309"/>
+								<Point x="8017" y="62706"/>
+								<Point x="8070" y="63103"/>
+								<Point x="8176" y="63526"/>
+							</positions>
+							<labelSize>
+								<Size width="2805" height="1588"/>
+							</labelSize>
+							<labelPos>
+								<Point x="4312" y="62865"/>
+							</labelPos>
+							<slashPos>
+								<Point x="6323" y="62865"/>
+							</slashPos>
+						</TransitionGE>
+						<TransitionGE presentable="!ed/17b46/41A/CEC/5ed5f0c6654f">
+							<positions>
+								<Point x="8255" y="65299"/>
+								<Point x="8281" y="65723"/>
+								<Point x="8308" y="66146"/>
+								<Point x="8334" y="66596"/>
+							</positions>
+							<labelSize>
+								<Size width="3122" height="953"/>
+							</labelSize>
+							<labelPos>
+								<Point x="5001" y="65696"/>
+							</labelPos>
+							<slashPos>
+								<Point x="7329" y="65696"/>
 							</slashPos>
 						</TransitionGE>
 					</presentationElements>
